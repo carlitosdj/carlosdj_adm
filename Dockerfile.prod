@@ -1,0 +1,32 @@
+# Stage 1
+# Build docker image of react app
+FROM node:alpine as build
+WORKDIR /administracao
+COPY package*.json ./
+# install and cache app dependencies
+RUN yarn install
+# Copy 
+COPY . .
+RUN yarn run build
+#EXPOSE 3014
+
+# Stage 2
+# Copy the react app build above in nginx
+FROM nginx:1.25.1-alpine
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+#Entra na pasta
+WORKDIR /usr/share/nginx/html
+##COPY docker-entrypoint.sh .
+## remove default nginx static assets
+#RUN rm -rf ./*
+## copy static files
+COPY --from=build /administracao/build .
+
+#expose ports
+#EXPOSE 80 443
+EXPOSE 80 443
+
+# containers run nginx with global directives and daemon off
+ENTRYPOINT ["nginx", "-g", "daemon off;"]
+
