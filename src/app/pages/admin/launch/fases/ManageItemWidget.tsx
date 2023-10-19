@@ -174,9 +174,9 @@ const ManageItemWidget: React.FC<React.PropsWithChildren<Props>> = ({className, 
                         Intertico
                       </a> */}
                         <span className='text-muted fw-bold text-muted d-block fs-7'>
-                          <a target={'_blank'} href={child.name=='Captação de lead' ? 'https://evento.labiopalatina.com.br/inscrever/' + child.description + '/site': ''}> {child.name=='Captação de lead' ? 'https://evento.labiopalatina.com.br/inscrever/' + child.description + '/site': ''} </a>
-                          <a target={'_blank'} href={child.name=='Evento' ? 'https://evento.labiopalatina.com.br/aulas/' + child.description + '/aula01': ''}> {child.name=='Evento' ? 'https://evento.labiopalatina.com.br/aulas/' + child.description + '/aula01': ''} </a>
-                          <a target={'_blank'} href={child.name=='Vendas' ? 'https://evento.labiopalatina.com.br/inscricao/' + child.description + '': ''}>{child.name=='Vendas' ? 'https://evento.labiopalatina.com.br/inscricao/' + child.description + '': ''}</a>
+                          <a target={'_blank'} href={child.name=='Captação de lead' ? 'http://localhost:3015/lead/subscribe/' + child.description + '/site': ''}> {child.name=='Captação de lead' ? 'http://localhost:3015/lead/subscribe/' + child.description + '/site': ''} </a>
+                          <a target={'_blank'} href={child.name=='Evento' ? 'http://localhost:3015/class/' + child.description + '/aula01': ''}> {child.name=='Evento' ? 'http://localhost:3015/class/' + child.description + '/aula01': ''} </a>
+                          <a target={'_blank'} href={child.name=='Vendas' ? 'http://localhost:3015/sale/subscribe/' + child.description + '': ''}>{child.name=='Vendas' ? 'http://localhost:3015/sale/subscribe/' + child.description + '': ''}</a>
                          
                         </span>
                       </td>
