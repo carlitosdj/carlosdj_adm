@@ -17,16 +17,16 @@ interface handleCloseProps {
 const Update = ({handleClose, child}: handleCloseProps) => {
   const [validated, setValidated] = useState(false)
   const component = useSelector((state: ApplicationState) => state.component)
-  const [key_extra, setKey_extra] = useState<string | undefined>('')
-  const [value_extra, setValue_extra] = useState<string | undefined>('')
+  const [keyExtra, setkeyExtra] = useState<string | undefined>('')
+  const [valueExtra, setvalueExtra] = useState<string | undefined>('')
   const [ckEditor, setCkEditor] = useState(false)
 
   const dispatch = useDispatch()
 
   useEffect(() => {
-    setKey_extra(child.key_extra)
-    setValue_extra(child.value_extra)
-  }, [child.key_extra, child.value_extra])
+    setkeyExtra(child.keyExtra)
+    setvalueExtra(child.valueExtra)
+  }, [child.keyExtra, child.valueExtra])
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     console.log('submit', component.data.id)
@@ -36,12 +36,12 @@ const Update = ({handleClose, child}: handleCloseProps) => {
       event.stopPropagation()
     }
     setValidated(true)
-    if (key_extra && value_extra) {
+    if (keyExtra && valueExtra) {
       var data = new Date()
       const extraToUpdate = {
         id: child.id,
-        key_extra,
-        value_extra,
+        keyExtra,
+        valueExtra,
         //created_at: (data.getTime() / 1000).toString(), //updated_at
         status: 1,
       }
@@ -60,8 +60,8 @@ const Update = ({handleClose, child}: handleCloseProps) => {
           <Form.Control
             placeholder=''
             required
-            value={key_extra}
-            onChange={(e:any) => setKey_extra(e.target.value)}
+            value={keyExtra}
+            onChange={(e:any) => setkeyExtra(e.target.value)}
             name='name'
           />
           <Form.Control.Feedback type='invalid'>
@@ -82,8 +82,8 @@ const Update = ({handleClose, child}: handleCloseProps) => {
             <Form.Control
               placeholder=''
               required
-              value={value_extra}
-              onChange={(e) => setValue_extra(e.target.value)}
+              value={valueExtra}
+              onChange={(e) => setvalueExtra(e.target.value)}
               as='textarea'
               rows={3}
               name='description'
@@ -93,7 +93,7 @@ const Update = ({handleClose, child}: handleCloseProps) => {
             </Form.Control.Feedback>
           </Form.Group>
         ) : (
-          <CKEditor initData={value_extra} onChange={(e) => setValue_extra(e.editor.getData())} />
+          <CKEditor initData={valueExtra} onChange={(e) => setvalueExtra(e.editor.getData())} />
         )}
 
         <br />

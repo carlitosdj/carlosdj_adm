@@ -68,6 +68,7 @@ const ManageItemExtraWidget: React.FC<React.PropsWithChildren<Props>> = ({classN
 
   // Deleta extra:
   const deleteExtra = (extra: Extras) => {
+    console.log("xxxextra", extra)
     dispatch(deleteExtraRequest(extra.id!))
   }
 
@@ -110,7 +111,7 @@ const ManageItemExtraWidget: React.FC<React.PropsWithChildren<Props>> = ({classN
         <div className='card-header border-0 pt-5'>
           <h3 className='card-title align-items-start flex-column'>
             <span className='card-label fw-bolder fs-3 mb-1'>Extra</span>
-            <span className='text-muted mt-1 fw-bold fs-7'>Extras do componente</span>
+            <span className='text-muted mt-1 fw-bold fs-7'>Gerencie os atributos extras desse componente.</span>
           </h3>
           <div
             className='card-toolbar justify-content-between d-flex'
@@ -168,6 +169,7 @@ const ManageItemExtraWidget: React.FC<React.PropsWithChildren<Props>> = ({classN
               {/* begin::Table body */}
               <tbody>
                 {comp.data.extras?.map((extra, index) => {
+                  console.log("VER AQUI##", extra)
                   return (
                     <tr key={index}>
                       {/* <td>
@@ -181,14 +183,14 @@ const ManageItemExtraWidget: React.FC<React.PropsWithChildren<Props>> = ({classN
                           <img src={toAbsoluteUrl('/media/avatars/150-11.jpg')} alt='' />
                         </div> */}
                           <div className='d-flex justify-content-start flex-column'>
-                            <Link
-                              to={'/manage/' + child.id}
+                            {/* <Link
+                              to={'/manage/' + extra.id}
                               style={{display: 'flex'}}
                               className='text-dark fw-bolder text-hover-primary fs-6'
-                            >
-                              {extra.key_extra}
+                            > */}
+                              {extra.keyExtra}
                               
-                            </Link>
+                            {/* </Link> */}
                             {/* <span className='text-muted fw-bold text-muted d-block fs-7'>
                             {child.description}
                           </span> */}
@@ -200,7 +202,7 @@ const ManageItemExtraWidget: React.FC<React.PropsWithChildren<Props>> = ({classN
                         Intertico
                       </a> */}
                         <span className='text-muted fw-bold text-muted d-block fs-7'>
-                          {extra.value_extra?.substring(0, 15)}...
+                          {extra.valueExtra?.substring(0, 15)}...
                         </span>
                       </td>
                       <td>
@@ -208,11 +210,11 @@ const ManageItemExtraWidget: React.FC<React.PropsWithChildren<Props>> = ({classN
                         Intertico
                       </a> */}
                         <span className='text-muted fw-bold text-muted d-block fs-7'>
-                          {(extra.key_extra == "url")? 
+                          {(extra.keyExtra == "url")? 
                               <iframe
                               title='video'
                               className='embed-responsive-item rounded'
-                              src={extra.value_extra}
+                              src={extra.valueExtra}
                               style={{width:150}}
                               height={75}
                               frameBorder={0}

@@ -18,8 +18,8 @@ interface handleCloseProps {
 
 const Extra = ({handleClose}: handleCloseProps) => {
   // const [sending, setSending] = useState(false)
-  // const [key_extra, setKey_extra] = useState('image')
-  // const [value_extra, setValue_extra] = useState('')
+  // const [keyExtra, setkeyExtra] = useState('image')
+  // const [valueExtra, setvalueExtra] = useState('')
   const [validated, setValidated] = useState(false)
 
   const [selectedFile, setSelectedFile] = useState<any>()
@@ -53,9 +53,9 @@ const Extra = ({handleClose}: handleCloseProps) => {
           console.log('RESSSS', res)
           var date = new Date()
           const extra: Extras = {
-            key_extra: 'img',
-            value_extra: res.data.filename,
-            component_id: component.data.id,
+            keyExtra: 'img',
+            valueExtra: res.data.filename,
+            componentId: component.data.id,
             //created_at: date.getTime() / 1000,
             status: 1,
           }

@@ -20,13 +20,13 @@ export function AsideMenuMainAdmin() {
     <>
       <AsideMenuItem
         to='/dashboard'
-        icon='/media/icons/duotune/art/art002.svg'
+        icon='/media/icons/duotune/general/gen001.svg'
         title={intl.formatMessage({id: 'MENUADMIN.DASHBOARD'})}
         fontIcon='bi-app-indicator'
       />
       <AsideMenuItem
         to='/manage/1'
-        icon='/media/icons/duotune/art/art002.svg'
+        icon='/media/icons/duotune/abstract/abs037.svg'
         title={intl.formatMessage({id: 'MENUADMIN.ROOT'})}
         fontIcon='bi-app-indicator'
       />
@@ -38,7 +38,7 @@ export function AsideMenuMainAdmin() {
       </div>
       <AsideMenuItem
         to='/manage/2'
-        icon='/media/icons/duotune/art/art002.svg'
+        icon='/media/icons/duotune/abstract/abs027.svg'
         fontIcon='bi-app-indicator'
         title={intl.formatMessage({id: 'MENUADMIN.COURSES'})}
       />
@@ -56,15 +56,21 @@ export function AsideMenuMainAdmin() {
       <AsideMenuItem
         //to='/manage/510'
         to='/launch'
-        icon='/media/icons/duotune/art/art002.svg'
+        icon='/media/icons/duotune/general/gen002.svg'
         fontIcon='bi-app-indicator'
         title={intl.formatMessage({id: 'MENUADMIN.MYLAUNCHES'})}
       />
       <AsideMenuItem
         to='/wppcamp'
-        icon='/media/icons/duotune/art/art002.svg'
+        icon='/media/icons/duotune/general/gen008.svg'
         fontIcon='bi-app-indicator'
         title={intl.formatMessage({id: 'MENUADMIN.WHATSAPPGROUPS'})}
+      />
+      <AsideMenuItem
+        to='/leads/1/10'
+        icon='/media/icons/duotune/general/gen022.svg'
+        fontIcon='bi-app-indicator'
+        title={intl.formatMessage({id: 'MENUADMIN.LEADS'})}
       />
       {/* <div className='menu-item'>
         <div className='menu-content pt-8 pb-2'>
@@ -84,20 +90,15 @@ export function AsideMenuMainAdmin() {
       </div>
       <AsideMenuItem
         to='/annotations'
-        icon='/media/icons/duotune/art/art002.svg'
+        icon='/media/icons/duotune/art/art003.svg'
         fontIcon='bi-app-indicator'
         // title={intl.formatMessage({id: 'MENUADMIN.LEADS'})}
         title={"Anotações"}
       />
-      <AsideMenuItem
-        to='/leads/1/10'
-        icon='/media/icons/duotune/art/art002.svg'
-        fontIcon='bi-app-indicator'
-        title={intl.formatMessage({id: 'MENUADMIN.LEADS'})}
-      />
+      
       <AsideMenuItem
         to='/users/1/10'
-        icon='/media/icons/duotune/art/art002.svg'
+        icon='/media/icons/duotune/communication/com006.svg'
         fontIcon='bi-app-indicator'
         title={intl.formatMessage({id: 'MENUADMIN.USERS'})}
       />
@@ -114,7 +115,7 @@ export function AsideMenuMainAdmin() {
       /> */}
       <AsideMenuItem
         to='/emailsenviados'
-        icon='/media/icons/duotune/art/art002.svg'
+        icon='/media/icons/duotune/communication/com002.svg'
         fontIcon='bi-app-indicator'
         title={intl.formatMessage({id: 'MENUADMIN.EMAILS'})}
       />
@@ -125,13 +126,13 @@ export function AsideMenuMainAdmin() {
       </div>
       <AsideMenuItem
         to='/support'
-        icon='/media/icons/duotune/art/art002.svg'
+        icon='/media/icons/duotune/communication/com003.svg'
         fontIcon='bi-app-indicator'
         title={intl.formatMessage({id: 'MENUADMIN.SUPPORT'})}
       />
       <AsideMenuItem
         to='/contact'
-        icon='/media/icons/duotune/art/art002.svg'
+        icon='/media/icons/duotune/communication/com010.svg'
         fontIcon='bi-app-indicator'
         title={intl.formatMessage({id: 'MENUADMIN.CONTACT'})}
       />

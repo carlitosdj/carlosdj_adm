@@ -103,7 +103,7 @@ const Create = ({handleClose}: handleCloseProps) => {
       const component: any = {
         name,
         description,
-        component_id: +id!,
+        componentId: +id!,
         status: 1,
         children: {
           create: [
@@ -115,52 +115,52 @@ const Create = ({handleClose}: handleCloseProps) => {
               extras: {
                 create: [
                   {
-                    key_extra: 'name',
-                    value_extra: eventName,
+                    keyExtra: 'name',
+                    valueExtra: eventName,
                   },
                   {
-                    key_extra: 'headline',
-                    value_extra: 'Faça suas primeiras vendas online. Evento online e gratuito.',
+                    keyExtra: 'headline',
+                    valueExtra: 'Faça suas primeiras vendas online. Evento online e gratuito.',
                   },
                   {
-                    key_extra: 'description',
-                    value_extra: 'Aprenda o passo a passo para a atração de clientes em potencial para seu negócio. O evento acontece no dia 08/09/2023 às 20h.',
+                    keyExtra: 'description',
+                    valueExtra: 'Aprenda o passo a passo para a atração de clientes em potencial para seu negócio. O evento acontece no dia 08/09/2023 às 20h.',
                   },
                   {
-                    key_extra: 'group_link',
-                    value_extra: 'https://evento.labiopalatina.com.br/viawhats/' + slug,
+                    keyExtra: 'group_link',
+                    valueExtra: 'https://evento.labiopalatina.com.br/viawhats/' + slug,
                   },
                   {
-                    key_extra: 'data_inicio',
-                    value_extra: MOMENT(datacpl1).format('DD/MM/YYYY'),
+                    keyExtra: 'data_inicio',
+                    valueExtra: MOMENT(datacpl1).format('DD/MM/YYYY'),
                   },
                   {
-                    key_extra: 'data_fim',
-                    value_extra: MOMENT(datacpl3).format('DD/MM/YYYY'),
+                    keyExtra: 'data_fim',
+                    valueExtra: MOMENT(datacpl3).format('DD/MM/YYYY'),
                   },
                   {
-                    key_extra: 'inscricao_inicio',
-                    value_extra: MOMENT(startSubscribeDate).format('DD/MM/YYYY'),
+                    keyExtra: 'inscricao_inicio',
+                    valueExtra: MOMENT(startSubscribeDate).format('DD/MM/YYYY'),
                   },
                   {
-                    key_extra: 'inscricao_fim',
-                    value_extra: MOMENT(endSubscribeDate).format('DD/MM/YYYY'),
+                    keyExtra: 'inscricao_fim',
+                    valueExtra: MOMENT(endSubscribeDate).format('DD/MM/YYYY'),
                   },
                   {
-                    key_extra: 'btn',
-                    value_extra: 'Quero aprender a tocar violão sem stress',
+                    keyExtra: 'btn',
+                    valueExtra: 'Quero aprender a tocar violão sem stress',
                   },
                   {
-                    key_extra: 'img',
-                    value_extra: '1671667103392-violaosemstress.png',
+                    keyExtra: 'img',
+                    valueExtra: '1671667103392-violaosemstress.png',
                   },
                   {
-                    key_extra: 'title_email',
-                    value_extra: 'Preciso da sua ajuda - ' + eventName,
+                    keyExtra: 'title_email',
+                    valueExtra: 'Preciso da sua ajuda - ' + eventName,
                   },
                   {
-                    key_extra: 'email',
-                    value_extra:
+                    keyExtra: 'email',
+                    valueExtra:
                       '<p>Ol&aacute; {name}, e ai, tudo bem?</p>' +
                       '<p>Aqui &eacute; o ' +
                       expert +
@@ -209,12 +209,12 @@ const Create = ({handleClose}: handleCloseProps) => {
                       '</p>',
                   },
                   {
-                    key_extra: 'title_email_d2',
-                    value_extra: 'Tudo que você precisa saber para acessar o evento ' + eventName,
+                    keyExtra: 'title_email_d2',
+                    valueExtra: 'Tudo que você precisa saber para acessar o evento ' + eventName,
                   },
                   {
-                    key_extra: 'email_d2',
-                    value_extra:
+                    keyExtra: 'email_d2',
+                    valueExtra:
                       '<p>Ol&aacute; {name}, tudo bem?</p>' +
                       '<p>Aqui &eacute; ' +
                       expert +
@@ -247,52 +247,52 @@ const Create = ({handleClose}: handleCloseProps) => {
               extras: {
                 create: [
                   {
-                    key_extra: 'data_inicio',
-                    value_extra: MOMENT(datacpl1).format('DD/MM/YYYY'),
+                    keyExtra: 'data_inicio',
+                    valueExtra: MOMENT(datacpl1).format('DD/MM/YYYY'),
                   },
                   {
-                    key_extra: 'data_fim',
-                    value_extra: MOMENT(datacpl3).format('DD/MM/YYYY'),
+                    keyExtra: 'data_fim',
+                    valueExtra: MOMENT(datacpl3).format('DD/MM/YYYY'),
                   },
                   {
-                    key_extra: 'data_cpl1',
-                    value_extra: MOMENT(datacpl1).format('DD/MM/YYYY'),
+                    keyExtra: 'data_cpl1',
+                    valueExtra: MOMENT(datacpl1).format('DD/MM/YYYY'),
                   },
                   {
-                    key_extra: 'data_cpl2',
-                    value_extra: MOMENT(datacpl2).format('DD/MM/YYYY'),
+                    keyExtra: 'data_cpl2',
+                    valueExtra: MOMENT(datacpl2).format('DD/MM/YYYY'),
                   },
                   {
-                    key_extra: 'data_cpl3',
-                    value_extra: MOMENT(datacpl3).format('DD/MM/YYYY'),
+                    keyExtra: 'data_cpl3',
+                    valueExtra: MOMENT(datacpl3).format('DD/MM/YYYY'),
                   },
                   {
-                    key_extra: 'data_cpl4',
-                    value_extra: MOMENT(startSalesDate).format('DD/MM/YYYY'),
+                    keyExtra: 'data_cpl4',
+                    valueExtra: MOMENT(startSalesDate).format('DD/MM/YYYY'),
                   },
                   {
-                    key_extra: 'cpl1',
-                    value_extra: 'https://www.youtube.com/embed/9i8WXdU9-U4?start=5378',
+                    keyExtra: 'cpl1',
+                    valueExtra: 'https://www.youtube.com/embed/9i8WXdU9-U4?start=5378',
                   },
                   {
-                    key_extra: 'cpl2',
-                    value_extra: 'https://www.youtube.com/embed/eba0aPjWh6c?start=803',
+                    keyExtra: 'cpl2',
+                    valueExtra: 'https://www.youtube.com/embed/eba0aPjWh6c?start=803',
                   },
                   {
-                    key_extra: 'cpl3',
-                    value_extra: 'https://www.youtube.com/embed/dLZRomd1dUk?start=1596',
+                    keyExtra: 'cpl3',
+                    valueExtra: 'https://www.youtube.com/embed/dLZRomd1dUk?start=1596',
                   },
                   {
-                    key_extra: 'cpl4',
-                    value_extra: 'https://player.vimeo.com/video/786710754?h=1dd52c4690',
+                    keyExtra: 'cpl4',
+                    valueExtra: 'https://player.vimeo.com/video/786710754?h=1dd52c4690',
                   },
                   {
-                    key_extra: 'img',
-                    value_extra: '1671667103392-violaosemstress.png',
+                    keyExtra: 'img',
+                    valueExtra: '1671667103392-violaosemstress.png',
                   },
                   {
-                    key_extra: 'link_grupo',
-                    value_extra: 'https://evento.labiopalatina.com.br/viawhats/' + slug,
+                    keyExtra: 'link_grupo',
+                    valueExtra: 'https://evento.labiopalatina.com.br/viawhats/' + slug,
                   },
                 ],
               },
@@ -305,49 +305,49 @@ const Create = ({handleClose}: handleCloseProps) => {
               extras: {
                 create: [
                   {
-                    key_extra: 'data_inicio',
-                    value_extra: MOMENT(startSalesDate).format('DD/MM/YYYY HH:mm'),
+                    keyExtra: 'data_inicio',
+                    valueExtra: MOMENT(startSalesDate).format('DD/MM/YYYY HH:mm'),
                   },
                   {
-                    key_extra: 'data_fim',
-                    value_extra: MOMENT(endSalesDate).format('DD/MM/YYYY HH:mm'),
+                    keyExtra: 'data_fim',
+                    valueExtra: MOMENT(endSalesDate).format('DD/MM/YYYY HH:mm'),
                   },
                   {
-                    key_extra: 'num_turma',
-                    value_extra: '10',
+                    keyExtra: 'num_turma',
+                    valueExtra: '10',
                   },
                   {
-                    key_extra: 'page_checkout',
-                    value_extra: 'https://pay.kiwify.com.br/fhTQpmR',
+                    keyExtra: 'page_checkout',
+                    valueExtra: 'https://pay.kiwify.com.br/fhTQpmR',
                   },
                   {
-                    key_extra: 'video_url',
-                    value_extra: 'https://player.vimeo.com/video/786710754',
+                    keyExtra: 'video_url',
+                    valueExtra: 'https://player.vimeo.com/video/786710754',
                   },
                   {
-                    key_extra: 'preco',
-                    value_extra: '12x R$79,90',
+                    keyExtra: 'preco',
+                    valueExtra: '12x R$79,90',
                   },
                   {
-                    key_extra: 'desconto',
-                    value_extra: '1',
+                    keyExtra: 'desconto',
+                    valueExtra: '1',
                   },
                   {
-                    key_extra: 'link_faleconosco',
-                    value_extra:
+                    keyExtra: 'link_faleconosco',
+                    valueExtra:
                       'https://api.whatsapp.com/send?phone=5534992301304&text=Ol%C3%A1%2C%20tenho%20d%C3%BAvidas%20sobre%20o%20treinamento%20Viol%C3%A3o%20Feeling',
                   },
                   {
-                    key_extra: 'texto_desconto',
-                    value_extra: 'De R$ 1299,00 por 12x R$ 79,90 (38% de desconto)',
+                    keyExtra: 'texto_desconto',
+                    valueExtra: 'De R$ 1299,00 por 12x R$ 79,90 (38% de desconto)',
                   },
                   {
-                    key_extra: 'upsell',
-                    value_extra: '0',
+                    keyExtra: 'upsell',
+                    valueExtra: '0',
                   },
                   {
-                    key_extra: 'link_grupo_espera',
-                    value_extra: 'https://evento.labiopalatina.com.br/viawhats/espera',
+                    keyExtra: 'link_grupo_espera',
+                    valueExtra: 'https://evento.labiopalatina.com.br/viawhats/espera',
                   },
                 ],
               },

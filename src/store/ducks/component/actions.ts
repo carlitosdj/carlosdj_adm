@@ -89,9 +89,9 @@ export const deleteExtraFailure = (err: any[]) => action(ComponentTypes.DELETE_E
 //Single Aula Concluida
 export const createAulaConcluidaRequest = (
   user_id: number,
-  component_id: number,
+  componentId: number,
   parent_id: number
-) => action(AulaConcluidaTypes.CREATE_AULACONCLUIDA_REQUEST, {user_id, component_id, parent_id})
+) => action(AulaConcluidaTypes.CREATE_AULACONCLUIDA_REQUEST, {user_id, componentId, parent_id})
 export const createAulaConcluidaSuccess = (data: AulaConcluida, parent_id: number) =>
   action(AulaConcluidaTypes.CREATE_AULACONCLUIDA_SUCCESS, {data, parent_id})
 export const createAulaConcluidaFailure = (error: {}) =>

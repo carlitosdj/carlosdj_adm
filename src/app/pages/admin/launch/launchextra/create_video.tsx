@@ -16,8 +16,8 @@ interface handleCloseProps {
 }
 
 const Create = ({handleClose}: handleCloseProps) => {
-  const [key_extra, setKey_extra] = useState('url')
-  const [value_extra, setValue_extra] = useState('')
+  const [keyExtra, setkeyExtra] = useState('url')
+  const [valueExtra, setvalueExtra] = useState('')
   const [validated, setValidated] = useState(false)
   // const {id} = useParams<ParamTypes>();
   // const history = useHistory();
@@ -33,12 +33,12 @@ const Create = ({handleClose}: handleCloseProps) => {
     }
     setValidated(true)
 
-    if (key_extra && value_extra) {
+    if (keyExtra && valueExtra) {
       var data = new Date()
       const extra: Extras = {
-        key_extra,
-        value_extra,
-        component_id: component.data.id,
+        keyExtra,
+        valueExtra,
+        componentId: component.data.id,
         //created_at: data.getTime() / 1000,
         status: 1,
       }
@@ -60,8 +60,8 @@ const Create = ({handleClose}: handleCloseProps) => {
           <Form.Control
             placeholder=''
             required
-            value={key_extra}
-            onChange={(e:any) => setKey_extra(e.target.value)}
+            value={keyExtra}
+            onChange={(e:any) => setkeyExtra(e.target.value)}
             disabled
           />
           <Form.Control.Feedback type='invalid'>Por favor informe o nome</Form.Control.Feedback>
@@ -72,8 +72,8 @@ const Create = ({handleClose}: handleCloseProps) => {
           <Form.Control
             placeholder=''
             required
-            value={value_extra}
-            onChange={(e:any) => setValue_extra(e.target.value)}
+            value={valueExtra}
+            onChange={(e:any) => setvalueExtra(e.target.value)}
             // as="textarea" rows={3}
           />
           <Form.Control.Feedback type='invalid'>

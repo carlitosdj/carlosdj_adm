@@ -50,7 +50,7 @@ const Create = ({handleClose}: handleCloseProps) => {
         name,
         description,
         //order,
-        component_id: +id!,
+        componentId: +id!,
         //created_at: (data.getTime() / 1000).toString(),
         status: 1,
         // duration: MOMENT.duration(duration).asSeconds(),

@@ -157,7 +157,7 @@ const reducer: Reducer<ComponentState> = (state = INITIAL_STATE, action) => {
         error: false,
         data: {
           ...state.data,
-          extras: state.data.extras?.filter((item) => item.id !== action.payload.data),
+          extras: state.data.extras?.filter((item) => item.id !== action.payload.data.id),
         },
       }
     case ComponentTypes.DELETE_EXTRA_FAILURE:
@@ -168,7 +168,7 @@ const reducer: Reducer<ComponentState> = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         loadingAulaConcluida: true,
-        loadingAulaConcluidaId: action.payload.component_id,
+        loadingAulaConcluidaId: action.payload.componentId,
       }
     case ComponentTypes.CREATE_AULACONCLUIDA_SUCCESS:
       return {
@@ -185,7 +185,7 @@ const reducer: Reducer<ComponentState> = (state = INITIAL_STATE, action) => {
               // console.log("Achei", modulo)
               //modulo.aulaconcluida = [action.payload.data]
               modulo.children?.map((aula) => {
-                if (aula.id === action.payload.data.data.component_id) {
+                if (aula.id === action.payload.data.data.componentId) {
                   // console.log("achei de novo", aula)
                   aula.aulaconcluida = [action.payload.data.data]
                 }
@@ -197,9 +197,9 @@ const reducer: Reducer<ComponentState> = (state = INITIAL_STATE, action) => {
         }),
         classes: Object.assign([], state.classes, {
           ...state.classes.map((aula) => {
-            // console.log("Payload", action.payload.data.data.component_id)
+            // console.log("Payload", action.payload.data.data.componentId)
             // console.log("Aula", aula.id)
-            if (aula.id === action.payload.data.data.component_id) {
+            if (aula.id === action.payload.data.data.componentId) {
               // console.log("Achei")
               aula.aulaconcluida = [action.payload.data.data]
             }

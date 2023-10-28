@@ -19,8 +19,8 @@ const InfoUser = ({handleClose, child}: handleCloseProps) => {
   }, [])
   const component = useSelector((state: ApplicationState) => state.component)
   let urlLastClass: string | undefined = ''
-  let checkLastClass = component.lastclass?.extras?.filter((extra: any) => extra.key_extra === 'url')[0] //Checa se tem o 'extra' de url.
-  if (checkLastClass) urlLastClass = checkLastClass.value_extra
+  let checkLastClass = component.lastclass?.extras?.filter((extra: any) => extra.keyExtra === 'url')[0] //Checa se tem o 'extra' de url.
+  if (checkLastClass) urlLastClass = checkLastClass.valueExtra
   console.log("component",component)
 
   // var data = new Date(apiResponse.created_at*1000);

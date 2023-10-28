@@ -25,8 +25,11 @@ import {MetronicI18nProvider} from './app/design/i18n/Metronici18n'
  * import './_metronic/assets/css/style.rtl.css'
  **/
 // import './_metronic/assets/sass/style.scss' 
-import './app/design/assets/sass/style.dark.scss'
+
+//import './app/design/assets/sass/style.dark.scss'
+import './app/design/assets/sass/style.scss'
 import './app/design/assets/sass/style.react.scss'
+
 // import './_metronic/assets/sass/core/components/_carousel.scss'
 
 import './mycss.css'

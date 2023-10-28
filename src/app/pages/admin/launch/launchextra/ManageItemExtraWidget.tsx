@@ -197,7 +197,7 @@ const ManageItemExtraWidget: React.FC<React.PropsWithChildren<Props>> = ({classN
                         </div> */}
                           <div className='d-flex justify-content-start flex-column'>
                             
-                              {extra.key_extra}
+                              {extra.keyExtra}
                               
                            
                             {/* <span className='text-muted fw-bold text-muted d-block fs-7'>
@@ -211,7 +211,7 @@ const ManageItemExtraWidget: React.FC<React.PropsWithChildren<Props>> = ({classN
                         Intertico
                       </a> */}
                         <span className='text-muted fw-bold text-muted d-block fs-7'>
-                          {extra.value_extra?.substring(0, 200)}...
+                          {extra.valueExtra?.substring(0, 200)}...
                         </span>
                       </td>
                       {/* <td>
@@ -219,11 +219,11 @@ const ManageItemExtraWidget: React.FC<React.PropsWithChildren<Props>> = ({classN
                         Intertico
                       </a> *x/}
                         <span className='text-muted fw-bold text-muted d-block fs-7'>
-                          {(extra.key_extra == "url")? 
+                          {(extra.keyExtra == "url")? 
                               <iframe
                               title='video'
                               className='embed-responsive-item rounded'
-                              src={extra.value_extra}
+                              src={extra.valueExtra}
                               style={{width:150}}
                               height={75}
                               frameBorder={0}

@@ -29,10 +29,10 @@ export enum ExtrasTypes {
 // User Imported from Me
 export interface Extras {
   id?: number | undefined
-  component_id?: number
-  key_extra?: string
-  value_extra?: string
-  created_at?: number
+  componentId?: number
+  keyExtra?: string
+  valueExtra?: string
+  createdAt?: number
   status?: number
   create?: Extras[] | undefined
 }

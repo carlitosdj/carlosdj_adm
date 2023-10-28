@@ -177,7 +177,8 @@ export function* deleteComponent(payload: ReturnType<typeof deleteComponentReque
 //Create Extra
 export function* createExtra(payload: ReturnType<typeof createExtraRequest>) {
   try {
-    const response: Extras = yield call(api.post, 'componentextra/', payload.payload)
+    console.log("aqui", payload.payload)
+    const response: Extras = yield call(api.post, 'componentextra', payload.payload)
     yield put(createExtraSuccess(response))
   } catch (error: any) {
     yield put(createExtraFailure(error.response.data))
@@ -212,6 +213,7 @@ export function* updateExtra(payload: ReturnType<typeof updateExtraRequest>) {
 //Delete Extra
 export function* deleteExtra(payload: ReturnType<typeof deleteExtraRequest>) {
   try {
+    console.log("VER AQUI xxxxx", payload.payload)
     const number: number = yield call(api.delete, 'componentextra/' + payload.payload)
     yield put(deleteExtraSuccess(number))
   } catch (error: any) {
@@ -225,7 +227,7 @@ export function* createAulaConcluida(payload: ReturnType<typeof createAulaConclu
     put(
       createAulaConcluidaRequest(
         payload.payload.user_id,
-        payload.payload.component_id,
+        payload.payload.componentId,
         payload.payload.parent_id
       )
     )

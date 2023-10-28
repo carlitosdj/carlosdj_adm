@@ -13,14 +13,15 @@
 
 .table.table-row-dashed tr {
   border: none !important;
-  border-bottom: 1px dashed #323248 !important;
+  border-bottom: 1px dashed #d2d2d9 !important;
 }
+
 .table.table-row-gray-200 tr {
   border: none !important;
-  border-bottom: 1px dashed #323248 !important;
+  border-bottom: 1px dashed #d2d2d9 !important;
 }
 .table > :not(:first-child) {
-  border-top: 1px dashed #323248;
+  border-top: 1px dashed #d2d2d9;
 }
 
 .embed-responsive-16by9::before {

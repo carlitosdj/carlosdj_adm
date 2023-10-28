@@ -30,7 +30,7 @@ export function* loadLeads(payload: ReturnType<typeof loadLeadsRequest>) {
 export function* searchLeads(payload: ReturnType<typeof searchLeadsRequest>) {
   try {
     put(searchLeadsRequest(payload.payload))
-    const response: Lead[] = yield call(api.get, 'leadssearch/' + payload.payload)
+    const response: Lead[] = yield call(api.get, 'lead/search/' + payload.payload)
     yield put(searchLeadsSuccess(response))
   } catch (error) {
     yield put(searchLeadsFailure())
