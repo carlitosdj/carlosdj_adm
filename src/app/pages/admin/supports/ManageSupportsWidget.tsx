@@ -101,27 +101,27 @@ const ManageSupportsWidget: React.FC<React.PropsWithChildren<Props>> = ({
                         </div>
                       </td>
                       <td>
-                        <span className='text-muted fw-bold text-muted d-block fs-7'>
+                        <span className='text-muted fw-bold d-block fs-7'>
                           {MOMENT(Number(support.created_at) * 1000).format('DD/MM/YYYY HH:mm')}
                         </span>
                       </td>
                       <td>
-                        <span className='text-muted fw-bold text-muted d-block fs-7'>
+                        <span className='text-muted fw-bold d-block fs-7'>
                           {support.message}
                         </span>
                       </td>
                       <td>
-                        <span className='text-muted fw-bold text-muted d-block fs-7'>
+                        <span className='text-muted fw-bold d-block fs-7'>
                           {support.reply}
                         </span>
                       </td>
                       <td>
-                        <span className='text-muted fw-bold text-muted d-block fs-7'>
+                        <span className='text-muted fw-bold d-block fs-7'>
                           {support.parentUser.name}
                         </span>
                       </td>
                       <td>
-                        <span className='text-muted fw-bold text-muted d-block fs-7'>
+                        <span className='text-muted fw-bold d-block fs-7'>
                           {support.status}
                         </span>
                       </td>

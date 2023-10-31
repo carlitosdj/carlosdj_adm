@@ -56,7 +56,8 @@ export function Login() {
       {me.error ? <Alert variant='danger'>Erro: Login ou senha inválidos</Alert> : ''}
       {/* begin::Form group */}
       <div className='fv-row mb-10'>
-        <label className='form-label fs-6 fw-bolder text-light'>Email</label>
+        <label className='form-label fs-6 fw-bolder'>Email</label>
+        {/* <label className='form-label fs-6 fw-bolder text-light'>Email</label> */}
         <input
           type='text'
           className='form-control form-control-lg form-control-solid'
@@ -75,7 +76,8 @@ export function Login() {
         <div className='d-flex justify-content-between mt-n5'>
           <div className='d-flex flex-stack mb-2'>
             {/* begin::Label */}
-            <label className='form-label fw-bolder text-light fs-6 mb-0'>Senha</label>
+            <label className='form-label fw-bolder fs-6 mb-0'>Senha</label>
+            {/* <label className='form-label fw-bolder fs-6 mb-0 text-light'>Senha</label> */}
             {/* end::Label */}
             {/* begin::Link */}
 

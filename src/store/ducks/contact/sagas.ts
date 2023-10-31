@@ -27,7 +27,7 @@ export function* loadAllcontacts(payload: ReturnType<typeof loadAllcontactsReque
   try {
 
     put(loadAllcontactsRequest())
-    const response: Contact[] = yield call(api.get, 'contacts')
+    const response: Contact[] = yield call(api.get, 'contact')
     yield put(loadAllcontactsSuccess(response))
 
   } catch (error: any) {

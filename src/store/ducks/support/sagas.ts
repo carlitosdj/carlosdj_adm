@@ -27,7 +27,7 @@ import {Support} from './types'
 //Load
 export function* loadAllsupports() {
   try {
-    const response: Support[] = yield call(api.get, 'supports')
+    const response: Support[] = yield call(api.get, 'support')
     yield put(loadAllsupportsSuccess(response))
   } catch (error: any) {
     yield put(loadAllsupportsFailure())

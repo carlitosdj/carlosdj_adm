@@ -92,35 +92,35 @@ const AnnotationWidget: React.FC<React.PropsWithChildren<Props>> = ({
               {/* end::Table head */}
               {/* begin::Table body */}
               <tbody>
-                {annotations.data.map((support: any, index: number) => {
+                {annotations.data.map((annotation: any, index: number) => {
                   return (
                     <tr key={index}>
                       <td>
                         <div className='d-flex align-items-center'>
                           <div className='d-flex justify-content-start flex-column'>
-                            {support.id}
+                            {annotation.id}
                           </div>
                         </div>
                       </td>
                       <td>
                         <span className='text-muted fw-bold text-muted d-block fs-7'>
-                          {MOMENT(Number(support.created_at) * 1000).format('DD/MM/YYYY HH:mm')}
+                          {MOMENT(Number(annotation.created_at) * 1000).format('DD/MM/YYYY HH:mm')}
                         </span>
                       </td>
                       <td>
                         <span className='text-muted fw-bold text-muted d-block fs-7'>
-                          {support.parentComponent.parent.name} - {support.parentComponent.name}
+                          {annotation.parentComponent.parent.name} - {annotation.parentComponent.name}
                         </span>
                       </td>
                       <td>
                         <span className='fw-bold d-block fs-7'>
-                          {support.message}
+                          {annotation.message}
                         </span>
                       </td>
                       
                       <td>
                         <span className='text-muted fw-bold text-muted d-block fs-7'>
-                          {support.parentUser.name}
+                          {annotation.parentUser.name}
                         </span>
                       </td>
                       {/* <td>
