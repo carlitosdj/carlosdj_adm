@@ -75,6 +75,8 @@ export interface User {
   image?: string
   profileUserId?: number
   postalCode?:string
+
+  data?: any
   /*  */
 }
 
@@ -114,6 +116,8 @@ export interface MeState {
   readonly me: User
   readonly loading: boolean
   error: boolean //Nao pode ser readonly pq na página de login estou setando error..
+  readonly token?: string 
   readonly logged: boolean
   readonly message?: string
+  readonly data?: any
 }

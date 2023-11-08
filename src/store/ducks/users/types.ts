@@ -63,4 +63,5 @@ export interface UsersState {
   readonly showPagination: boolean
   readonly filterStartDate: number
   readonly filterEndDate: number
+  
 }

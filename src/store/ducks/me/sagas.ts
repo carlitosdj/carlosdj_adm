@@ -35,12 +35,25 @@ import {
   loadMeFailure,
 } from './actions'
 import {User} from './types'
+import axios from 'axios'
 
 //Login
 export function* loginUser(payload: ReturnType<typeof loginUserRequest>) {
   try {
     const response: User = yield call(api.post, 'auth/loginadm', payload.payload) //Payload.payload está ok
-    yield put(loginUserSuccess(response))
+    
+    console.log('response', response.data.access_token)
+
+    //Guarda o Token na LocalStorage
+    localStorage.setItem('TOKEN', response.data.access_token)
+
+    //Get user informations
+    const responseB: User = yield call(api.get, 'auth/profile')
+    console.log("response B", responseB)
+    yield put(loginUserSuccess(responseB))
+
+    
+    //window.location.reload()
   } catch (error) {
     yield put(loginUserFailure())
   }

@@ -23,6 +23,7 @@ export function Logout() {
     console.log("cookies user - logout", cookieUser)
     dispatch(logoutUser())
     
+    localStorage.removeItem('TOKEN')
     
     document.location.reload()
 

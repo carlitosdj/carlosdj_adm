@@ -33,23 +33,6 @@ export function AsideMenuMainAdmin() {
 
       <div className='menu-item'>
         <div className='menu-content pt-8 pb-2'>
-          <span className='menu-section text-muted text-uppercase fs-8 ls-1'>INFO-PRODUTOS</span>
-        </div>
-      </div>
-      <AsideMenuItem
-        to='/manage/2'
-        icon='/media/icons/duotune/abstract/abs027.svg'
-        fontIcon='bi-app-indicator'
-        title={intl.formatMessage({id: 'MENUADMIN.COURSES'})}
-      />
-      {/* <AsideMenuItem
-        to='/manage/756'
-        icon='/media/icons/duotune/art/art002.svg'
-        fontIcon='bi-app-indicator'
-        title={intl.formatMessage({id: 'MENUADMIN.CLASS'})}
-      /> */}
-      <div className='menu-item'>
-        <div className='menu-content pt-8 pb-2'>
           <span className='menu-section text-muted text-uppercase fs-8 ls-1'>LAUNCHES</span>
         </div>
       </div>
@@ -61,17 +44,75 @@ export function AsideMenuMainAdmin() {
         title={intl.formatMessage({id: 'MENUADMIN.MYLAUNCHES'})}
       />
       <AsideMenuItem
-        to='/wppcamp'
-        icon='/media/icons/duotune/general/gen008.svg'
-        fontIcon='bi-app-indicator'
-        title={intl.formatMessage({id: 'MENUADMIN.WHATSAPPGROUPS'})}
-      />
-      <AsideMenuItem
         to='/leads/1/10'
         icon='/media/icons/duotune/general/gen022.svg'
         fontIcon='bi-app-indicator'
         title={intl.formatMessage({id: 'MENUADMIN.LEADS'})}
       />
+      <AsideMenuItem
+        to='/wppcamp'
+        icon='/media/icons/duotune/general/gen008.svg'
+        fontIcon='bi-app-indicator'
+        title={intl.formatMessage({id: 'MENUADMIN.WHATSAPPGROUPS'})}
+      />
+      
+
+      <AsideMenuItem
+        to='/manage/5'
+        icon='/media/icons/duotune/art/art002.svg'
+        fontIcon='bi-app-indicator'
+        title={intl.formatMessage({id: 'MENUADMIN.PREEMAILS'})}
+      />
+      <AsideMenuItem
+        to='/emailsenviados'
+        icon='/media/icons/duotune/communication/com002.svg'
+        fontIcon='bi-app-indicator'
+        title={intl.formatMessage({id: 'MENUADMIN.EMAILS'})}
+      />
+
+
+
+
+      <div className='menu-item'>
+        <div className='menu-content pt-8 pb-2'>
+          <span className='menu-section text-muted text-uppercase fs-8 ls-1'>INFO-PRODUTOS</span>
+        </div>
+      </div>
+      <AsideMenuItem
+        to='/manage/2'
+        icon='/media/icons/duotune/abstract/abs027.svg'
+        fontIcon='bi-app-indicator'
+        title={intl.formatMessage({id: 'MENUADMIN.COURSES'})}
+      />
+      <AsideMenuItem
+        to='/annotations'
+        icon='/media/icons/duotune/art/art003.svg'
+        fontIcon='bi-app-indicator'
+        // title={intl.formatMessage({id: 'MENUADMIN.LEADS'})}
+        title={'Anotações'}
+      />
+      <AsideMenuItem
+        to='/annotations'
+        icon='/media/icons/duotune/art/art003.svg'
+        fontIcon='bi-app-indicator'
+        // title={intl.formatMessage({id: 'MENUADMIN.LEADS'})}
+        title={'Comentários'}
+      />
+
+      <AsideMenuItem
+        to='/users/1/10'
+        icon='/media/icons/duotune/communication/com006.svg'
+        fontIcon='bi-app-indicator'
+        title={intl.formatMessage({id: 'MENUADMIN.USERS'})}
+      />
+
+      {/* <AsideMenuItem
+        to='/manage/756'
+        icon='/media/icons/duotune/art/art002.svg'
+        fontIcon='bi-app-indicator'
+        title={intl.formatMessage({id: 'MENUADMIN.CLASS'})}
+      /> */}
+
       {/* <div className='menu-item'>
         <div className='menu-content pt-8 pb-2'>
           <span className='menu-section text-muted text-uppercase fs-8 ls-1'>REWARDS</span>
@@ -83,42 +124,18 @@ export function AsideMenuMainAdmin() {
         fontIcon='bi-app-indicator'
         title={intl.formatMessage({id: 'MENUADMIN.DIGITALREWARDS'})}
       /> */}
-      <div className='menu-item'>
+      {/* <div className='menu-item'>
         <div className='menu-content pt-8 pb-2'>
           <span className='menu-section text-muted text-uppercase fs-8 ls-1'>LISTS</span>
         </div>
-      </div>
-      <AsideMenuItem
-        to='/annotations'
-        icon='/media/icons/duotune/art/art003.svg'
-        fontIcon='bi-app-indicator'
-        // title={intl.formatMessage({id: 'MENUADMIN.LEADS'})}
-        title={"Anotações"}
-      />
+      </div> */}
       
-      <AsideMenuItem
-        to='/users/1/10'
-        icon='/media/icons/duotune/communication/com006.svg'
-        fontIcon='bi-app-indicator'
-        title={intl.formatMessage({id: 'MENUADMIN.USERS'})}
-      />
-      <div className='menu-item'>
+      {/* <div className='menu-item'>
         <div className='menu-content pt-8 pb-2'>
           <span className='menu-section text-muted text-uppercase fs-8 ls-1'>E-MAILS</span>
         </div>
-      </div>
-      {/* <AsideMenuItem
-        to='/manage/525'
-        icon='/media/icons/duotune/art/art002.svg'
-        fontIcon='bi-app-indicator'
-        title={intl.formatMessage({id: 'MENUADMIN.PREEMAILS'})}
-      /> */}
-      <AsideMenuItem
-        to='/emailsenviados'
-        icon='/media/icons/duotune/communication/com002.svg'
-        fontIcon='bi-app-indicator'
-        title={intl.formatMessage({id: 'MENUADMIN.EMAILS'})}
-      />
+      </div> */}
+      
       <div className='menu-item'>
         <div className='menu-content pt-8 pb-2'>
           <span className='menu-section text-muted text-uppercase fs-8 ls-1'>SUPPORT</span>
