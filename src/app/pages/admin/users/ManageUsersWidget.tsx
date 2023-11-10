@@ -439,6 +439,10 @@ const ManageUsersWidget: React.FC<React.PropsWithChildren<Props>> = ({
         </div>
         {/* begin::Body */}
       </div>
+      {/* teste
+      {currentPage!}
+      {count}
+      {take} */}
       {users.showPagination ? (
         <Pagination
           className=''

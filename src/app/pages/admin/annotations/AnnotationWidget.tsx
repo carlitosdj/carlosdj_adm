@@ -10,17 +10,15 @@ import Info from './info'
 // import Create from './create'
 import Update from './update'
 import {useIntl} from 'react-intl'
-import { AnnotationsState } from '../../../../store/ducks/annotations/types'
+import {AnnotationsState} from '../../../../store/ducks/annotations/types'
+import Loading from '../../../loading'
 
 type Props = {
   className: string
   annotations: AnnotationsState
 }
 
-const AnnotationWidget: React.FC<React.PropsWithChildren<Props>> = ({
-  className,
-  annotations,
-}) => {
+const AnnotationWidget: React.FC<React.PropsWithChildren<Props>> = ({className, annotations}) => {
   const MOMENT = require('moment')
   const intl = useIntl()
 
@@ -42,7 +40,8 @@ const AnnotationWidget: React.FC<React.PropsWithChildren<Props>> = ({
   const handleClose = () => {
     setShow(false)
   }
-  console.log("Annotations", annotations)
+  console.log('Annotations', annotations)
+  if (annotations.loading) return <Loading />
   return (
     <>
       <Modal size='lg' show={show} onHide={handleClose}>
@@ -109,15 +108,15 @@ const AnnotationWidget: React.FC<React.PropsWithChildren<Props>> = ({
                       </td>
                       <td>
                         <span className='text-muted fw-bold text-muted d-block fs-7'>
-                          {annotation.parentComponent.parent.name} - {annotation.parentComponent.name}
+                          {annotation.parentComponent.parent.parent.name} {'>'}{' '}
+                          {annotation.parentComponent.parent.name} {'>'}{' '}
+                          {annotation.parentComponent.name}
                         </span>
                       </td>
                       <td>
-                        <span className='fw-bold d-block fs-7'>
-                          {annotation.message}
-                        </span>
+                        <span className='fw-bold d-block fs-7'>{annotation.message}</span>
                       </td>
-                      
+
                       <td>
                         <span className='text-muted fw-bold text-muted d-block fs-7'>
                           {annotation.parentUser.name}
@@ -128,8 +127,6 @@ const AnnotationWidget: React.FC<React.PropsWithChildren<Props>> = ({
                           {support.status}
                         </span>
                       </td> */}
-
-                      
                     </tr>
                   )
                 })}

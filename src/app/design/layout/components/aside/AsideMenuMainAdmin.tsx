@@ -31,7 +31,45 @@ export function AsideMenuMainAdmin() {
         fontIcon='bi-app-indicator'
       />
 
+      
+
+
+
+
       <div className='menu-item'>
+        <div className='menu-content pt-8 pb-2'>
+          <span className='menu-section text-muted text-uppercase fs-8 ls-1'>INFO-PRODUTOS</span>
+        </div>
+      </div>
+      <AsideMenuItem
+        to='/manage/2'
+        icon='/media/icons/duotune/abstract/abs027.svg'
+        fontIcon='bi-app-indicator'
+        title={intl.formatMessage({id: 'MENUADMIN.COURSES'})}
+      />
+      <AsideMenuItem
+        to='/annotations'
+        icon='/media/icons/duotune/art/art003.svg'
+        fontIcon='bi-app-indicator'
+        // title={intl.formatMessage({id: 'MENUADMIN.LEADS'})}
+        title={'Anotações'}
+      />
+      <AsideMenuItem
+        to='/annotations'
+        icon='/media/icons/duotune/art/art003.svg'
+        fontIcon='bi-app-indicator'
+        // title={intl.formatMessage({id: 'MENUADMIN.LEADS'})}
+        title={'Comentários'}
+      />
+
+      <AsideMenuItem
+        to='/users/1/10'
+        icon='/media/icons/duotune/communication/com006.svg'
+        fontIcon='bi-app-indicator'
+        title={intl.formatMessage({id: 'MENUADMIN.USERS'})}
+      />
+
+<div className='menu-item'>
         <div className='menu-content pt-8 pb-2'>
           <span className='menu-section text-muted text-uppercase fs-8 ls-1'>LAUNCHES</span>
         </div>
@@ -68,42 +106,6 @@ export function AsideMenuMainAdmin() {
         icon='/media/icons/duotune/communication/com002.svg'
         fontIcon='bi-app-indicator'
         title={intl.formatMessage({id: 'MENUADMIN.EMAILS'})}
-      />
-
-
-
-
-      <div className='menu-item'>
-        <div className='menu-content pt-8 pb-2'>
-          <span className='menu-section text-muted text-uppercase fs-8 ls-1'>INFO-PRODUTOS</span>
-        </div>
-      </div>
-      <AsideMenuItem
-        to='/manage/2'
-        icon='/media/icons/duotune/abstract/abs027.svg'
-        fontIcon='bi-app-indicator'
-        title={intl.formatMessage({id: 'MENUADMIN.COURSES'})}
-      />
-      <AsideMenuItem
-        to='/annotations'
-        icon='/media/icons/duotune/art/art003.svg'
-        fontIcon='bi-app-indicator'
-        // title={intl.formatMessage({id: 'MENUADMIN.LEADS'})}
-        title={'Anotações'}
-      />
-      <AsideMenuItem
-        to='/annotations'
-        icon='/media/icons/duotune/art/art003.svg'
-        fontIcon='bi-app-indicator'
-        // title={intl.formatMessage({id: 'MENUADMIN.LEADS'})}
-        title={'Comentários'}
-      />
-
-      <AsideMenuItem
-        to='/users/1/10'
-        icon='/media/icons/duotune/communication/com006.svg'
-        fontIcon='bi-app-indicator'
-        title={intl.formatMessage({id: 'MENUADMIN.USERS'})}
       />
 
       {/* <AsideMenuItem
