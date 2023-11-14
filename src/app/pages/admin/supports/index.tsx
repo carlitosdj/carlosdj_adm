@@ -39,15 +39,17 @@ const ManageSentEmails: FC<React.PropsWithChildren<unknown>> = () => {
   // const intl = useIntl()
 
   const dispatch = useDispatch()
-  const emailList = useSelector((state: ApplicationState) => state.emailToList)
+  //const emailList = useSelector((state: ApplicationState) => state.emailToList)
   const supportsList = useSelector((state: ApplicationState) => state.supports)
+
+  console.log("supportsList", supportsList)
 
   useEffect(() => {
     // console.log("DISPATCHINGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG")
     dispatch(loadAllsupportsRequest())
   }, [dispatch])
 
-  if (emailList.loading) return <Loading />
+  if (supportsList.loading) return <Loading />
 
   return (
     <>

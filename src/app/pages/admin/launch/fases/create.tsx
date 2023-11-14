@@ -51,7 +51,7 @@ const Create = ({handleClose}: handleCloseProps) => {
         description,
         //order,
         componentId: +id!,
-        //created_at: (data.getTime() / 1000).toString(),
+        //createdAt: (data.getTime() / 1000).toString(),
         status: 1,
         // duration: MOMENT.duration(duration).asSeconds(),
         // tags,

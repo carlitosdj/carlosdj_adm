@@ -93,7 +93,7 @@ export interface Component {
   componentId?: number
   name?: string
   description?: string
-  created_at?: string
+  createdAt?: string
   status?: number | boolean
   order?: string
   duration?: number

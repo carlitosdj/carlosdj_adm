@@ -31,7 +31,7 @@ export function* loadAllcontacts(payload: ReturnType<typeof loadAllcontactsReque
     yield put(loadAllcontactsSuccess(response))
 
   } catch (error: any) {
-    yield put(loadAllcontactsFailure())
+    yield put(loadAllcontactsFailure(error.response.data))
   }
 }
 
@@ -40,8 +40,8 @@ export function* loadcontacts(payload: ReturnType<typeof loadcontactsRequest>) {
   try {
     const response: Contact[] = yield call(api.get, 'contact/' + payload.payload)
     yield put(loadcontactsSuccess(response))
-  } catch (error) {
-    yield put(loadcontactsFailure())
+  } catch (error: any) {
+    yield put(loadcontactsFailure(error.response.data))
   }
 }
 
@@ -62,8 +62,8 @@ export function* updatecontact(payload: ReturnType<typeof updatecontactRequest>)
     put(updatecontactRequest(payload.payload))
     const response: Contact = yield call(api.post, 'contact', payload.payload)
     yield put(updatecontactSuccess(response))
-  } catch (error) {
-    yield put(updatecontactFailure())
+  } catch (error: any) {
+    yield put(updatecontactFailure(error.response.data))
   }
 }
 
@@ -72,8 +72,8 @@ export function* deletecontact(payload: ReturnType<typeof deletecontactRequest>)
   try {
     const response: Contact = yield call(api.delete, 'contact/' + payload.payload)
     yield put(deletecontactSuccess(response))
-  } catch (error) {
-    yield put(deletecontactFailure())
+  } catch (error: any) {
+    yield put(deletecontactFailure(error.response.data))
   }
 }
 

@@ -21,6 +21,7 @@ import CreateExtraImg from '../extra/create_img'
 import CreateExtraVideo from '../extra/create_video'
 import CreateExtraFile from '../extra/create_file'
 import UpdateExtra from '../extra/update'
+import CreateLink from '../extra/create_link'
 
 type Props = {
   className: string
@@ -42,6 +43,11 @@ const ManageItemExtraWidget: React.FC<React.PropsWithChildren<Props>> = ({classN
 
   const createExtra = () => {
     setAction('createExtra')
+    setShow(true)
+  }
+
+  const createLink = () => {
+    setAction('createLink')
     setShow(true)
   }
 
@@ -89,6 +95,7 @@ const ManageItemExtraWidget: React.FC<React.PropsWithChildren<Props>> = ({classN
             {/* { (action === 'createComponent')?'Adicionar componente':'' }
           { (action === 'updateComponent')?'Editar componente':'' } */}
             {action === 'createExtra' ? 'Adicionar extra' : ''}
+            {action === 'createLink' ? 'Adicionar extra - link' : ''}
             {action === 'createExtraImg' ? 'Adicionar extra - imagem' : ''}
             {action === 'createExtraFile' ? 'Adicionar extra - arquivo' : ''}
             {action === 'createExtraVideo' ? 'Adicionar extra - video' : ''}
@@ -99,6 +106,7 @@ const ManageItemExtraWidget: React.FC<React.PropsWithChildren<Props>> = ({classN
           {/* { (action === 'createComponent')?<Create handleClose={handleClose} />:'' }
           { (action === 'updateComponent')?<Update handleClose={handleClose} child={child} />:'' } */}
           {action === 'createExtra' ? <CreateExtra handleClose={handleClose} /> : ''}
+          {action === 'createLink' ? <CreateLink handleClose={handleClose} /> : ''}
           {action === 'createExtraImg' ? <CreateExtraImg handleClose={handleClose} /> : ''}
           {action === 'createExtraFile' ? <CreateExtraFile handleClose={handleClose} /> : ''}
           {action === 'createExtraVideo' ? <CreateExtraVideo handleClose={handleClose} /> : ''}
@@ -120,19 +128,23 @@ const ManageItemExtraWidget: React.FC<React.PropsWithChildren<Props>> = ({classN
             data-bs-trigger='hover'
             style={{width: '100%'}}
           >
-            <a href='#' className='btn btn-sm btn-light-primary' onClick={() => createExtra()}>
+            <a href='#' className='btn btn-sm w-100 btn-light-primary m-2' onClick={() => createExtra()}>
               <KTSVG path='media/icons/duotune/arrows/arr075.svg' className='svg-icon-3' />
               Novo item
             </a>
-            <a href='#' className='btn btn-sm btn-light-primary' onClick={() => createExtraVideo()}>
+            <a href='#' className='btn btn-sm w-100 btn-light-primary m-2' onClick={() => createLink()}>
+              <KTSVG path='media/icons/duotune/arrows/arr075.svg' className='svg-icon-3' />
+              Novo link
+            </a>
+            <a href='#' className='btn btn-sm w-100 btn-light-primary m-2' onClick={() => createExtraVideo()}>
               <KTSVG path='media/icons/duotune/arrows/arr075.svg' className='svg-icon-3' />
               Novo Vídeo
             </a>
-            <a href='#' className='btn btn-sm btn-light-primary' onClick={() => createExtraImg()}>
+            <a href='#' className='btn btn-sm w-100 btn-light-primary m-2' onClick={() => createExtraImg()}>
               <KTSVG path='media/icons/duotune/arrows/arr075.svg' className='svg-icon-3' />
               Nova imagem
             </a>
-            <a href='#' className='btn btn-sm btn-light-primary' onClick={() => createExtraFile()}>
+            <a href='#' className='btn btn-sm w-100 btn-light-primary m-2' onClick={() => createExtraFile()}>
               <KTSVG path='media/icons/duotune/arrows/arr075.svg' className='svg-icon-3' />
               Novo Arquivo
             </a>

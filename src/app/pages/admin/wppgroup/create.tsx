@@ -41,7 +41,7 @@ const Create = ({handleClose}: handleCloseProps) => {
         camp_id: +id!,
         url,
         clicks: 0,
-        //created_at: data.getTime() / 1000,
+        //createdAt: data.getTime() / 1000,
         status: 1,
       }
       console.log('component to save:', component)

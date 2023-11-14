@@ -33,9 +33,9 @@ export interface Support {
   parentUser?: number
   user_id?: number
   parentAdmin?: number
-  admin_id?: number
-  created_at?: number
-  replied_at?: number
+  adminId?: number
+  createdAt?: number
+  repliedAt?: number
   status?: number
 }
 

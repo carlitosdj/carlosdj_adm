@@ -56,7 +56,7 @@ const Extra = ({handleClose}: handleCloseProps) => {
             keyExtra: 'img',
             valueExtra: res.data.filename,
             componentId: component.data.id,
-            //created_at: date.getTime() / 1000,
+            //createdAt: date.getTime() / 1000,
             status: 1,
           }
           console.log('extra to save:', extra)

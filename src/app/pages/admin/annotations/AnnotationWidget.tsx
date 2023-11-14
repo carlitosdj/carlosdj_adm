@@ -103,7 +103,7 @@ const AnnotationWidget: React.FC<React.PropsWithChildren<Props>> = ({className, 
                       </td>
                       <td>
                         <span className='text-muted fw-bold text-muted d-block fs-7'>
-                          {MOMENT(Number(annotation.created_at) * 1000).format('DD/MM/YYYY HH:mm')}
+                          {MOMENT(annotation.createdAt).format('DD/MM/YYYY HH:mm')}
                         </span>
                       </td>
                       <td>

@@ -23,8 +23,8 @@ const InfoUser = ({handleClose, child}: handleCloseProps) => {
   if (checkLastClass) urlLastClass = checkLastClass.valueExtra
   console.log("component",component)
 
-  // var data = new Date(apiResponse.created_at*1000);
-  let created_at = MOMENT(Number(child.created_at) * 1000) //.format('DD/MM/YYYY HH:mm')
+  // var data = new Date(apiResponse.createdAt*1000);
+  let createdAt = MOMENT(Number(child.createdAt) * 1000) //.format('DD/MM/YYYY HH:mm')
   var now = MOMENT(Date()) //.format('DD/MM/YYYY HH:mm')
   var src = /^(\d{3})(\d{3})(\d{3})(\d{2})$/
   var dst = '$1.$2.$3-$4'
@@ -71,14 +71,14 @@ const InfoUser = ({handleClose, child}: handleCloseProps) => {
           <br/><br/>
           <span className='text-dark fw-bolder fs-6'>Endereço: {child.profile?.address}, {child.profile?.addressNumber}, {child.profile?.addressDistrict} - {child.profile?.addressCity} / {child.profile?.addressState} / {child.profile?.addressCountry} - {child.profile?.postalCode}</span>
           <br/><br/>
-          {/* <span className='text-dark fw-bolder fs-6'>Última renovação: {created_at!.format('DD/MM/YYYY HH:mm')}</span>
+          {/* <span className='text-dark fw-bolder fs-6'>Última renovação: {createdAt!.format('DD/MM/YYYY HH:mm')}</span>
           <br/> */}
 
-          Última renovação: {created_at.format('DD/MM/YYYY HH:mm')}
+          Última renovação: {createdAt.format('DD/MM/YYYY HH:mm')}
           {' / '}
-          {now.diff(created_at, 'years', true) > 1? 'RENOVAÇÃO' : 'NO PRAZO'}
+          {now.diff(createdAt, 'years', true) > 1? 'RENOVAÇÃO' : 'NO PRAZO'}
           {' / '}
-          {(now.diff(created_at, 'years', true)*100).toFixed(2)}%
+          {(now.diff(createdAt, 'years', true)*100).toFixed(2)}%
           <h6>{/* Criado em: {data.toLocaleDateString('pt-BR')} */}</h6>
           {component.error}
           Última aula assistida: {component.lastclass?.parent?.parent?.name} - {component.lastclass?.parent?.name} - {component.lastclass?.name}

@@ -81,7 +81,7 @@ const ManageSentEmailsWidget: React.FC<React.PropsWithChildren<Props>> = ({
                   <th className='min-w-150px'>Lista</th>
                   <th className='min-w-140px'>Email</th>
                   <th className='min-w-120px'>Whatsapp</th>
-                  <th className='min-w-120px'>Created_at</th>
+                  <th className='min-w-120px'>CreatedAt</th>
                   <th className='min-w-120px'>Flags</th>
                 </tr>
               </thead>
@@ -110,7 +110,7 @@ const ManageSentEmailsWidget: React.FC<React.PropsWithChildren<Props>> = ({
                       </td>
                       <td>
                         <span className='text-muted fw-bold text-muted d-block fs-7'>
-                          {child.created_at}
+                          {child.createdAt}
                         </span>
                       </td>
                       <td>

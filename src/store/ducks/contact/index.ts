@@ -15,7 +15,7 @@ const reducer: Reducer<ContactState> = (state = INITIAL_STATE, action) => {
     case ContactsTypes.LOAD_ALLCONTACT_SUCCESS:
       return {...state, loading: false, error: false, all: action.payload.data}
     case ContactsTypes.LOAD_ALLCONTACT_FAILURE:
-      return {...state, loading: false, error: true, all: []}
+      return {...state, loading: false, error: action.payload, all: []}
 
     //Load single
     case ContactsTypes.LOAD_CONTACT_REQUEST:
@@ -23,7 +23,7 @@ const reducer: Reducer<ContactState> = (state = INITIAL_STATE, action) => {
     case ContactsTypes.LOAD_CONTACT_SUCCESS:
       return {...state, loading: false, error: false, data: action.payload.data}
     case ContactsTypes.LOAD_CONTACT_FAILURE:
-      return {...state, loading: false, error: true, data: []}
+      return {...state, loading: false, error: action.payload, data: []}
 
     //Create
     case ContactsTypes.CREATE_CONTACT_REQUEST:
@@ -31,7 +31,7 @@ const reducer: Reducer<ContactState> = (state = INITIAL_STATE, action) => {
     case ContactsTypes.CREATE_CONTACT_SUCCESS:
       return {...state, loading: false, error: false, data: [...state.data, action.payload.data]}
     case ContactsTypes.CREATE_CONTACT_FAILURE:
-      return {...state, loading: false, error: true, data: []}
+      return {...state, loading: false, error: action.payload, data: []}
 
     //Update
     case ContactsTypes.UPDATE_CONTACT_REQUEST:
@@ -47,7 +47,7 @@ const reducer: Reducer<ContactState> = (state = INITIAL_STATE, action) => {
         ),
       } //update data?
     case ContactsTypes.UPDATE_CONTACT_FAILURE:
-      return {...state, loading: false, error: true}
+      return {...state, loading: false, error: action.payload}
 
       //Delete
     case ContactsTypes.DELETE_CONTACT_SUCCESS:
@@ -59,7 +59,7 @@ const reducer: Reducer<ContactState> = (state = INITIAL_STATE, action) => {
         all: state.all?.filter((item) => item.id !== action.payload.data),
       } //só uma data: pq excluiu o user "Excluido com sucesso."
     case ContactsTypes.DELETE_CONTACT_FAILURE:
-      return {...state, loading: false, error: true, data: []}
+      return {...state, loading: false, error: action.payload, data: []}
 
     default:
       return state

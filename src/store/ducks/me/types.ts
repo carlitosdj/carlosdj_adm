@@ -47,11 +47,11 @@ export interface User {
   password_hash?: string
   newPassword?: string
   auth_key?: string
-  confirmed_at?: number
+  confirmedAt?: number
   unconfirmed_email?: string
   blocked_at?: number
   registration_ip?: string
-  created_at?: number
+  createdAt?: number
   updated_at?: number
   flags?: number
   last_login_at?: number

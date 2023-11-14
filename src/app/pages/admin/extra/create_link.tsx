@@ -15,8 +15,8 @@ interface handleCloseProps {
   handleClose: () => void
 }
 
-const Create = ({handleClose}: handleCloseProps) => {
-  const [keyExtra, setkeyExtra] = useState('url')
+const CreateLink = ({handleClose}: handleCloseProps) => {
+  const [keyExtra, setkeyExtra] = useState('link')
   const [valueExtra, setvalueExtra] = useState('')
   const [validated, setValidated] = useState(false)
   // const {id} = useParams<ParamTypes>();
@@ -56,7 +56,7 @@ const Create = ({handleClose}: handleCloseProps) => {
     <>
       <Form validated={validated} onSubmit={handleSubmit}>
         <Form.Group controlId='fromName'>
-          <Form.Label>Nome do componente</Form.Label>
+          <Form.Label>Nome do link</Form.Label>
           <Form.Control
             placeholder=''
             required
@@ -68,7 +68,7 @@ const Create = ({handleClose}: handleCloseProps) => {
         </Form.Group>
         <br />
         <Form.Group controlId='formDescription'>
-          <Form.Label>Endereço (url)</Form.Label>
+          <Form.Label>Link (url)</Form.Label>
           <Form.Control
             placeholder=''
             required
@@ -89,4 +89,4 @@ const Create = ({handleClose}: handleCloseProps) => {
     </>
   )
 }
-export default Create
+export default CreateLink

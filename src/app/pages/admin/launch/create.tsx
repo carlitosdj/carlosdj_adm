@@ -110,7 +110,7 @@ const Create = ({handleClose}: handleCloseProps) => {
             {
               name: 'Captação de lead',
               description: slug,
-              //created_at: (data.getTime() / 1000).toString(),
+              //createdAt: (data.getTime() / 1000).toString(),
               status: 1,
               extras: {
                 create: [
@@ -242,7 +242,7 @@ const Create = ({handleClose}: handleCloseProps) => {
             {
               name: 'Evento',
               description: 'imersao-' + slug,
-              //created_at: (data.getTime() / 1000).toString(),
+              //createdAt: (data.getTime() / 1000).toString(),
               status: 1,
               extras: {
                 create: [
@@ -300,7 +300,7 @@ const Create = ({handleClose}: handleCloseProps) => {
             {
               name: 'Vendas',
               description: 'violaofeeling-' + slug,
-              //created_at: (data.getTime() / 1000).toString(),
+              //createdAt: (data.getTime() / 1000).toString(),
               status: 1,
               extras: {
                 create: [

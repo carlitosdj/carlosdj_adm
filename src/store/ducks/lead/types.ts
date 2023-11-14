@@ -35,8 +35,8 @@ export interface Lead {
   list?: string
   confirm?: number
   segmentacao?: string
-  created_at?: string
-  confirmed_at?: string
+  createdAt?: string
+  confirmedAt?: string
   origin?: string
   naoperturbe?: number
 }

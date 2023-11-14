@@ -53,7 +53,7 @@ const Leads = ({handleClose}: handleCloseProps) => {
       parentUser: me.me.id,
       user_id: me.me.id,
       status: 1,
-      //created_at: (data.getTime() / 1000).toString(),
+      //createdAt: (data.getTime() / 1000).toString(),
     }
     dispatch(createEmailToListRequest(emailToListNew))
     handleClose()

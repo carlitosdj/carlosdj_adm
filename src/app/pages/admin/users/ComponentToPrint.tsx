@@ -21,8 +21,8 @@ export class ComponentToPrint extends React.Component<Props> {
             
             <br/><br/>
             {this.props.data.map((user => {
-            // var data = new Date(apiResponse.created_at*1000);
-            let created_at = MOMENT(Number(user.created_at) * 1000) //.format('DD/MM/YYYY HH:mm')
+            // var data = new Date(apiResponse.createdAt*1000);
+            let createdAt = MOMENT(Number(user.createdAt) * 1000) //.format('DD/MM/YYYY HH:mm')
             var now = MOMENT(Date()) //.format('DD/MM/YYYY HH:mm')
             var src = /^(\d{3})(\d{3})(\d{3})(\d{2})$/
             var dst = '$1.$2.$3-$4'
@@ -40,10 +40,10 @@ export class ComponentToPrint extends React.Component<Props> {
               <br/>
               <span style={{ color: 'black' }}>Endereço: {user.profile?.address}, {user.profile?.addressNumber}, {user.profile?.addressDistrict} - {user.profile?.addressCity} / {user.profile?.addressState} / {user.profile?.addressCountry} - {user.profile?.postalCode}</span>
               <br/>
-              <span style={{ color: 'black' }}>Última renovação: {created_at!.format('DD/MM/YYYY HH:mm')}</span>
+              <span style={{ color: 'black' }}>Última renovação: {createdAt!.format('DD/MM/YYYY HH:mm')}</span>
               <br/><br/><br/>
 
-              {/* Última renovação: {created_at.format('DD/MM/YYYY HH:mm')} */}
+              {/* Última renovação: {createdAt.format('DD/MM/YYYY HH:mm')} */}
               </div>
             )
           }))}

@@ -21,7 +21,7 @@ export interface Annotation {
   user_id?: number | undefined
   componentId?: number | undefined
   message?: string | undefined
-  created_at?: string | undefined
+  createdAt?: string | undefined
   status?: number | undefined
   parentUser?: any | undefined
   parentComponent?: any | undefined

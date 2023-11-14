@@ -11,7 +11,7 @@ const InfoSupport = ({child}: handleCloseProps) => {
       <hr />
       <p>{child.reply}</p>
       <p>{child.status}</p>
-      <p>{child.created_at}</p>
+      <p>{child.createdAt}</p>
     </>
   )
 }

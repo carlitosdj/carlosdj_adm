@@ -52,7 +52,7 @@ const Update = ({handleClose, child}: handleCloseProps) => {
         name,
         description,
         order,
-        //created_at: (data.getTime() / 1000).toString(), //updated_at
+        //createdAt: (data.getTime() / 1000).toString(), //updated_at
         status,
         duration: MOMENT.duration(duration).asSeconds(),
         tags,

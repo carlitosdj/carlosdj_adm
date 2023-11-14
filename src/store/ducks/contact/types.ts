@@ -37,7 +37,7 @@ export interface Contact {
   email?: string
   subject?: string
   message?: string
-  created_at?: number
+  createdAt?: number
 }
 
 /**

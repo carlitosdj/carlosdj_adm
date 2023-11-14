@@ -86,7 +86,7 @@ const ManageSupportsWidget: React.FC<React.PropsWithChildren<Props>> = ({
               {/* begin::Table head */}
               <thead>
                 <tr className='fw-bolder text-muted'>
-                  <th className='min-w-150px'>Id</th>
+                  <th className='min-w-50px'>Id</th>
                   <th className='min-w-140px'>Criado em</th>
                   <th className='min-w-140px'>Nome</th>
                   <th className='min-w-120px'>Email</th>
@@ -109,27 +109,27 @@ const ManageSupportsWidget: React.FC<React.PropsWithChildren<Props>> = ({
                         </div>
                       </td>
                       <td>
-                        <span className='text-muted fw-bold text-muted d-block fs-7'>
-                          {MOMENT(Number(support.created_at) * 1000).format('DD/MM/YYYY HH:mm')}
+                        <span className='text-muted fw-bold d-block fs-7'>
+                          {MOMENT(support.createdAt).format('DD/MM/YYYY HH:mm')}
                         </span>
                       </td>
                       <td>
-                        <span className='text-muted fw-bold text-muted d-block fs-7'>
+                        <span className='text-muted fw-bold d-block fs-7'>
                           {support.name}
                         </span>
                       </td>
                       <td>
-                        <span className='text-muted fw-bold text-muted d-block fs-7'>
+                        <span className='text-muted fw-bold d-block fs-7'>
                           {support.email}
                         </span>
                       </td>
                       <td>
-                        <span className='text-muted fw-bold text-muted d-block fs-7'>
+                        <span className='text-muted fw-bold d-block fs-7'>
                           {support.subject}
                         </span>
                       </td>
                       <td>
-                        <span className='text-muted fw-bold text-muted d-block fs-7'>
+                        <span className='text-muted fw-bold d-block fs-7'>
                           {support.message}
                         </span>
                       </td>

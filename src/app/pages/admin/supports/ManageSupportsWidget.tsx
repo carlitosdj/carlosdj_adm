@@ -78,7 +78,7 @@ const ManageSupportsWidget: React.FC<React.PropsWithChildren<Props>> = ({
               {/* begin::Table head */}
               <thead>
                 <tr className='fw-bolder text-muted'>
-                  <th className='min-w-150px'>Id</th>
+                  <th className='min-w-50px'>Id</th>
                   <th className='min-w-140px'>Criado em</th>
                   <th className='min-w-120px'>Chamado</th>
                   <th className='min-w-120px'>Resposta</th>
@@ -102,7 +102,7 @@ const ManageSupportsWidget: React.FC<React.PropsWithChildren<Props>> = ({
                       </td>
                       <td>
                         <span className='text-muted fw-bold d-block fs-7'>
-                          {MOMENT(Number(support.created_at) * 1000).format('DD/MM/YYYY HH:mm')}
+                          {MOMENT(support.createdAt).format('DD/MM/YYYY HH:mm')}
                         </span>
                       </td>
                       <td>

@@ -252,7 +252,7 @@ const ManageUsersWidget: React.FC<React.PropsWithChildren<Props>> = ({
               {/* begin::Table body */}
               <tbody>
                 {users.data?.map((child, index) => {
-                  var created_at = MOMENT(Number(child.created_at) * 1000) //.format('DD/MM/YYYY HH:mm')
+                  var createdAt = MOMENT(Number(child.createdAt) * 1000) //.format('DD/MM/YYYY HH:mm')
                   var last_login_at = child.last_login_at
                     ? MOMENT(Number(child.last_login_at) * 1000)
                     : '' //.format('DD/MM/YYYY HH:mm')
@@ -352,15 +352,15 @@ const ManageUsersWidget: React.FC<React.PropsWithChildren<Props>> = ({
                           Intertico
                         </a> */}
                         <span className='text-muted fw-bold text-muted d-block fs-7'>
-                          {created_at.format('DD/MM/YYYY HH:mm')}
+                          {createdAt.format('DD/MM/YYYY HH:mm')}
                           {' / '}
-                          {now.diff(created_at, 'years', true) > 1 ? (
+                          {now.diff(createdAt, 'years', true) > 1 ? (
                             <span className='text-danger'>RENOVAÇÃO</span>
                           ) : (
                             <span className='text-success'>NO PRAZO</span>
                           )}
                           {' / '}
-                          {(now.diff(created_at, 'years', true) * 100).toFixed(2)}%
+                          {(now.diff(createdAt, 'years', true) * 100).toFixed(2)}%
                         </span>
                       </td>
                       <td>

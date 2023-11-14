@@ -80,7 +80,7 @@ const Create = ({handleClose}: handleCloseProps) => {
         newPassword: password,
         // auth_key: 'teste',
         // registration_ip: '0',
-        //created_at: data.getTime() / 1000,
+        //createdAt: data.getTime() / 1000,
         // updated_at: '0',
         flags: 10,
         num_turma: numTurma,

@@ -33,8 +33,8 @@ const Update = ({handleClose, child}: handleCloseProps) => {
     supportToUpdate.reply = reply
     supportToUpdate.status = Number(status)
     supportToUpdate.parentAdmin = me.me.id!
-    supportToUpdate.admin_id = me.me.id!
-    supportToUpdate.replied_at = data.getTime() / 1000
+    supportToUpdate.adminId = me.me.id!
+    supportToUpdate.repliedAt = data.getTime() / 1000
 
     console.log('support', supportToUpdate)
     dispatch(updateSupportRequest(supportToUpdate))

@@ -95,9 +95,9 @@ const ManageLeadsWidget: React.FC<React.PropsWithChildren<Props>> = ({className,
                   <th className='min-w-150px'>Nome</th>
                   <th className='min-w-140px'>Email</th>
                   <th className='min-w-120px'>Lista</th>
-                  <th className='min-w-120px'>Created_at</th>
+                  <th className='min-w-120px'>CreatedAt</th>
                   <th className='min-w-120px'>Confirmado</th>
-                  <th className='min-w-120px'>Confirmed_at</th>
+                  <th className='min-w-120px'>ConfirmedAt</th>
                   <th className='min-w-120px'>Não perturbe</th>
                   <th className='min-w-120px'>Origem</th>
                 </tr>
@@ -130,7 +130,7 @@ const ManageLeadsWidget: React.FC<React.PropsWithChildren<Props>> = ({className,
                         {/* <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                           Intertico
                         </a> */}
-                        <span className='text-muted fw-bold text-muted d-block fs-7'>
+                        <span className='text-muted fw-bold d-block fs-7'>
                           {child.email}
                         </span>
                       </td>
@@ -138,7 +138,7 @@ const ManageLeadsWidget: React.FC<React.PropsWithChildren<Props>> = ({className,
                         {/* <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                           Intertico
                         </a> */}
-                        <span className='text-muted fw-bold text-muted d-block fs-7'>
+                        <span className='text-muted fw-bold d-block fs-7'>
                           {child.list}
                         </span>
                       </td>
@@ -146,15 +146,15 @@ const ManageLeadsWidget: React.FC<React.PropsWithChildren<Props>> = ({className,
                         {/* <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                           Intertico
                         </a> */}
-                        <span className='text-muted fw-bold text-muted d-block fs-7'>
-                          {child.created_at}
+                        <span className='text-muted fw-bold d-block fs-7'>
+                          {child.createdAt}
                         </span>
                       </td>
                       <td>
                         {/* <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                           Intertico
                         </a> */}
-                        <span className='text-muted fw-bold text-muted d-block fs-7'>
+                        <span className='text-muted fw-bold d-block fs-7'>
                           {child.confirm}
                         </span>
                       </td>
@@ -162,15 +162,15 @@ const ManageLeadsWidget: React.FC<React.PropsWithChildren<Props>> = ({className,
                         {/* <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                           Intertico
                         </a> */}
-                        <span className='text-muted fw-bold text-muted d-block fs-7'>
-                          {child.confirmed_at}
+                        <span className='text-muted fw-bold d-block fs-7'>
+                          {child.confirmedAt}
                         </span>
                       </td>
                       <td>
                         {/* <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                           Intertico
                         </a> */}
-                        <span className='text-muted fw-bold text-muted d-block fs-7'>
+                        <span className='text-muted fw-bold d-block fs-7'>
                           {child.naoperturbe}
                         </span>
                       </td>
@@ -178,7 +178,7 @@ const ManageLeadsWidget: React.FC<React.PropsWithChildren<Props>> = ({className,
                         {/* <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                           Intertico
                         </a> */}
-                        <span className='text-muted fw-bold text-muted d-block fs-7'>
+                        <span className='text-muted fw-bold d-block fs-7'>
                           {child.origin}
                         </span>
                       </td>

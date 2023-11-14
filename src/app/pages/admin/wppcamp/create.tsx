@@ -40,7 +40,7 @@ const Create = ({handleClose}: handleCloseProps) => {
       const component: Wppcamp = {
         name,
         description,
-        //created_at: data.getTime() / 1000,
+        //createdAt: data.getTime() / 1000,
         status: 1,
         slug,
         maxclicks: +maxclicks,

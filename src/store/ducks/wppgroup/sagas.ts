@@ -29,8 +29,8 @@ export function* loadWppgroups(payload: ReturnType<typeof loadWppgroupsRequest>)
   try {
     const response: Wppgroup[] = yield call(api.get, 'wppgroup/camp_id/' + payload.payload + '/1/100')
     yield put(loadWppgroupsSuccess(response))
-  } catch (error) {
-    yield put(loadWppgroupsFailure())
+  } catch (error: any) {
+    yield put(loadWppgroupsFailure(error.response.data))
   }
 }
 
@@ -51,8 +51,8 @@ export function* updateWppgroup(payload: ReturnType<typeof updateWppgroupRequest
     put(updateWppgroupRequest(payload.payload))
     const response: Wppgroup = yield call(api.patch, 'wppgroup/'+payload.payload.id, payload.payload)
     yield put(updateWppgroupSuccess(response))
-  } catch (error) {
-    yield put(updateWppgroupFailure())
+  } catch (error: any) {
+    yield put(updateWppgroupFailure(error.response.data))
   }
 }
 
