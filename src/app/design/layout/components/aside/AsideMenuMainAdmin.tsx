@@ -155,6 +155,12 @@ export function AsideMenuMainAdmin() {
         fontIcon='bi-app-indicator'
         title={intl.formatMessage({id: 'MENUADMIN.CONTACT'})}
       />
+      <AsideMenuItem
+        to='/manage/174'
+        icon='/media/icons/duotune/communication/com010.svg'
+        fontIcon='bi-app-indicator'
+        title={intl.formatMessage({id: 'MENUADMIN.BUGREPORTS'})}
+      />
 
       {/*
       <div className='menu-item'>

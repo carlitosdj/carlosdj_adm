@@ -4,6 +4,7 @@ import ApexCharts, {ApexOptions} from 'apexcharts'
 import {KTSVG} from '../../../helpers'
 import {getCSSVariableValue} from '../../../assets/ts/_utils'
 import {Dropdown1} from '../../content/dropdown/Dropdown1'
+import {Link} from 'react-router-dom'
 
 type Props = {
   className: string
@@ -70,52 +71,51 @@ const MixedWidget2: React.FC<Props> = ({className, chartColor, chartHeight, stro
           {/* begin::Row */}
           <div className='row g-0'>
             {/* begin::Col */}
-            <div className='col bg-light-warning px-6 py-8 rounded-2 me-7 mb-7'>
+            <Link to={'/launch'} className='col bg-light-warning px-6 py-8 rounded-2 me-7 mb-7'>
               <KTSVG
                 path='/media/icons/duotune/general/gen032.svg'
                 className='svg-icon-3x svg-icon-warning d-block my-2'
               />
               <a href='#' className='text-warning fw-bold fs-6'>
-                Weekly Sales
+                Lançamentos
               </a>
-            </div>
+            </Link>
             {/* end::Col */}
             {/* begin::Col */}
-            <div className='col bg-light-primary px-6 py-8 rounded-2 mb-7'>
+            <Link to={'/users/1/10'} className='col bg-light-primary px-6 py-8 rounded-2 mb-7'>
               <KTSVG
                 path='/media/icons/duotune/arrows/arr075.svg'
                 className='svg-icon-3x svg-icon-primary d-block my-2'
               />
-              <a href='#' className='text-primary fw-bold fs-6'>
-                New Users
-              </a>
-            </div>
+              <div className='text-primary fw-bold fs-6'>Usuários</div>
+            </Link>
+
             {/* end::Col */}
           </div>
           {/* end::Row */}
           {/* begin::Row */}
           <div className='row g-0'>
             {/* begin::Col */}
-            <div className='col bg-light-danger px-6 py-8 rounded-2 me-7'>
+            <Link to={'/manage/2'} className='col bg-light-danger px-6 py-8 rounded-2 me-7'>
               <KTSVG
                 path='/media/icons/duotune/abstract/abs027.svg'
                 className='svg-icon-3x svg-icon-danger d-block my-2'
               />
               <a href='#' className='text-danger fw-bold fs-6 mt-2'>
-                Item Orders
+                Treinamentos
               </a>
-            </div>
+            </Link>
             {/* end::Col */}
             {/* begin::Col */}
-            <div className='col bg-light-success px-6 py-8 rounded-2'>
+            <Link to={'/manage/174'} className='col bg-light-success px-6 py-8 rounded-2'>
               <KTSVG
                 path='/media/icons/duotune/communication/com010.svg'
                 className='svg-icon-3x svg-icon-success d-block my-2'
               />
               <a href='#' className='text-success fw-bold fs-6 mt-2'>
-                Bug Reports
+                Reportar Bug
               </a>
-            </div>
+            </Link>
             {/* end::Col */}
           </div>
           {/* end::Row */}
