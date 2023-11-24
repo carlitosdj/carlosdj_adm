@@ -26,7 +26,7 @@ export function Documents() {
             />
           </div>
 
-          <a href='#' className='btn btn-primary btn-sm'>
+          <a href='#!' className='btn btn-primary btn-sm'>
             File Manager
           </a>
         </div>

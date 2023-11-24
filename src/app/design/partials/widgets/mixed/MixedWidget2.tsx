@@ -76,7 +76,7 @@ const MixedWidget2: React.FC<Props> = ({className, chartColor, chartHeight, stro
                 path='/media/icons/duotune/general/gen032.svg'
                 className='svg-icon-3x svg-icon-warning d-block my-2'
               />
-              <a href='#' className='text-warning fw-bold fs-6'>
+              <a href='#!' className='text-warning fw-bold fs-6'>
                 Lançamentos
               </a>
             </Link>
@@ -101,7 +101,7 @@ const MixedWidget2: React.FC<Props> = ({className, chartColor, chartHeight, stro
                 path='/media/icons/duotune/abstract/abs027.svg'
                 className='svg-icon-3x svg-icon-danger d-block my-2'
               />
-              <a href='#' className='text-danger fw-bold fs-6 mt-2'>
+              <a href='#!' className='text-danger fw-bold fs-6 mt-2'>
                 Treinamentos
               </a>
             </Link>
@@ -112,7 +112,7 @@ const MixedWidget2: React.FC<Props> = ({className, chartColor, chartHeight, stro
                 path='/media/icons/duotune/communication/com010.svg'
                 className='svg-icon-3x svg-icon-success d-block my-2'
               />
-              <a href='#' className='text-success fw-bold fs-6 mt-2'>
+              <a href='#!' className='text-success fw-bold fs-6 mt-2'>
                 Reportar Bug
               </a>
             </Link>

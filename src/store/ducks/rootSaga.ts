@@ -34,6 +34,9 @@ import {
   createAulaConcluida,
   deleteAulaConcluida,
   loadLastClass,
+  loadComponentWithAccess,
+  createComponentAccess,
+  updateComponentAccess,
   // uploadExtra
 } from './component/sagas'
 
@@ -73,6 +76,10 @@ import {WppgroupTypes} from './wppgroup/types'
 import {createWppgroup, deleteWppgroup, loadWppgroups, updateWppgroup} from './wppgroup/sagas'
 import { createcontact, deletecontact, loadAllcontacts, loadcontacts, updatecontact } from './contact/sagas'
 import { ContactsTypes } from './contact/types'
+import { StateTypes } from './state/types'
+import { CityTypes } from './city/types'
+import { loadState } from './state/sagas'
+import { loadCity } from './city/sagas'
 
 export default function* rootSaga() {
   yield all([
@@ -101,10 +108,12 @@ export default function* rootSaga() {
 
     //Components
     takeLatest(ComponentTypes.LOAD_COMPONENT_REQUEST, loadComponent),
-
+    takeLatest(ComponentTypes.LOAD_COMPONENT_WITH_ACCESS_REQUEST, loadComponentWithAccess),
     takeLatest(ComponentTypes.LOAD_COMPONENT_BY_DESC_REQUEST, loadComponentByDescription),
     takeLatest(ComponentTypes.CREATE_COMPONENT_REQUEST, createComponent),
+    takeLatest(ComponentTypes.CREATE_COMPONENTACCESS_REQUEST, createComponentAccess),
     takeLatest(ComponentTypes.UPDATE_COMPONENT_REQUEST, updateComponent),
+    takeLatest(ComponentTypes.UPDATE_COMPONENTACCESS_REQUEST, updateComponentAccess),
     takeLatest(ComponentTypes.DELETE_COMPONENT_REQUEST, deleteComponent),
     takeLatest(ComponentTypes.LOAD_MODULES_REQUEST, loadModules),
     takeLatest(ComponentTypes.LOAD_CLASSES_REQUEST, loadClasses),
@@ -173,6 +182,8 @@ export default function* rootSaga() {
     takeLatest(ContactsTypes.UPDATE_CONTACT_REQUEST, updatecontact),
     takeLatest(ContactsTypes.DELETE_CONTACT_REQUEST, deletecontact),
 
+    takeLatest(StateTypes.LOAD_STATES_REQUEST, loadState),
+    takeLatest(CityTypes.LOAD_CITIES_REQUEST, loadCity),
 
     // takeLatest(ExtraTypes.LOAD_EXTRAS_REQUEST,loadExtras),
     // takeLatest(ExtraTypes.CREATE_EXTRA_REQUEST,createExtra),

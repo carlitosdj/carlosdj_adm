@@ -57,7 +57,7 @@ export enum UsersTypes {
 export interface UsersState {
   readonly data: User[]
   readonly loading: boolean
-  readonly error: boolean
+  readonly error: any
   readonly count: number
   readonly selectedUsers: User[]
   readonly showPagination: boolean

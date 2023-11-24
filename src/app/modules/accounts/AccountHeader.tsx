@@ -23,17 +23,17 @@ const AccountHeader: React.FC<React.PropsWithChildren<unknown>> = () => {
             <div className='d-flex justify-content-between align-items-start flex-wrap mb-2'>
               <div className='d-flex flex-column'>
                 <div className='d-flex align-items-center mb-2'>
-                  <a href='#' className='text-gray-800 text-hover-primary fs-2 fw-bolder me-1'>
+                  <a href='#!' className='text-gray-800 text-hover-primary fs-2 fw-bolder me-1'>
                     Max Smith
                   </a>
-                  <a href='#'>
+                  <a href='#!'>
                     <KTSVG
                       path='/media/icons/duotune/general/gen026.svg'
                       className='svg-icon-1 svg-icon-primary'
                     />
                   </a>
                   <a
-                    href='#'
+                    href='#!'
                     className='btn btn-sm btn-light-success fw-bolder ms-2 fs-8 py-1 px-3'
                     data-bs-toggle='modal'
                     data-bs-target='#kt_modal_upgrade_plan'
@@ -44,7 +44,7 @@ const AccountHeader: React.FC<React.PropsWithChildren<unknown>> = () => {
 
                 <div className='d-flex flex-wrap fw-bold fs-6 mb-4 pe-2'>
                   <a
-                    href='#'
+                    href='#!'
                     className='d-flex align-items-center text-gray-400 text-hover-primary me-5 mb-2'
                   >
                     <KTSVG
@@ -54,7 +54,7 @@ const AccountHeader: React.FC<React.PropsWithChildren<unknown>> = () => {
                     Developer
                   </a>
                   <a
-                    href='#'
+                    href='#!'
                     className='d-flex align-items-center text-gray-400 text-hover-primary me-5 mb-2'
                   >
                     <KTSVG
@@ -64,7 +64,7 @@ const AccountHeader: React.FC<React.PropsWithChildren<unknown>> = () => {
                     SF, Bay Area
                   </a>
                   <a
-                    href='#'
+                    href='#!'
                     className='d-flex align-items-center text-gray-400 text-hover-primary mb-2'
                   >
                     <KTSVG
@@ -77,7 +77,7 @@ const AccountHeader: React.FC<React.PropsWithChildren<unknown>> = () => {
               </div>
 
               <div className='d-flex my-4'>
-                <a href='#' className='btn btn-sm btn-light me-2' id='kt_user_follow_button'>
+                <a href='#!' className='btn btn-sm btn-light me-2' id='kt_user_follow_button'>
                   <KTSVG
                     path='/media/icons/duotune/arrows/arr012.svg'
                     className='svg-icon-3 d-none'
@@ -90,7 +90,7 @@ const AccountHeader: React.FC<React.PropsWithChildren<unknown>> = () => {
                   </span>
                 </a>
                 <a
-                  href='#'
+                  href='#!'
                   className='btn btn-sm btn-primary me-3'
                   data-bs-toggle='modal'
                   data-bs-target='#kt_modal_offer_a_deal'

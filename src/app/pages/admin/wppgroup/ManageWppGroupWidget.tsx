@@ -74,7 +74,7 @@ const ManageWppGroupWidget: React.FC<React.PropsWithChildren<Props>> = ({classNa
             title='Click to add a user'
           >
             <a
-              href='#'
+              href='#!'
               className='btn btn-sm btn-light-primary'
               // data-bs-toggle='modal'
               // data-bs-target='#kt_modal_invite_friends'
@@ -128,7 +128,7 @@ const ManageWppGroupWidget: React.FC<React.PropsWithChildren<Props>> = ({classNa
                         </div>
                       </td>
                       <td>
-                        {/* <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                        {/* <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                         Intertico
                       </a> */}
                         <span className='text-muted fw-bold text-muted d-block fs-7'>
@@ -136,7 +136,7 @@ const ManageWppGroupWidget: React.FC<React.PropsWithChildren<Props>> = ({classNa
                         </span>
                       </td>
                       <td>
-                        {/* <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                        {/* <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                         Intertico
                       </a> */}
                         <span className='text-muted fw-bold text-muted d-block fs-7'>
@@ -153,7 +153,7 @@ const ManageWppGroupWidget: React.FC<React.PropsWithChildren<Props>> = ({classNa
                       <td>
                         <div className='d-flex justify-content-end flex-shrink-0'>
                           <a
-                            href='#'
+                            href='#!'
                             onClick={() => updateComponent(child)}
                             className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                           >
@@ -163,7 +163,7 @@ const ManageWppGroupWidget: React.FC<React.PropsWithChildren<Props>> = ({classNa
                             />
                           </a>
                           <a
-                            href='#'
+                            href='#!'
                             onClick={() => {
                               if (window.confirm('Deseja realmente excluir: ' + child.name + '?'))
                                 deleteComponent(child)

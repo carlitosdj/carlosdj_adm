@@ -50,7 +50,7 @@ const ListsWidget1: React.FC<Props> = ({className}) => {
           {/* end::Symbol */}
           {/* begin::Text */}
           <div className='d-flex flex-column'>
-            <a href='#' className='text-dark text-hover-primary fs-6 fw-bolder'>
+            <a href='#!' className='text-dark text-hover-primary fs-6 fw-bolder'>
               Project Briefing
             </a>
             <span className='text-muted fw-bold'>Project Manager</span>
@@ -72,7 +72,7 @@ const ListsWidget1: React.FC<Props> = ({className}) => {
           {/* end::Symbol */}
           {/* begin::Text */}
           <div className='d-flex flex-column'>
-            <a href='#' className='text-dark text-hover-primary fs-6 fw-bolder'>
+            <a href='#!' className='text-dark text-hover-primary fs-6 fw-bolder'>
               Concept Design
             </a>
             <span className='text-muted fw-bold'>Art Director</span>
@@ -94,7 +94,7 @@ const ListsWidget1: React.FC<Props> = ({className}) => {
           {/* end::Symbol */}
           {/* begin::Text */}
           <div className='d-flex flex-column'>
-            <a href='#' className='text-dark text-hover-primary fs-6 fw-bolder'>
+            <a href='#!' className='text-dark text-hover-primary fs-6 fw-bolder'>
               Functional Logics
             </a>
             <span className='text-muted fw-bold'>Lead Developer</span>
@@ -116,7 +116,7 @@ const ListsWidget1: React.FC<Props> = ({className}) => {
           {/* end::Symbol */}
           {/* begin::Text */}
           <div className='d-flex flex-column'>
-            <a href='#' className='text-dark text-hover-primary fs-6 fw-bolder'>
+            <a href='#!' className='text-dark text-hover-primary fs-6 fw-bolder'>
               Development
             </a>
             <span className='text-muted fw-bold'>DevOps</span>
@@ -138,7 +138,7 @@ const ListsWidget1: React.FC<Props> = ({className}) => {
           {/* end::Symbol */}
           {/* begin::Text */}
           <div className='d-flex flex-column'>
-            <a href='#' className='text-dark text-hover-primary fs-6 fw-bolder'>
+            <a href='#!' className='text-dark text-hover-primary fs-6 fw-bolder'>
               Testing
             </a>
             <span className='text-muted fw-bold'>QA Managers</span>

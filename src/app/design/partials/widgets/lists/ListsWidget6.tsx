@@ -40,7 +40,7 @@ const ListsWidget6: React.FC<Props> = ({className}) => {
           {/* end::Icon */}
           {/* begin::Title */}
           <div className='flex-grow-1 me-2'>
-            <a href='#' className='fw-bolder text-gray-800 text-hover-primary fs-6'>
+            <a href='#!' className='fw-bolder text-gray-800 text-hover-primary fs-6'>
               Group lunch celebration
             </a>
             <span className='text-muted fw-bold d-block'>Due in 2 Days</span>
@@ -60,7 +60,7 @@ const ListsWidget6: React.FC<Props> = ({className}) => {
           {/* end::Icon */}
           {/* begin::Title */}
           <div className='flex-grow-1 me-2'>
-            <a href='#' className='fw-bolder text-gray-800 text-hover-primary fs-6'>
+            <a href='#!' className='fw-bolder text-gray-800 text-hover-primary fs-6'>
               Navigation optimization
             </a>
             <span className='text-muted fw-bold d-block'>Due in 2 Days</span>
@@ -80,7 +80,7 @@ const ListsWidget6: React.FC<Props> = ({className}) => {
           {/* end::Icon */}
           {/* begin::Title */}
           <div className='flex-grow-1 me-2'>
-            <a href='#' className='fw-bolder text-gray-800 text-hover-primary fs-6'>
+            <a href='#!' className='fw-bolder text-gray-800 text-hover-primary fs-6'>
               Rebrand strategy planning
             </a>
             <span className='text-muted fw-bold d-block'>Due in 5 Days</span>
@@ -100,7 +100,7 @@ const ListsWidget6: React.FC<Props> = ({className}) => {
           {/* end::Icon */}
           {/* begin::Title */}
           <div className='flex-grow-1 me-2'>
-            <a href='#' className='fw-bolder text-gray-800 text-hover-primary fs-6'>
+            <a href='#!' className='fw-bolder text-gray-800 text-hover-primary fs-6'>
               Product goals strategy
             </a>
             <span className='text-muted fw-bold d-block'>Due in 7 Days</span>

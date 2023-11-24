@@ -44,10 +44,18 @@ import {
   loadLastClassRequest,
   loadLastClassSuccess,
   loadLastClassFailure,
+  loadComponentWithAccessRequest,
+  loadComponentWithAccessSuccess,
+  loadComponentWithAccessFailure,
+  createComponentAccessRequest,
+  createComponentAccessSuccess,
+  updateComponentAccessRequest,
+  updateComponentAccessSuccess,
+  updateComponenAccesstFailure,
   // loadCourseRequest,
 } from './actions'
 
-import {Component} from './types'
+import {Component, ComponentAccess} from './types'
 import {AulaConcluida} from '../aulaconcluida/types'
 
 // import { loadExtrasSuccess } from '../extras/actions'
@@ -66,10 +74,36 @@ export function* loadComponent(payload: ReturnType<typeof loadComponentRequest>)
   }
 }
 
+export function* loadComponentWithAccess(
+  payload: ReturnType<typeof loadComponentWithAccessRequest>
+) {
+  try {
+    put(
+      loadComponentWithAccessRequest(
+        payload.payload.id,
+        payload.payload.userId,
+        payload.payload.sort
+      )
+    )
+    const response: Component = yield call(
+      api.get,
+      'component/mycourses/' +
+        payload.payload.id +
+        '/' +
+        payload.payload.userId +
+        '/' +
+        payload.payload.sort
+    )
+    yield put(loadComponentWithAccessSuccess(response))
+  } catch (error: any) {
+    yield put(loadComponentWithAccessFailure(error.response.data))
+  }
+}
+
 //Load Modules
 export function* loadModules(payload: ReturnType<typeof loadModulesRequest>) {
   try {
-    put(loadModulesRequest(payload.payload.id, payload.payload.user_id, payload.payload.num_turma))
+    put(loadModulesRequest(payload.payload.id, payload.payload.user_id, payload.payload.numTurma))
     const response: Component = yield call(
       api.get,
       'components/modules/' +
@@ -77,7 +111,7 @@ export function* loadModules(payload: ReturnType<typeof loadModulesRequest>) {
         '/' +
         payload.payload.user_id +
         '/' +
-        payload.payload.num_turma
+        payload.payload.numTurma
     )
     yield put(loadModulesSuccess(response))
   } catch (error: any) {
@@ -106,7 +140,7 @@ export function* loadLastClass(payload: ReturnType<typeof loadLastClassRequest>)
     put(loadLastClassRequest(payload.payload.user_id))
     const response: Component = yield call(
       api.get,
-      'lastclass/'+payload.payload.user_id //done
+      'component/lastclassattended/' + payload.payload.user_id //done
     )
     yield put(loadLastClassSuccess(response))
   } catch (error: any) {
@@ -151,14 +185,42 @@ export function* createComponent(payload: ReturnType<typeof createComponentReque
   }
 }
 
+export function* createComponentAccess(payload: ReturnType<typeof createComponentAccessRequest>) {
+  try {
+    const response: ComponentAccess = yield call(api.post, 'componentaccess', payload.payload)
+    console.log("RESPONSE", response)
+    yield put(createComponentAccessSuccess(response))
+  } catch (error: any) {
+    yield put(createComponentFailure(error.response.data))
+  }
+}
+
 //Update Component
 export function* updateComponent(payload: ReturnType<typeof updateComponentRequest>) {
   try {
     put(updateComponentRequest(payload.payload))
-    const response: Component = yield call(api.patch, 'component/'+payload.payload.id, payload.payload)
+    const response: Component = yield call(
+      api.patch,
+      'component/' + payload.payload.id,
+      payload.payload
+    )
     yield put(updateComponentSuccess(response))
   } catch (error: any) {
     yield put(updateComponentFailure(error.response.data))
+  }
+}
+
+export function* updateComponentAccess(payload: ReturnType<typeof updateComponentAccessRequest>) {
+  try {
+    put(updateComponentAccessRequest(payload.payload))
+    const response: ComponentAccess = yield call(
+      api.patch,
+      'componentaccess/' + payload.payload.id,
+      payload.payload
+    )
+    yield put(updateComponentAccessSuccess(response))
+  } catch (error: any) {
+    yield put(updateComponenAccesstFailure(error.response.data))
   }
 }
 
@@ -177,7 +239,7 @@ export function* deleteComponent(payload: ReturnType<typeof deleteComponentReque
 //Create Extra
 export function* createExtra(payload: ReturnType<typeof createExtraRequest>) {
   try {
-    console.log("aqui", payload.payload)
+    console.log('aqui', payload.payload)
     const response: Extras = yield call(api.post, 'componentextra', payload.payload)
     yield put(createExtraSuccess(response))
   } catch (error: any) {
@@ -203,7 +265,11 @@ export function* createExtra(payload: ReturnType<typeof createExtraRequest>) {
 export function* updateExtra(payload: ReturnType<typeof updateExtraRequest>) {
   try {
     put(updateExtraRequest(payload.payload))
-    const response: Extras = yield call(api.patch, 'componentextra/'+payload.payload.id, payload.payload)
+    const response: Extras = yield call(
+      api.patch,
+      'componentextra/' + payload.payload.id,
+      payload.payload
+    )
     yield put(updateExtraSuccess(response))
   } catch (error: any) {
     yield put(updateExtraFailure(error.response.data))
@@ -213,7 +279,7 @@ export function* updateExtra(payload: ReturnType<typeof updateExtraRequest>) {
 //Delete Extra
 export function* deleteExtra(payload: ReturnType<typeof deleteExtraRequest>) {
   try {
-    console.log("VER AQUI xxxxx", payload.payload)
+    console.log('VER AQUI xxxxx', payload.payload)
     const number: number = yield call(api.delete, 'componentextra/' + payload.payload)
     yield put(deleteExtraSuccess(number))
   } catch (error: any) {

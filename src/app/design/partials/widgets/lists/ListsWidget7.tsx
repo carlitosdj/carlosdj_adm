@@ -47,7 +47,7 @@ const ListsWidget7: React.FC<Props> = ({className}) => {
           {/* begin::Title */}
           <div className='d-flex flex-row-fluid flex-wrap align-items-center'>
             <div className='flex-grow-1 me-2'>
-              <a href='#' className='text-gray-800 fw-bolder text-hover-primary fs-6'>
+              <a href='#!' className='text-gray-800 fw-bolder text-hover-primary fs-6'>
                 Cup &amp; Green
               </a>
               <span className='text-muted fw-bold d-block pt-1'>Size: 87KB</span>
@@ -70,7 +70,7 @@ const ListsWidget7: React.FC<Props> = ({className}) => {
           {/* begin::Title */}
           <div className='d-flex flex-row-fluid flex-wrap align-items-center'>
             <div className='flex-grow-1 me-2'>
-              <a href='#' className='text-gray-800 fw-bolder text-hover-primary fs-6'>
+              <a href='#!' className='text-gray-800 fw-bolder text-hover-primary fs-6'>
                 Yellow Background
               </a>
               <span className='text-muted fw-bold d-block pt-1'>Size: 1.2MB</span>
@@ -93,7 +93,7 @@ const ListsWidget7: React.FC<Props> = ({className}) => {
           {/* begin::Title */}
           <div className='d-flex flex-row-fluid flex-wrap align-items-center'>
             <div className='flex-grow-1 me-2'>
-              <a href='#' className='text-gray-800 fw-bolder text-hover-primary fs-6'>
+              <a href='#!' className='text-gray-800 fw-bolder text-hover-primary fs-6'>
                 Nike &amp; Blue
               </a>
               <span className='text-muted fw-bold d-block pt-1'>Size: 87KB</span>
@@ -116,7 +116,7 @@ const ListsWidget7: React.FC<Props> = ({className}) => {
           {/* begin::Title */}
           <div className='d-flex flex-row-fluid flex-wrap align-items-center'>
             <div className='flex-grow-1 me-2'>
-              <a href='#' className='text-gray-800 fw-bolder text-hover-primary fs-6'>
+              <a href='#!' className='text-gray-800 fw-bolder text-hover-primary fs-6'>
                 Red Boots
               </a>
               <span className='text-muted fw-bold d-block pt-1'>Size: 345KB</span>

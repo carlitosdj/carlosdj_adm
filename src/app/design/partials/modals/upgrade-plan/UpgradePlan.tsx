@@ -152,7 +152,7 @@ const UpgradePlan: FC<React.PropsWithChildren<unknown>> = () => {
 
               <div className='text-muted fw-bold fs-5'>
                 If you need more info, please check{' '}
-                <a href='#' className='link-primary fw-bolder'>
+                <a href='#!' className='link-primary fw-bolder'>
                   Pricing Guidelines
                 </a>
                 .
@@ -162,7 +162,7 @@ const UpgradePlan: FC<React.PropsWithChildren<unknown>> = () => {
             <div className='d-flex flex-column'>
               <div className='nav-group nav-group-outline mx-auto' data-kt-buttons='true'>
                 <a
-                  href='#'
+                  href='#!'
                   className={
                     'btn btn-color-gray-400 btn-active btn-active-secondary px-6 py-3 me-2 ' +
                     (currentState === 'month' && 'active')
@@ -175,7 +175,7 @@ const UpgradePlan: FC<React.PropsWithChildren<unknown>> = () => {
                   Monthly
                 </a>
                 <a
-                  href='#'
+                  href='#!'
                   className={
                     'btn btn-color-gray-400 btn-active btn-active-secondary px-6 py-3 me-2 ' +
                     (currentState === 'annual' && 'active')

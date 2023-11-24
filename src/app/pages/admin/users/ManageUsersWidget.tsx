@@ -22,6 +22,7 @@ import Update from './update'
 import Pagination from '../../../../customHooks/Pagination'
 import ExportUser from './export'
 import Filter from './filter'
+import UserCourses from './userCourses'
 const MOMENT = require('moment')
 
 type Props = {
@@ -88,6 +89,12 @@ const ManageUsersWidget: React.FC<React.PropsWithChildren<Props>> = ({
     setChild(user)
   }
 
+  const userCourses = (user: User) => {
+    setAction('userCourses')
+    setShow(true)
+    setChild(user)
+  }
+
   const deleteUser = (user: User) => {
     console.log('deletar', user.id)
     dispatch(deleteUserRequest(user.id!))
@@ -132,14 +139,17 @@ const ManageUsersWidget: React.FC<React.PropsWithChildren<Props>> = ({
         <Modal.Header closeButton>
           <Modal.Title>
             {action === 'infoUser' ? 'Informações do usuário' : ''}
+            {action === 'userCourses' ? 'userCourses' : ''}
             {action === 'editUser' ? 'Editar usuário' : ''}
             {action === 'createUser' ? 'Adicionar usuário' : ''}
             {action === 'showExport' ? 'Exportar' : ''}
             {action === 'showFilter' ? 'Filtro' : ''}
+            
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {action === 'infoUser' ? <Info handleClose={handleClose} child={child} /> : ''}
+          {action === 'userCourses' ? <UserCourses handleClose={handleClose} child={child} /> : ''}
           {action === 'editUser' ? <Update handleClose={handleClose} child={child} /> : ''}
           {action === 'createUser' ? <Create handleClose={handleClose} /> : ''}
           {action === 'showExport' ? <ExportUser handleClose={handleClose} /> : ''}
@@ -155,20 +165,18 @@ const ManageUsersWidget: React.FC<React.PropsWithChildren<Props>> = ({
           onChange={(e: any) => setSearch(e.target.value)}
         />
         {/* <InputGroup.Append> */}
-        <Button variant='outline-secondary' onClick={searchUser}>
+        <Button variant='info' onClick={searchUser}>
           Pesquisar
         </Button>
         {/* </InputGroup.Append> */}
       </InputGroup>
       <div style={{marginLeft: 5}}>A pesquisa retornou: {count} dados</div>
-      {!search ? (
+      {!search && (
         <div style={{marginLeft: 5}}>
           Mostrando: {(+page! - 1) * +take! + 1} - {(+page! - 1) * +take! + +length!}
         </div>
-      ) : (
-        ''
       )}
-      <div>{users.error ? 'Tem erro' : ''}</div>
+      {users.error && <div>{JSON.stringify(users.error.message)}</div>}
       <br />
       <div className={`card ${className}`}>
         {/* begin::Header */}
@@ -185,7 +193,7 @@ const ManageUsersWidget: React.FC<React.PropsWithChildren<Props>> = ({
             //style={{width: '100%'}}
           >
             <a
-              href='#'
+              href='#!'
               className='btn btn-sm btn-light-success'
               // data-bs-toggle='modal'
               // data-bs-target='#kt_modal_invite_friends'
@@ -196,7 +204,7 @@ const ManageUsersWidget: React.FC<React.PropsWithChildren<Props>> = ({
             </a>
             &nbsp;&nbsp;
             <a
-              href='#'
+              href='#!'
               className='btn btn-sm btn-light-primary'
               // data-bs-toggle='modal'
               // data-bs-target='#kt_modal_invite_friends'
@@ -207,7 +215,7 @@ const ManageUsersWidget: React.FC<React.PropsWithChildren<Props>> = ({
             </a>
             &nbsp;&nbsp;
             <a
-              href='#'
+              href='#!'
               className='btn btn-sm btn-light-info'
               // data-bs-toggle='modal'
               // data-bs-target='#kt_modal_invite_friends'
@@ -243,22 +251,22 @@ const ManageUsersWidget: React.FC<React.PropsWithChildren<Props>> = ({
                   <th className='min-w-140px'>Email</th>
                   <th className='min-w-120px'>Whatsapp</th>
                   <th className='min-w-120px'>Criação</th>
-                  <th className='min-w-120px'>Último Login</th>
+                  <th className='min-w-120px'>Login</th>
                   {/* <th className='min-w-120px'>Última aula assistida</th> */}
-                  <th className='min-w-120px'>Status</th>
+                  <th className='min-w-120px'>Turma</th>
                 </tr>
               </thead>
               {/* end::Table head */}
               {/* begin::Table body */}
               <tbody>
                 {users.data?.map((child, index) => {
-                  var createdAt = MOMENT(Number(child.createdAt) * 1000) //.format('DD/MM/YYYY HH:mm')
-                  var last_login_at = child.last_login_at
-                    ? MOMENT(Number(child.last_login_at) * 1000)
-                    : '' //.format('DD/MM/YYYY HH:mm')
+                  console.log('CHILD', child)
+                  //let dateCreatedAt = child.createdAt
+                  var createdAt = MOMENT(child.createdAt) //.format('DD/MM/YYYY HH:mm')
+                  var lastLoginAt = child.lastLoginAt ? MOMENT(child.lastLoginAt) : '' //.format('DD/MM/YYYY HH:mm')
                   var now = MOMENT(Date()) //.format('DD/MM/YYYY HH:mm')
                   const regex = /\('([^']+)',\)/g
-                  const whats = '55' + child.profile?.whatsapp?.replace(/[|&;$%@"<>()+,-]/g, '')
+                  const whats = '55' + child.whatsapp?.replace(/[|&;$%@"<>()+,-]/g, '')
                   let check = users.selectedUsers?.filter((item) => item.id === child.id)
                   let defaultChecked = check.length || isAllChecked ? true : false
 
@@ -299,12 +307,12 @@ const ManageUsersWidget: React.FC<React.PropsWithChildren<Props>> = ({
                           <div className='symbol symbol-45px me-5'>
                             {/* <img src={'https://labiopalatina.com.br/files/1678819623100-vf.jpg'} alt='' /> */}
                             <img
-                              //src={users.user.profile?.image}
+                              //src={users.user.image}
                               //src={ image?.includes('https://') ? image : '../../files/' + image}
                               src={
                                 child.image?.includes('https://')
                                   ? child.image
-                                  : 'https://labiopalatina.com.br/files/' + child.image
+                                  : 'http://localhost:3000/upload/file/' + child.image
                               }
                               style={{width: '100%'}}
                               onError={({currentTarget}) => {
@@ -330,7 +338,7 @@ const ManageUsersWidget: React.FC<React.PropsWithChildren<Props>> = ({
                         </div>
                       </td>
                       <td>
-                        {/* <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                        {/* <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                           Intertico
                         </a> */}
                         <span className='text-muted fw-bold text-muted d-block fs-7'>
@@ -338,7 +346,7 @@ const ManageUsersWidget: React.FC<React.PropsWithChildren<Props>> = ({
                         </span>
                       </td>
                       <td>
-                        {/* <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                        {/* <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                           Intertico
                         </a> */}
                         <span className='text-muted fw-bold text-muted d-block fs-7'>
@@ -348,7 +356,7 @@ const ManageUsersWidget: React.FC<React.PropsWithChildren<Props>> = ({
                         </span>
                       </td>
                       <td>
-                        {/* <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                        {/* <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                           Intertico
                         </a> */}
                         <span className='text-muted fw-bold text-muted d-block fs-7'>
@@ -364,15 +372,15 @@ const ManageUsersWidget: React.FC<React.PropsWithChildren<Props>> = ({
                         </span>
                       </td>
                       <td>
-                        {/* <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                        {/* <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                           Intertico
                         </a> */}
                         <span className='text-muted fw-bold text-muted d-block fs-7'>
-                          {last_login_at ? last_login_at?.format('DD/MM/YYYY HH:mm') : ''}
+                          {lastLoginAt ? lastLoginAt?.format('DD/MM/YYYY HH:mm') : ''}
                         </span>
                       </td>
                       {/* <td>
-                        {/* <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                        {/* <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                           Intertico
                         </a> *x/}
                         <span className='text-muted fw-bold text-muted d-block fs-7'>
@@ -380,18 +388,28 @@ const ManageUsersWidget: React.FC<React.PropsWithChildren<Props>> = ({
                         </span>
                       </td> */}
                       <td>
-                        {/* <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                        {/* <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                           Intertico
                         </a> */}
                         <span className='text-muted fw-bold text-muted d-block fs-7'>
-                          {child.num_turma}
+                          {child.numTurma}
                         </span>
                       </td>
 
                       <td>
                         <div className='d-flex justify-content-end flex-shrink-0'>
                           <a
-                            href='#'
+                            href='#!'
+                            onClick={() => userCourses(child)}
+                            className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
+                          >
+                            <KTSVG
+                              path='/media/icons/duotune/general/gen019.svg'
+                              className='svg-icon-3'
+                            />
+                          </a>
+                          <a
+                            href='#!'
                             onClick={() => infoUser(child)}
                             className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                           >
@@ -401,7 +419,7 @@ const ManageUsersWidget: React.FC<React.PropsWithChildren<Props>> = ({
                             />
                           </a>
                           <a
-                            href='#'
+                            href='#!'
                             onClick={() => updateUser(child)}
                             className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                           >
@@ -411,7 +429,7 @@ const ManageUsersWidget: React.FC<React.PropsWithChildren<Props>> = ({
                             />
                           </a>
                           <a
-                            href='#'
+                            href='#!'
                             onClick={() => {
                               if (
                                 window.confirm('Deseja realmente excluir: ' + child.username + '?')

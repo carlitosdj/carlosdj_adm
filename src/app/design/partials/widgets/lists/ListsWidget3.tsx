@@ -43,7 +43,7 @@ const ListsWidget3: React.FC<Props> = ({className}) => {
           {/* end::Checkbox */}
           {/* begin::Description */}
           <div className='flex-grow-1'>
-            <a href='#' className='text-gray-800 text-hover-primary fw-bolder fs-6'>
+            <a href='#!' className='text-gray-800 text-hover-primary fw-bolder fs-6'>
               Create FireStone Logo
             </a>
             <span className='text-muted fw-bold d-block'>Due in 2 Days</span>
@@ -64,7 +64,7 @@ const ListsWidget3: React.FC<Props> = ({className}) => {
           {/* end::Checkbox */}
           {/* begin::Description */}
           <div className='flex-grow-1'>
-            <a href='#' className='text-gray-800 text-hover-primary fw-bolder fs-6'>
+            <a href='#!' className='text-gray-800 text-hover-primary fw-bolder fs-6'>
               Stakeholder Meeting
             </a>
             <span className='text-muted fw-bold d-block'>Due in 3 Days</span>
@@ -85,7 +85,7 @@ const ListsWidget3: React.FC<Props> = ({className}) => {
           {/* end::Checkbox */}
           {/* begin::Description */}
           <div className='flex-grow-1'>
-            <a href='#' className='text-gray-800 text-hover-primary fw-bolder fs-6'>
+            <a href='#!' className='text-gray-800 text-hover-primary fw-bolder fs-6'>
               Scoping &amp; Estimations
             </a>
             <span className='text-muted fw-bold d-block'>Due in 5 Days</span>
@@ -106,7 +106,7 @@ const ListsWidget3: React.FC<Props> = ({className}) => {
           {/* end::Checkbox */}
           {/* begin::Description */}
           <div className='flex-grow-1'>
-            <a href='#' className='text-gray-800 text-hover-primary fw-bolder fs-6'>
+            <a href='#!' className='text-gray-800 text-hover-primary fw-bolder fs-6'>
               KPI App Showcase
             </a>
             <span className='text-muted fw-bold d-block'>Due in 2 Days</span>
@@ -127,7 +127,7 @@ const ListsWidget3: React.FC<Props> = ({className}) => {
           {/* end::Checkbox */}
           {/* begin::Description */}
           <div className='flex-grow-1'>
-            <a href='#' className='text-gray-800 text-hover-primary fw-bolder fs-6'>
+            <a href='#!' className='text-gray-800 text-hover-primary fw-bolder fs-6'>
               Project Meeting
             </a>
             <span className='text-muted fw-bold d-block'>Due in 12 Days</span>
@@ -148,7 +148,7 @@ const ListsWidget3: React.FC<Props> = ({className}) => {
           {/* end::Checkbox */}
           {/* begin::Description */}
           <div className='flex-grow-1'>
-            <a href='#' className='text-gray-800 text-hover-primary fw-bolder fs-6'>
+            <a href='#!' className='text-gray-800 text-hover-primary fw-bolder fs-6'>
               Customers Update
             </a>
             <span className='text-muted fw-bold d-block'>Due in 1 week</span>

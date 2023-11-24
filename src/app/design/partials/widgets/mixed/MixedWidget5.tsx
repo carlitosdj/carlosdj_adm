@@ -29,7 +29,7 @@ const MixedWidget5: React.FC<Props> = ({className, time, image, title, descripti
           {/* end::Info */}
 
           {/* begin::Link */}
-          <a href='#' className='text-dark fw-bolder text-hover-primary fs-4'>
+          <a href='#!' className='text-dark fw-bolder text-hover-primary fs-4'>
             {title}
           </a>
           {/* end::Link */}
@@ -42,7 +42,7 @@ const MixedWidget5: React.FC<Props> = ({className, time, image, title, descripti
         {/* begin::Team */}
         <div className='d-flex align-items-center'>
           <a
-            href='#'
+            href='#!'
             className='symbol symbol-35px me-2'
             data-bs-toggle='tooltip'
             title='Ana Stone'
@@ -51,7 +51,7 @@ const MixedWidget5: React.FC<Props> = ({className, time, image, title, descripti
           </a>
 
           <a
-            href='#'
+            href='#!'
             className='symbol symbol-35px me-2'
             data-bs-toggle='tooltip'
             title='Mark Larson'
@@ -60,7 +60,7 @@ const MixedWidget5: React.FC<Props> = ({className, time, image, title, descripti
           </a>
 
           <a
-            href='#'
+            href='#!'
             className='symbol symbol-35px me-2'
             data-bs-toggle='tooltip'
             title='Sam Harris'

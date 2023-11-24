@@ -128,21 +128,21 @@ const ManageItemExtraWidget: React.FC<React.PropsWithChildren<Props>> = ({classN
               data-bs-trigger='hover'
               style={{width: '100%'}}
             >
-              <a href='#' className='btn btn-sm btn-light-primary' onClick={() => createExtra()}>
+              <a href='#!' className='btn btn-sm btn-light-primary' onClick={() => createExtra()}>
                 <KTSVG path='media/icons/duotune/arrows/arr075.svg' className='svg-icon-3' />
                 Novo item
               </a>
               &nbsp;&nbsp;
-              {/* <a href='#' className='btn btn-sm btn-light-primary' onClick={() => createExtraVideo()}>
+              {/* <a href='#!' className='btn btn-sm btn-light-primary' onClick={() => createExtraVideo()}>
                 <KTSVG path='media/icons/duotune/arrows/arr075.svg' className='svg-icon-3' />
                 Novo Vídeo
               </a> */}
-              <a href='#' className='btn btn-sm btn-light-primary' onClick={() => createExtraImg()}>
+              <a href='#!' className='btn btn-sm btn-light-primary' onClick={() => createExtraImg()}>
                 <KTSVG path='media/icons/duotune/arrows/arr075.svg' className='svg-icon-3' />
                 Nova imagem
               </a>
               &nbsp;&nbsp;
-              <a href='#' className='btn btn-sm btn-light-primary' onClick={() => createExtraFile()}>
+              <a href='#!' className='btn btn-sm btn-light-primary' onClick={() => createExtraFile()}>
                 <KTSVG path='media/icons/duotune/arrows/arr075.svg' className='svg-icon-3' />
                 Novo Arquivo
               </a>
@@ -207,7 +207,7 @@ const ManageItemExtraWidget: React.FC<React.PropsWithChildren<Props>> = ({classN
                         </div>
                       </td>
                       <td>
-                        {/* <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                        {/* <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                         Intertico
                       </a> */}
                         <span className='text-muted fw-bold text-muted d-block fs-7'>
@@ -215,7 +215,7 @@ const ManageItemExtraWidget: React.FC<React.PropsWithChildren<Props>> = ({classN
                         </span>
                       </td>
                       {/* <td>
-                        {/* <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                        {/* <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                         Intertico
                       </a> *x/}
                         <span className='text-muted fw-bold text-muted d-block fs-7'>
@@ -237,7 +237,7 @@ const ManageItemExtraWidget: React.FC<React.PropsWithChildren<Props>> = ({classN
                       <td>
                         <div className='d-flex justify-content-end flex-shrink-0'>
                           {/* <a
-                          href='#'
+                          href='#!'
                           onClick={() => history.push('/manage/'+child.id)} 
                           className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                         >
@@ -247,7 +247,7 @@ const ManageItemExtraWidget: React.FC<React.PropsWithChildren<Props>> = ({classN
                           />
                         </a> */}
                           <a
-                            href='#'
+                            href='#!'
                             onClick={() => updateExtra(extra)}
                             className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                           >
@@ -257,7 +257,7 @@ const ManageItemExtraWidget: React.FC<React.PropsWithChildren<Props>> = ({classN
                             />
                           </a>
                           <a
-                            href='#'
+                            href='#!'
                             onClick={() => {
                               if (window.confirm('Are you sure you wish to delete this item?'))
                                 deleteExtra(extra)

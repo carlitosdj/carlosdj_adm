@@ -83,7 +83,7 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Brad Simmons
                       </a>
                       <span className='text-muted fw-bold d-block'>Movie Creator</span>
@@ -94,7 +94,7 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
                     </td>
                     <td className='text-end'>
                       <a
-                        href='#'
+                        href='#!'
                         className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
                       >
                         <KTSVG
@@ -117,7 +117,7 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Popular Authors
                       </a>
                       <span className='text-muted fw-bold d-block'>Most Successful</span>
@@ -128,7 +128,7 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
                     </td>
                     <td className='text-end'>
                       <a
-                        href='#'
+                        href='#!'
                         className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
                       >
                         <KTSVG
@@ -151,7 +151,7 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         New Users
                       </a>
                       <span className='text-muted fw-bold d-block'>Awesome Users</span>
@@ -162,7 +162,7 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
                     </td>
                     <td className='text-end'>
                       <a
-                        href='#'
+                        href='#!'
                         className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
                       >
                         <KTSVG
@@ -185,7 +185,7 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Active Customers
                       </a>
                       <span className='text-muted fw-bold d-block'>Movie Creator</span>
@@ -196,7 +196,7 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
                     </td>
                     <td className='text-end'>
                       <a
-                        href='#'
+                        href='#!'
                         className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
                       >
                         <KTSVG
@@ -219,7 +219,7 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Bestseller Theme
                       </a>
                       <span className='text-muted fw-bold d-block'>Best Customers</span>
@@ -230,7 +230,7 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
                     </td>
                     <td className='text-end'>
                       <a
-                        href='#'
+                        href='#!'
                         className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
                       >
                         <KTSVG
@@ -279,7 +279,7 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Brad Simmons
                       </a>
                       <span className='text-muted fw-bold d-block'>Movie Creator</span>
@@ -290,7 +290,7 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
                     </td>
                     <td className='text-end'>
                       <a
-                        href='#'
+                        href='#!'
                         className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
                       >
                         <KTSVG
@@ -313,7 +313,7 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Popular Authors
                       </a>
                       <span className='text-muted fw-bold d-block'>Most Successful</span>
@@ -324,7 +324,7 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
                     </td>
                     <td className='text-end'>
                       <a
-                        href='#'
+                        href='#!'
                         className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
                       >
                         <KTSVG
@@ -347,7 +347,7 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Active Customers
                       </a>
                       <span className='text-muted fw-bold d-block'>Movie Creator</span>
@@ -358,7 +358,7 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
                     </td>
                     <td className='text-end'>
                       <a
-                        href='#'
+                        href='#!'
                         className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
                       >
                         <KTSVG
@@ -407,7 +407,7 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Bestseller Theme
                       </a>
                       <span className='text-muted fw-bold d-block'>Best Customers</span>
@@ -418,7 +418,7 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
                     </td>
                     <td className='text-end'>
                       <a
-                        href='#'
+                        href='#!'
                         className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
                       >
                         <KTSVG
@@ -441,7 +441,7 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Active Customers
                       </a>
                       <span className='text-muted fw-bold d-block'>Movie Creator</span>
@@ -452,7 +452,7 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
                     </td>
                     <td className='text-end'>
                       <a
-                        href='#'
+                        href='#!'
                         className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
                       >
                         <KTSVG
@@ -475,7 +475,7 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         New Users
                       </a>
                       <span className='text-muted fw-bold d-block'>Awesome Users</span>
@@ -486,7 +486,7 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
                     </td>
                     <td className='text-end'>
                       <a
-                        href='#'
+                        href='#!'
                         className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
                       >
                         <KTSVG
@@ -509,7 +509,7 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Popular Authors
                       </a>
                       <span className='text-muted fw-bold d-block'>Most Successful</span>
@@ -520,7 +520,7 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
                     </td>
                     <td className='text-end'>
                       <a
-                        href='#'
+                        href='#!'
                         className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
                       >
                         <KTSVG

@@ -76,7 +76,7 @@ const TablesWidget4: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Brad Simmons
                       </a>
                       <span className='text-muted fw-bold d-block fs-7'>Movie Creator</span>
@@ -102,10 +102,10 @@ const TablesWidget4: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td className='text-end'>
-                      <a href='#' className='btn btn-icon btn-light-twitter btn-sm me-3'>
+                      <a href='#!' className='btn btn-icon btn-light-twitter btn-sm me-3'>
                         <i className='bi bi-twitter fs-4'></i>
                       </a>
-                      <a href='#' className='btn btn-icon btn-light-facebook btn-sm'>
+                      <a href='#!' className='btn btn-icon btn-light-facebook btn-sm'>
                         <i className='bi bi-facebook fs-4'></i>
                       </a>
                     </td>
@@ -117,7 +117,7 @@ const TablesWidget4: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Jessie Clarcson
                       </a>
                       <span className='text-muted fw-bold d-block fs-7'>HTML, CSS Coding</span>
@@ -143,10 +143,10 @@ const TablesWidget4: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td className='text-end'>
-                      <a href='#' className='btn btn-icon btn-light-twitter btn-sm me-3'>
+                      <a href='#!' className='btn btn-icon btn-light-twitter btn-sm me-3'>
                         <i className='bi bi-twitter fs-4'></i>
                       </a>
-                      <a href='#' className='btn btn-icon btn-light-facebook btn-sm'>
+                      <a href='#!' className='btn btn-icon btn-light-facebook btn-sm'>
                         <i className='bi bi-facebook fs-4'></i>
                       </a>
                     </td>
@@ -158,7 +158,7 @@ const TablesWidget4: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Lebron Wayde
                       </a>
                       <span className='text-muted fw-bold d-block fs-7'>ReactJS Developer</span>
@@ -184,10 +184,10 @@ const TablesWidget4: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td className='text-end'>
-                      <a href='#' className='btn btn-icon btn-light-twitter btn-sm me-3'>
+                      <a href='#!' className='btn btn-icon btn-light-twitter btn-sm me-3'>
                         <i className='bi bi-twitter fs-4'></i>
                       </a>
-                      <a href='#' className='btn btn-icon btn-light-facebook btn-sm'>
+                      <a href='#!' className='btn btn-icon btn-light-facebook btn-sm'>
                         <i className='bi bi-facebook fs-4'></i>
                       </a>
                     </td>
@@ -199,7 +199,7 @@ const TablesWidget4: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Natali Trump
                       </a>
                       <span className='text-muted fw-bold d-block fs-7'>UI/UX Designer</span>
@@ -225,10 +225,10 @@ const TablesWidget4: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td className='text-end'>
-                      <a href='#' className='btn btn-icon btn-light-twitter btn-sm me-3'>
+                      <a href='#!' className='btn btn-icon btn-light-twitter btn-sm me-3'>
                         <i className='bi bi-twitter fs-4'></i>
                       </a>
-                      <a href='#' className='btn btn-icon btn-light-facebook btn-sm'>
+                      <a href='#!' className='btn btn-icon btn-light-facebook btn-sm'>
                         <i className='bi bi-facebook fs-4'></i>
                       </a>
                     </td>
@@ -240,7 +240,7 @@ const TablesWidget4: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Kevin Leonard
                       </a>
                       <span className='text-muted fw-bold d-block fs-7'>Art Director</span>
@@ -266,10 +266,10 @@ const TablesWidget4: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td className='text-end'>
-                      <a href='#' className='btn btn-icon btn-light-twitter btn-sm me-3'>
+                      <a href='#!' className='btn btn-icon btn-light-twitter btn-sm me-3'>
                         <i className='bi bi-twitter fs-4'></i>
                       </a>
-                      <a href='#' className='btn btn-icon btn-light-facebook btn-sm'>
+                      <a href='#!' className='btn btn-icon btn-light-facebook btn-sm'>
                         <i className='bi bi-facebook fs-4'></i>
                       </a>
                     </td>
@@ -306,7 +306,7 @@ const TablesWidget4: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Kevin Leonard
                       </a>
                       <span className='text-muted fw-bold d-block fs-7'>Art Director</span>
@@ -332,10 +332,10 @@ const TablesWidget4: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td className='text-end'>
-                      <a href='#' className='btn btn-icon btn-light-twitter btn-sm me-3'>
+                      <a href='#!' className='btn btn-icon btn-light-twitter btn-sm me-3'>
                         <i className='bi bi-twitter fs-4'></i>
                       </a>
-                      <a href='#' className='btn btn-icon btn-light-facebook btn-sm'>
+                      <a href='#!' className='btn btn-icon btn-light-facebook btn-sm'>
                         <i className='bi bi-facebook fs-4'></i>
                       </a>
                     </td>
@@ -347,7 +347,7 @@ const TablesWidget4: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Natali Trump
                       </a>
                       <span className='text-muted fw-bold d-block fs-7'>UI/UX Designer</span>
@@ -373,10 +373,10 @@ const TablesWidget4: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td className='text-end'>
-                      <a href='#' className='btn btn-icon btn-light-twitter btn-sm me-3'>
+                      <a href='#!' className='btn btn-icon btn-light-twitter btn-sm me-3'>
                         <i className='bi bi-twitter fs-4'></i>
                       </a>
-                      <a href='#' className='btn btn-icon btn-light-facebook btn-sm'>
+                      <a href='#!' className='btn btn-icon btn-light-facebook btn-sm'>
                         <i className='bi bi-facebook fs-4'></i>
                       </a>
                     </td>
@@ -388,7 +388,7 @@ const TablesWidget4: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Jessie Clarcson
                       </a>
                       <span className='text-muted fw-bold d-block fs-7'>HTML, CSS Coding</span>
@@ -414,10 +414,10 @@ const TablesWidget4: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td className='text-end'>
-                      <a href='#' className='btn btn-icon btn-light-twitter btn-sm me-3'>
+                      <a href='#!' className='btn btn-icon btn-light-twitter btn-sm me-3'>
                         <i className='bi bi-twitter fs-4'></i>
                       </a>
-                      <a href='#' className='btn btn-icon btn-light-facebook btn-sm'>
+                      <a href='#!' className='btn btn-icon btn-light-facebook btn-sm'>
                         <i className='bi bi-facebook fs-4'></i>
                       </a>
                     </td>
@@ -429,7 +429,7 @@ const TablesWidget4: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Brad Simmons
                       </a>
                       <span className='text-muted fw-bold d-block fs-7'>Movie Creator</span>
@@ -455,10 +455,10 @@ const TablesWidget4: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td className='text-end'>
-                      <a href='#' className='btn btn-icon btn-light-twitter btn-sm me-3'>
+                      <a href='#!' className='btn btn-icon btn-light-twitter btn-sm me-3'>
                         <i className='bi bi-twitter fs-4'></i>
                       </a>
-                      <a href='#' className='btn btn-icon btn-light-facebook btn-sm'>
+                      <a href='#!' className='btn btn-icon btn-light-facebook btn-sm'>
                         <i className='bi bi-facebook fs-4'></i>
                       </a>
                     </td>
@@ -495,7 +495,7 @@ const TablesWidget4: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Jessie Clarcson
                       </a>
                       <span className='text-muted fw-bold d-block fs-7'>HTML, CSS Coding</span>
@@ -521,10 +521,10 @@ const TablesWidget4: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td className='text-end'>
-                      <a href='#' className='btn btn-icon btn-light-twitter btn-sm me-3'>
+                      <a href='#!' className='btn btn-icon btn-light-twitter btn-sm me-3'>
                         <i className='bi bi-twitter fs-4'></i>
                       </a>
-                      <a href='#' className='btn btn-icon btn-light-facebook btn-sm'>
+                      <a href='#!' className='btn btn-icon btn-light-facebook btn-sm'>
                         <i className='bi bi-facebook fs-4'></i>
                       </a>
                     </td>
@@ -536,7 +536,7 @@ const TablesWidget4: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Lebron Wayde
                       </a>
                       <span className='text-muted fw-bold d-block fs-7'>ReactJS Developer</span>
@@ -562,10 +562,10 @@ const TablesWidget4: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td className='text-end'>
-                      <a href='#' className='btn btn-icon btn-light-twitter btn-sm me-3'>
+                      <a href='#!' className='btn btn-icon btn-light-twitter btn-sm me-3'>
                         <i className='bi bi-twitter fs-4'></i>
                       </a>
-                      <a href='#' className='btn btn-icon btn-light-facebook btn-sm'>
+                      <a href='#!' className='btn btn-icon btn-light-facebook btn-sm'>
                         <i className='bi bi-facebook fs-4'></i>
                       </a>
                     </td>
@@ -577,7 +577,7 @@ const TablesWidget4: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Natali Trump
                       </a>
                       <span className='text-muted fw-bold d-block fs-7'>UI/UX Designer</span>
@@ -603,10 +603,10 @@ const TablesWidget4: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td className='text-end'>
-                      <a href='#' className='btn btn-icon btn-light-twitter btn-sm me-3'>
+                      <a href='#!' className='btn btn-icon btn-light-twitter btn-sm me-3'>
                         <i className='bi bi-twitter fs-4'></i>
                       </a>
-                      <a href='#' className='btn btn-icon btn-light-facebook btn-sm'>
+                      <a href='#!' className='btn btn-icon btn-light-facebook btn-sm'>
                         <i className='bi bi-facebook fs-4'></i>
                       </a>
                     </td>

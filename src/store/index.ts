@@ -20,6 +20,8 @@ import {SupportState} from './ducks/support/types'
 import {WppcampState} from './ducks/wppcamp/types'
 import {WppgroupState} from './ducks/wppgroup/types'
 import { ContactState } from './ducks/contact/types'
+import { CityState } from './ducks/city/types'
+import { StateState } from './ducks/state/types'
 // import { AulaConcluidaState } from './ducks/aulaconcluida/types';
 
 export interface ApplicationState {
@@ -39,6 +41,8 @@ export interface ApplicationState {
   wppcamp: WppcampState
   wppgroup: WppgroupState
   contact: ContactState
+  city: CityState
+  state: StateState
   // aulaconcluida: AulaConcluidaState,
 }
 

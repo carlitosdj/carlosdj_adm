@@ -3,6 +3,8 @@ import React, {FC} from 'react'
 import {KTSVG, toAbsoluteUrl} from '../../../helpers'
 import {HeaderUserMenu} from '../../../partials'
 import {useLayout} from '../../core'
+import { useSelector } from 'react-redux'
+import { ApplicationState } from '../../../../../store'
 
 const toolbarButtonMarginClass = 'ms-1 ms-lg-3',
   // toolbarButtonHeightClass = 'w-30px h-30px w-md-40px h-md-40px',
@@ -11,6 +13,8 @@ const toolbarButtonMarginClass = 'ms-1 ms-lg-3',
 
 const Topbar: FC<React.PropsWithChildren<unknown>> = () => {
   const {config} = useLayout()
+  const me = useSelector((state: ApplicationState) => state.me)
+  const image = me.me.image
 
   return (
     <div className='d-flex align-items-stretch flex-shrink-0'>
@@ -106,7 +110,15 @@ const Topbar: FC<React.PropsWithChildren<unknown>> = () => {
           data-kt-menu-placement='bottom-end'
           data-kt-menu-flip='bottom'
         >
-          <img src={toAbsoluteUrl('/media/avatars/blank.png')} alt='metronic' />
+          <img 
+            src={ image?.includes('https://') ? image : 'http://localhost:3000/upload/file/' + image}
+            //style={{width: '40px', height:'40px'}}
+            className=''
+            onError={({ currentTarget }) => {
+              currentTarget.onerror = null; // prevents looping
+              currentTarget.src="https://labiopalatina.com.br/media/guestuser.jpg";
+            }}
+            />
         </div>
         <HeaderUserMenu />
         {/* end::Toggle */}

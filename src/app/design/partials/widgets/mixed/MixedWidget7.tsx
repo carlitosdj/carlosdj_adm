@@ -72,7 +72,7 @@ const MixedWidget7: React.FC<Props> = ({className, chartColor, chartHeight}) => 
             to approve newly amended policies
           </p>
 
-          <a href='#' className={`btn btn-${chartColor} w-100 py-3`}>
+          <a href='#!' className={`btn btn-${chartColor} w-100 py-3`}>
             Take Action
           </a>
         </div>

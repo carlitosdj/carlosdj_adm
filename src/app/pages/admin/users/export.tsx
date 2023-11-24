@@ -54,19 +54,19 @@ const ExportUser = ({handleClose}: handleCloseProps) => {
             var now = MOMENT(Date()) //.format('DD/MM/YYYY HH:mm')
             var src = /^(\d{3})(\d{3})(\d{3})(\d{2})$/
             var dst = '$1.$2.$3-$4'
-            var cpfformat = user.profile?.cpf?.replace(src, dst)
+            var cpfformat = user.cpf?.replace(src, dst)
             return (
               <div>
                 
                   
-              <h1>{user.profile?.name}</h1>
+              <h1>{user.name}</h1>
               <span className='text-dark fw-bolder fs-6'>Email: {user.email}</span>
               <br/>
-              <span className='text-dark fw-bolder fs-6'>Whatsapp: {user.profile?.whatsapp}</span>
+              <span className='text-dark fw-bolder fs-6'>Whatsapp: {user.whatsapp}</span>
               <br/>
               <span className='text-dark fw-bolder fs-6'>CPF: {cpfformat}</span>
               <br/>
-              <span className='text-dark fw-bolder fs-6'>Endereço: {user.profile?.address}, {user.profile?.addressNumber}, {user.profile?.addressDistrict} - {user.profile?.addressCity} / {user.profile?.addressState} / {user.profile?.addressCountry} - {user.profile?.postalCode}</span>
+              <span className='text-dark fw-bolder fs-6'>Endereço: {user.address}, {user.addressNumber}, {user.addressDistrict} - {user.addressCity} / {user.addressState} / {user.addressCountry} - {user.postalCode}</span>
               <br/>
               <span className='text-dark fw-bolder fs-6'>Última renovação: {createdAt!.format('DD/MM/YYYY HH:mm')}</span>
               <br/><br/><br/>

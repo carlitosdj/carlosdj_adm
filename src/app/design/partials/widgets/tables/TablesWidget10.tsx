@@ -23,7 +23,7 @@ const TablesWidget10: React.FC<Props> = ({className}) => {
           title='Click to add a user'
         >
           <a
-            href='#'
+            href='#!'
             className='btn btn-sm btn-light-primary'
             // data-bs-toggle='modal'
             // data-bs-target='#kt_modal_invite_friends'
@@ -75,7 +75,7 @@ const TablesWidget10: React.FC<Props> = ({className}) => {
                       <img src={toAbsoluteUrl('/media/avatars/150-11.jpg')} alt='' />
                     </div>
                     <div className='d-flex justify-content-start flex-column'>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary fs-6'>
                         Ana Simmons
                       </a>
                       <span className='text-muted fw-bold text-muted d-block fs-7'>
@@ -85,7 +85,7 @@ const TablesWidget10: React.FC<Props> = ({className}) => {
                   </div>
                 </td>
                 <td>
-                  <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                  <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                     Intertico
                   </a>
                   <span className='text-muted fw-bold text-muted d-block fs-7'>
@@ -109,7 +109,7 @@ const TablesWidget10: React.FC<Props> = ({className}) => {
                 <td>
                   <div className='d-flex justify-content-end flex-shrink-0'>
                     <a
-                      href='#'
+                      href='#!'
                       className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                     >
                       <KTSVG
@@ -118,13 +118,13 @@ const TablesWidget10: React.FC<Props> = ({className}) => {
                       />
                     </a>
                     <a
-                      href='#'
+                      href='#!'
                       className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                     >
                       <KTSVG path='/media/icons/duotune/art/art005.svg' className='svg-icon-3' />
                     </a>
                     <a
-                      href='#'
+                      href='#!'
                       className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'
                     >
                       <KTSVG
@@ -147,7 +147,7 @@ const TablesWidget10: React.FC<Props> = ({className}) => {
                       <img src={toAbsoluteUrl('/media/avatars/150-3.jpg')} alt='' />
                     </div>
                     <div className='d-flex justify-content-start flex-column'>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary fs-6'>
                         Jessie Clarcson
                       </a>
                       <span className='text-muted fw-bold text-muted d-block fs-7'>
@@ -157,7 +157,7 @@ const TablesWidget10: React.FC<Props> = ({className}) => {
                   </div>
                 </td>
                 <td>
-                  <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                  <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                     Agoda
                   </a>
                   <span className='text-muted fw-bold text-muted d-block fs-7'>
@@ -181,7 +181,7 @@ const TablesWidget10: React.FC<Props> = ({className}) => {
                 <td>
                   <div className='d-flex justify-content-end flex-shrink-0'>
                     <a
-                      href='#'
+                      href='#!'
                       className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                     >
                       <KTSVG
@@ -190,13 +190,13 @@ const TablesWidget10: React.FC<Props> = ({className}) => {
                       />
                     </a>
                     <a
-                      href='#'
+                      href='#!'
                       className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                     >
                       <KTSVG path='/media/icons/duotune/art/art005.svg' className='svg-icon-3' />
                     </a>
                     <a
-                      href='#'
+                      href='#!'
                       className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'
                     >
                       <KTSVG
@@ -219,7 +219,7 @@ const TablesWidget10: React.FC<Props> = ({className}) => {
                       <img src={toAbsoluteUrl('/media/avatars/150-4.jpg')} alt='' />
                     </div>
                     <div className='d-flex justify-content-start flex-column'>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary fs-6'>
                         Lebron Wayde
                       </a>
                       <span className='text-muted fw-bold text-muted d-block fs-7'>
@@ -229,7 +229,7 @@ const TablesWidget10: React.FC<Props> = ({className}) => {
                   </div>
                 </td>
                 <td>
-                  <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                  <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                     RoadGee
                   </a>
                   <span className='text-muted fw-bold text-muted d-block fs-7'>Transportation</span>
@@ -251,7 +251,7 @@ const TablesWidget10: React.FC<Props> = ({className}) => {
                 <td>
                   <div className='d-flex justify-content-end flex-shrink-0'>
                     <a
-                      href='#'
+                      href='#!'
                       className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                     >
                       <KTSVG
@@ -260,13 +260,13 @@ const TablesWidget10: React.FC<Props> = ({className}) => {
                       />
                     </a>
                     <a
-                      href='#'
+                      href='#!'
                       className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                     >
                       <KTSVG path='/media/icons/duotune/art/art005.svg' className='svg-icon-3' />
                     </a>
                     <a
-                      href='#'
+                      href='#!'
                       className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'
                     >
                       <KTSVG
@@ -289,7 +289,7 @@ const TablesWidget10: React.FC<Props> = ({className}) => {
                       <img src={toAbsoluteUrl('/media/avatars/150-5.jpg')} alt='' />
                     </div>
                     <div className='d-flex justify-content-start flex-column'>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary fs-6'>
                         Natali Goodwin
                       </a>
                       <span className='text-muted fw-bold text-muted d-block fs-7'>
@@ -299,7 +299,7 @@ const TablesWidget10: React.FC<Props> = ({className}) => {
                   </div>
                 </td>
                 <td>
-                  <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                  <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                     The Hill
                   </a>
                   <span className='text-muted fw-bold text-muted d-block fs-7'>Insurance</span>
@@ -321,7 +321,7 @@ const TablesWidget10: React.FC<Props> = ({className}) => {
                 <td>
                   <div className='d-flex justify-content-end flex-shrink-0'>
                     <a
-                      href='#'
+                      href='#!'
                       className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                     >
                       <KTSVG
@@ -330,13 +330,13 @@ const TablesWidget10: React.FC<Props> = ({className}) => {
                       />
                     </a>
                     <a
-                      href='#'
+                      href='#!'
                       className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                     >
                       <KTSVG path='/media/icons/duotune/art/art005.svg' className='svg-icon-3' />
                     </a>
                     <a
-                      href='#'
+                      href='#!'
                       className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'
                     >
                       <KTSVG
@@ -359,7 +359,7 @@ const TablesWidget10: React.FC<Props> = ({className}) => {
                       <img src={toAbsoluteUrl('/media/avatars/150-6.jpg')} alt='' />
                     </div>
                     <div className='d-flex justify-content-start flex-column'>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary fs-6'>
                         Kevin Leonard
                       </a>
                       <span className='text-muted fw-bold text-muted d-block fs-7'>
@@ -369,7 +369,7 @@ const TablesWidget10: React.FC<Props> = ({className}) => {
                   </div>
                 </td>
                 <td>
-                  <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                  <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                     RoadGee
                   </a>
                   <span className='text-muted fw-bold text-muted d-block fs-7'>Art Director</span>
@@ -391,7 +391,7 @@ const TablesWidget10: React.FC<Props> = ({className}) => {
                 <td>
                   <div className='d-flex justify-content-end flex-shrink-0'>
                     <a
-                      href='#'
+                      href='#!'
                       className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                     >
                       <KTSVG
@@ -400,13 +400,13 @@ const TablesWidget10: React.FC<Props> = ({className}) => {
                       />
                     </a>
                     <a
-                      href='#'
+                      href='#!'
                       className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                     >
                       <KTSVG path='/media/icons/duotune/art/art005.svg' className='svg-icon-3' />
                     </a>
                     <a
-                      href='#'
+                      href='#!'
                       className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'
                     >
                       <KTSVG

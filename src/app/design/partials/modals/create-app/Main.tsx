@@ -574,7 +574,7 @@ const Main: FC<React.PropsWithChildren<unknown>> = () => {
 
                             <div className='text-gray-400 fw-bold fs-6'>
                               If you need more info, please check out
-                              <a href='#' className='text-primary fw-bolder'>
+                              <a href='#!' className='text-primary fw-bolder'>
                                 Help Page
                               </a>
                               .

@@ -12,13 +12,13 @@ const Dropdown3: FC = () => {
       </div>
 
       <div className='menu-item px-3'>
-        <a href='#' className='menu-link px-3'>
+        <a href='#!' className='menu-link px-3'>
           Create Invoice
         </a>
       </div>
 
       <div className='menu-item px-3'>
-        <a href='#' className='menu-link flex-stack px-3'>
+        <a href='#!' className='menu-link flex-stack px-3'>
           Create Payment
           <i
             className='fas fa-exclamation-circle ms-2 fs-7'
@@ -29,7 +29,7 @@ const Dropdown3: FC = () => {
       </div>
 
       <div className='menu-item px-3'>
-        <a href='#' className='menu-link px-3'>
+        <a href='#!' className='menu-link px-3'>
           Generate Bill
         </a>
       </div>
@@ -40,26 +40,26 @@ const Dropdown3: FC = () => {
         data-kt-menu-placement='left-start'
         data-kt-menu-flip='center, top'
       >
-        <a href='#' className='menu-link px-3'>
+        <a href='#!' className='menu-link px-3'>
           <span className='menu-title'>Subscription</span>
           <span className='menu-arrow'></span>
         </a>
 
         <div className='menu-sub menu-sub-dropdown w-175px py-4'>
           <div className='menu-item px-3'>
-            <a href='#' className='menu-link px-3'>
+            <a href='#!' className='menu-link px-3'>
               Plans
             </a>
           </div>
 
           <div className='menu-item px-3'>
-            <a href='#' className='menu-link px-3'>
+            <a href='#!' className='menu-link px-3'>
               Billing
             </a>
           </div>
 
           <div className='menu-item px-3'>
-            <a href='#' className='menu-link px-3'>
+            <a href='#!' className='menu-link px-3'>
               Statements
             </a>
           </div>
@@ -85,7 +85,7 @@ const Dropdown3: FC = () => {
       </div>
 
       <div className='menu-item px-3 my-1'>
-        <a href='#' className='menu-link px-3'>
+        <a href='#!' className='menu-link px-3'>
           Settings
         </a>
       </div>

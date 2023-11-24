@@ -124,7 +124,7 @@ const InviteUsers: FC<React.PropsWithChildren<unknown>> = () => {
 
               <div className='text-muted fw-bold fs-5'>
                 If you need more info, please check out
-                <a href='#' className='link-primary fw-bolder'>
+                <a href='#!' className='link-primary fw-bolder'>
                   {' '}
                   FAQ Page
                 </a>
@@ -177,7 +177,7 @@ const InviteUsers: FC<React.PropsWithChildren<unknown>> = () => {
 
                         <div className='ms-5'>
                           <a
-                            href='#'
+                            href='#!'
                             className='fs-5 fw-bolder text-gray-900 text-hover-primary mb-2'
                           >
                             {user.name}

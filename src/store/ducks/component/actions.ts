@@ -1,5 +1,5 @@
 import {action} from 'typesafe-actions'
-import {ComponentTypes} from './types'
+import {ComponentAccess, ComponentTypes} from './types'
 import {AulaConcluidaTypes, AulaConcluida} from '../aulaconcluida/types'
 import {Component} from './types'
 import {Extras} from '../extras/types'
@@ -9,11 +9,20 @@ export const loadComponentRequest = (id: string, sort: string) =>
   action(ComponentTypes.LOAD_COMPONENT_REQUEST, {id, sort})
 export const loadComponentSuccess = (data: Component) =>
   action(ComponentTypes.LOAD_COMPONENT_SUCCESS, data)
-export const loadComponentFailure = (err: any[]) => action(ComponentTypes.LOAD_COMPONENT_FAILURE, err)
+export const loadComponentFailure = (err: any[]) =>
+  action(ComponentTypes.LOAD_COMPONENT_FAILURE, err)
+
+//Load
+export const loadComponentWithAccessRequest = (id: string, userId: string, sort: string) =>
+  action(ComponentTypes.LOAD_COMPONENT_WITH_ACCESS_REQUEST, {id, userId, sort})
+export const loadComponentWithAccessSuccess = (data: Component) =>
+  action(ComponentTypes.LOAD_COMPONENT_WITH_ACCESS_SUCCESS, data)
+export const loadComponentWithAccessFailure = (err: any[]) =>
+  action(ComponentTypes.LOAD_COMPONENT_WITH_ACCESS_FAILURE, err)
 
 //Load Modules
-export const loadModulesRequest = (id: string, user_id: number, num_turma: number) =>
-  action(ComponentTypes.LOAD_MODULES_REQUEST, {id, user_id, num_turma})
+export const loadModulesRequest = (id: string, user_id: number, numTurma: number) =>
+  action(ComponentTypes.LOAD_MODULES_REQUEST, {id, user_id, numTurma})
 export const loadModulesSuccess = (data: Component) =>
   action(ComponentTypes.LOAD_MODULES_SUCCESS, data)
 export const loadModulesFailure = (err: any[]) => action(ComponentTypes.LOAD_MODULES_FAILURE, err)
@@ -30,7 +39,8 @@ export const loadLastClassRequest = (user_id: number) =>
   action(ComponentTypes.LOAD_LASTCLASS_REQUEST, {user_id})
 export const loadLastClassSuccess = (data: Component) =>
   action(ComponentTypes.LOAD_LASTCLASS_SUCCESS, data)
-export const loadLastClassFailure = (err: any[]) => action(ComponentTypes.LOAD_LASTCLASS_FAILURE, err)
+export const loadLastClassFailure = (err: any[]) =>
+  action(ComponentTypes.LOAD_LASTCLASS_FAILURE, err)
 
 //Load Component by Description
 export const loadComponentByDescriptionRequest = (id: string) =>
@@ -48,19 +58,37 @@ export const createComponentSuccess = (data: Component) =>
 export const createComponentFailure = (err: any[]) =>
   action(ComponentTypes.CREATE_COMPONENT_FAILURE, err)
 
+//Create access
+export const createComponentAccessRequest = (access: ComponentAccess) =>
+  action(ComponentTypes.CREATE_COMPONENTACCESS_REQUEST, access)
+export const createComponentAccessSuccess = (data: ComponentAccess) =>
+  action(ComponentTypes.CREATE_COMPONENTACCESS_SUCCESS, data)
+export const createComponentAccessFailure = (err: any[]) =>
+  action(ComponentTypes.CREATE_COMPONENTACCESS_FAILURE, err)
+
 //Update Component
 export const updateComponentRequest = (componentToUpdate: Component) =>
   action(ComponentTypes.UPDATE_COMPONENT_REQUEST, componentToUpdate)
 export const updateComponentSuccess = (data: Component) =>
   action(ComponentTypes.UPDATE_COMPONENT_SUCCESS, data)
-export const updateComponentFailure = (err: any[]) => action(ComponentTypes.UPDATE_COMPONENT_FAILURE, err)
+export const updateComponentFailure = (err: any[]) =>
+  action(ComponentTypes.UPDATE_COMPONENT_FAILURE, err)
+
+//Update access
+export const updateComponentAccessRequest = (access: ComponentAccess) =>
+  action(ComponentTypes.UPDATE_COMPONENTACCESS_REQUEST, access)
+export const updateComponentAccessSuccess = (data: ComponentAccess) =>
+  action(ComponentTypes.UPDATE_COMPONENTACCESS_SUCCESS, data)
+export const updateComponenAccesstFailure = (err: any[]) =>
+  action(ComponentTypes.UPDATE_COMPONENTACCESS_FAILURE, err)
 
 //Delete Component
 export const deleteComponentRequest = (id: number) =>
   action(ComponentTypes.DELETE_COMPONENT_REQUEST, id)
 export const deleteComponentSuccess = (id: number) =>
   action(ComponentTypes.DELETE_COMPONENT_SUCCESS, id)
-export const deleteComponentFailure = (err: any[]) => action(ComponentTypes.DELETE_COMPONENT_FAILURE, err)
+export const deleteComponentFailure = (err: any[]) =>
+  action(ComponentTypes.DELETE_COMPONENT_FAILURE, err)
 
 //Create Extra
 export const createExtraRequest = (newExtra: Extras) =>

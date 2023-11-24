@@ -16,6 +16,8 @@ import supports from './support'
 import wppcamp from './wppcamp'
 import wppgroup from './wppgroup'
 import contact from './contact'
+import city from './city'
+import state from './state'
 
 export default combineReducers({
   carts,
@@ -33,5 +35,7 @@ export default combineReducers({
   supports,
   wppcamp,
   wppgroup,
-  contact
+  contact,
+  city,
+  state,
 })

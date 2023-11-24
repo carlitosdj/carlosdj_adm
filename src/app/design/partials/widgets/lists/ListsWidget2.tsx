@@ -40,7 +40,7 @@ const ListsWidget2: React.FC<Props> = ({className}) => {
           {/* end::Avatar */}
           {/* begin::Text */}
           <div className='flex-grow-1'>
-            <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
+            <a href='#!' className='text-dark fw-bolder text-hover-primary fs-6'>
               Emma Smith
             </a>
             <span className='text-muted d-block fw-bold'>Project Manager</span>
@@ -57,7 +57,7 @@ const ListsWidget2: React.FC<Props> = ({className}) => {
           {/* end::Avatar */}
           {/* begin::Text */}
           <div className='flex-grow-1'>
-            <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
+            <a href='#!' className='text-dark fw-bolder text-hover-primary fs-6'>
               Sean Bean
             </a>
             <span className='text-muted d-block fw-bold'>PHP, SQLite, Artisan CLI</span>
@@ -74,7 +74,7 @@ const ListsWidget2: React.FC<Props> = ({className}) => {
           {/* end::Avatar */}
           {/* begin::Text */}
           <div className='flex-grow-1'>
-            <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
+            <a href='#!' className='text-dark fw-bolder text-hover-primary fs-6'>
               Brian Cox
             </a>
             <span className='text-muted d-block fw-bold'>PHP, SQLite, Artisan CLI</span>
@@ -91,7 +91,7 @@ const ListsWidget2: React.FC<Props> = ({className}) => {
           {/* end::Avatar */}
           {/* begin::Text */}
           <div className='flex-grow-1'>
-            <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
+            <a href='#!' className='text-dark fw-bolder text-hover-primary fs-6'>
               Francis Mitcham
             </a>
             <span className='text-muted d-block fw-bold'>PHP, SQLite, Artisan CLI</span>
@@ -108,7 +108,7 @@ const ListsWidget2: React.FC<Props> = ({className}) => {
           {/* end::Avatar */}
           {/* begin::Text */}
           <div className='flex-grow-1'>
-            <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
+            <a href='#!' className='text-dark fw-bolder text-hover-primary fs-6'>
               Dan Wilson
             </a>
             <span className='text-muted d-block fw-bold'>PHP, SQLite, Artisan CLI</span>

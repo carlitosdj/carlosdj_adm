@@ -32,7 +32,7 @@ const MixedWidget4: React.FC<Props> = ({className, color, image, title, date, pr
 
             {/* begin:Title */}
             <div className='d-flex flex-column flex-grow-1 my-lg-0 my-2 pr-3'>
-              <a href='#' className='text-dark fw-bolder text-hover-primary fs-5'>
+              <a href='#!' className='text-dark fw-bolder text-hover-primary fs-5'>
                 {title}
               </a>
 
@@ -79,7 +79,7 @@ const MixedWidget4: React.FC<Props> = ({className, color, image, title, date, pr
 
           <div className='d-flex'>
             <a
-              href='#'
+              href='#!'
               className='symbol symbol-35px me-2'
               data-bs-toggle='tooltip'
               title='Ana Stone'
@@ -88,7 +88,7 @@ const MixedWidget4: React.FC<Props> = ({className, color, image, title, date, pr
             </a>
 
             <a
-              href='#'
+              href='#!'
               className='symbol symbol-35px me-2'
               data-bs-toggle='tooltip'
               title='Mark Larson'
@@ -97,7 +97,7 @@ const MixedWidget4: React.FC<Props> = ({className, color, image, title, date, pr
             </a>
 
             <a
-              href='#'
+              href='#!'
               className='symbol symbol-35px me-2'
               data-bs-toggle='tooltip'
               title='Sam Harris'
@@ -105,7 +105,7 @@ const MixedWidget4: React.FC<Props> = ({className, color, image, title, date, pr
               <img src={toAbsoluteUrl('/media/avatars/150-8.jpg')} alt='' />
             </a>
 
-            <a href='#' className='symbol symbol-35px' data-bs-toggle='tooltip' title='Alice Micto'>
+            <a href='#!' className='symbol symbol-35px' data-bs-toggle='tooltip' title='Alice Micto'>
               <img src={toAbsoluteUrl('/media/avatars/150-9.jpg')} alt='' />
             </a>
           </div>

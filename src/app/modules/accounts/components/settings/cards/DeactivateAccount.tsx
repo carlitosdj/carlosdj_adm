@@ -56,7 +56,7 @@ const DeactivateAccount: React.FC<React.PropsWithChildren<unknown>> = () => {
                     For extra security, this requires you to confirm your email or phone number when
                     you reset yousignr password.
                     <br />
-                    <a className='fw-bolder' href='#'>
+                    <a className='fw-bolder' href='#!'>
                       Learn more
                     </a>
                   </div>

@@ -38,7 +38,7 @@ const MixedWidget10: React.FC<Props> = ({className, chartColor, chartHeight}) =>
         <div className='flex-grow-1 card-p pb-0'>
           <div className='d-flex flex-stack flex-wrap'>
             <div className='me-2'>
-              <a href='#' className='text-dark text-hover-primary fw-bolder fs-3'>
+              <a href='#!' className='text-dark text-hover-primary fw-bolder fs-3'>
                 Generate Reports
               </a>
 

@@ -1,3 +1,6 @@
+import { City } from "../city/types"
+import { State } from "../state/types"
+
 /**
  * Action types
  */
@@ -54,12 +57,12 @@ export interface User {
   createdAt?: number
   updated_at?: number
   flags?: number
-  last_login_at?: number
+  lastLoginAt?: number
   origin?: string
-  num_turma?: number
+  numTurma?: number
   
   //profile:
-  profile?: Profile
+  //profile?: Profile
   name?: string
   bio?: string
   timezone?: string
@@ -76,33 +79,38 @@ export interface User {
   profileUserId?: number
   postalCode?:string
 
+  city?: City
+  state?: State
   data?: any
+  cityId?: string
+  stateId?: string
+  roles?: string
   /*  */
 }
 
-export interface Profile {
-  user_id?: number
-  name?: string
-  public_email?: string
-  gravatar_email?: string
-  gravatar_id?: string
-  location?: string
-  website?: string
-  bio?: string
-  timezone?: string
-  whatsapp?: string
-  cpf?: string
-  endereco?: string
-  address?: string
-  addressNumber?: string
-  addressDistrict?: string
-  addressCity?: string
-  addressState?: string
-  addressCountry?: string
-  image?: string
-  profileUserId?: number
-  postalCode?:string
-}
+// export interface Profile {
+//   user_id?: number
+//   name?: string
+//   public_email?: string
+//   gravatar_email?: string
+//   gravatar_id?: string
+//   location?: string
+//   website?: string
+//   bio?: string
+//   timezone?: string
+//   whatsapp?: string
+//   cpf?: string
+//   endereco?: string
+//   address?: string
+//   addressNumber?: string
+//   addressDistrict?: string
+//   addressCity?: string
+//   addressState?: string
+//   addressCountry?: string
+//   image?: string
+//   profileUserId?: number
+//   postalCode?:string
+// }
 
 export interface Login {
   email: string

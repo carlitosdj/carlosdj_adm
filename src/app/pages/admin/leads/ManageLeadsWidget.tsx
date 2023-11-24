@@ -127,7 +127,7 @@ const ManageLeadsWidget: React.FC<React.PropsWithChildren<Props>> = ({className,
                         </div>
                       </td>
                       <td>
-                        {/* <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                        {/* <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                           Intertico
                         </a> */}
                         <span className='text-muted fw-bold d-block fs-7'>
@@ -135,7 +135,7 @@ const ManageLeadsWidget: React.FC<React.PropsWithChildren<Props>> = ({className,
                         </span>
                       </td>
                       <td>
-                        {/* <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                        {/* <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                           Intertico
                         </a> */}
                         <span className='text-muted fw-bold d-block fs-7'>
@@ -143,7 +143,7 @@ const ManageLeadsWidget: React.FC<React.PropsWithChildren<Props>> = ({className,
                         </span>
                       </td>
                       <td>
-                        {/* <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                        {/* <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                           Intertico
                         </a> */}
                         <span className='text-muted fw-bold d-block fs-7'>
@@ -151,7 +151,7 @@ const ManageLeadsWidget: React.FC<React.PropsWithChildren<Props>> = ({className,
                         </span>
                       </td>
                       <td>
-                        {/* <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                        {/* <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                           Intertico
                         </a> */}
                         <span className='text-muted fw-bold d-block fs-7'>
@@ -159,7 +159,7 @@ const ManageLeadsWidget: React.FC<React.PropsWithChildren<Props>> = ({className,
                         </span>
                       </td>
                       <td>
-                        {/* <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                        {/* <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                           Intertico
                         </a> */}
                         <span className='text-muted fw-bold d-block fs-7'>
@@ -167,7 +167,7 @@ const ManageLeadsWidget: React.FC<React.PropsWithChildren<Props>> = ({className,
                         </span>
                       </td>
                       <td>
-                        {/* <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                        {/* <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                           Intertico
                         </a> */}
                         <span className='text-muted fw-bold d-block fs-7'>
@@ -175,7 +175,7 @@ const ManageLeadsWidget: React.FC<React.PropsWithChildren<Props>> = ({className,
                         </span>
                       </td>
                       <td>
-                        {/* <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                        {/* <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                           Intertico
                         </a> */}
                         <span className='text-muted fw-bold d-block fs-7'>
@@ -186,7 +186,7 @@ const ManageLeadsWidget: React.FC<React.PropsWithChildren<Props>> = ({className,
                       {/* <td>
                         <div className='d-flex justify-content-end flex-shrink-0'>
                           <a
-                            href='#'
+                            href='#!'
                             onClick={() => history.push('/wppgroup/'+child.id)}
                             className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                           >
@@ -196,14 +196,14 @@ const ManageLeadsWidget: React.FC<React.PropsWithChildren<Props>> = ({className,
                             />
                           </a>
                           <a
-                            href='#'
+                            href='#!'
                             onClick={() => updateComponent(child)}
                             className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                           >
                             <KTSVG path='/media/icons/duotune/art/art005.svg' className='svg-icon-3' />
                           </a>
                           <a
-                            href='#'
+                            href='#!'
                             onClick={() => { if (window.confirm('Deseja realmente excluir: ' + child.name + '?')) deleteComponent(child)  } }
                             className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'
                           >

@@ -137,7 +137,7 @@ const ManageSupportsWidget: React.FC<React.PropsWithChildren<Props>> = ({
                       <td>
                         <div className='d-flex justify-content-end flex-shrink-0'>
                           <a
-                            // href='#'
+                            // href='#!'
                             onClick={() => infoSupport(support)}
                             className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                           >
@@ -147,7 +147,7 @@ const ManageSupportsWidget: React.FC<React.PropsWithChildren<Props>> = ({
                             />
                           </a>
                           {/* <a
-                            // href='#'
+                            // href='#!'
                             onClick={() => updateSupport(support)}
                             className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                           >
@@ -157,7 +157,7 @@ const ManageSupportsWidget: React.FC<React.PropsWithChildren<Props>> = ({
                             />
                           </a> */}
                           <a
-                            href='#'
+                            href='#!'
                             onClick={() => { if (window.confirm('Deseja realmente excluir: ' + support.subject + '?')) deleteContact(support)  } }
                             className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'
                           >

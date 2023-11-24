@@ -85,7 +85,7 @@ const MixedWidget8: React.FC<Props> = ({className, chartColor, chartHeight}) => 
 
               {/* begin::Title */}
               <div>
-                <a href='#' className='fs-6 text-gray-800 text-hover-primary fw-bolder'>
+                <a href='#!' className='fs-6 text-gray-800 text-hover-primary fw-bolder'>
                   Top Authors
                 </a>
                 <div className='fs-7 text-muted fw-bold mt-1'>Ricky Hunt, Sandra Trepp</div>
@@ -118,7 +118,7 @@ const MixedWidget8: React.FC<Props> = ({className, chartColor, chartHeight}) => 
 
               {/* begin::Title */}
               <div>
-                <a href='#' className='fs-6 text-gray-800 text-hover-primary fw-bolder'>
+                <a href='#!' className='fs-6 text-gray-800 text-hover-primary fw-bolder'>
                   Top Sales
                 </a>
                 <div className='fs-7 text-muted fw-bold mt-1'>PitStop Emails</div>
@@ -151,7 +151,7 @@ const MixedWidget8: React.FC<Props> = ({className, chartColor, chartHeight}) => 
 
               {/* begin::Title */}
               <div className='py-1'>
-                <a href='#' className='fs-6 text-gray-800 text-hover-primary fw-bolder'>
+                <a href='#!' className='fs-6 text-gray-800 text-hover-primary fw-bolder'>
                   Top Engagement
                 </a>
 

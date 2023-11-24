@@ -313,7 +313,7 @@ const Create = ({handleClose}: handleCloseProps) => {
                     valueExtra: MOMENT(endSalesDate).format('DD/MM/YYYY HH:mm'),
                   },
                   {
-                    keyExtra: 'num_turma',
+                    keyExtra: 'numTurma',
                     valueExtra: '10',
                   },
                   {

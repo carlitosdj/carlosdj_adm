@@ -65,7 +65,7 @@ const TablesWidget2: React.FC<Props> = ({className}) => {
                   </div>
                 </td>
                 <td>
-                  <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                  <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                     Top Authors
                   </a>
                   <span className='text-muted fw-bold d-block fs-7'>Successful Fellas</span>
@@ -78,7 +78,7 @@ const TablesWidget2: React.FC<Props> = ({className}) => {
                   <span className='text-muted fw-bold'>4600 Users</span>
                 </td>
                 <td className='text-end'>
-                  <a href='#' className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'>
+                  <a href='#!' className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'>
                     <KTSVG path='/media/icons/duotune/arrows/arr064.svg' className='svg-icon-2' />
                   </a>
                 </td>
@@ -96,7 +96,7 @@ const TablesWidget2: React.FC<Props> = ({className}) => {
                   </div>
                 </td>
                 <td>
-                  <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                  <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                     Popular Authors
                   </a>
                   <span className='text-muted fw-bold d-block fs-7'>Most Successful</span>
@@ -109,7 +109,7 @@ const TablesWidget2: React.FC<Props> = ({className}) => {
                   <span className='text-muted fw-bold'>7200 Users</span>
                 </td>
                 <td className='text-end'>
-                  <a href='#' className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'>
+                  <a href='#!' className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'>
                     <KTSVG path='/media/icons/duotune/arrows/arr064.svg' className='svg-icon-2' />
                   </a>
                 </td>
@@ -127,7 +127,7 @@ const TablesWidget2: React.FC<Props> = ({className}) => {
                   </div>
                 </td>
                 <td>
-                  <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                  <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                     New Users
                   </a>
                   <span className='text-muted fw-bold d-block fs-7'>Awesome Users</span>
@@ -140,7 +140,7 @@ const TablesWidget2: React.FC<Props> = ({className}) => {
                   <span className='text-muted fw-bold'>890 Users</span>
                 </td>
                 <td className='text-end'>
-                  <a href='#' className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'>
+                  <a href='#!' className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'>
                     <KTSVG path='/media/icons/duotune/arrows/arr064.svg' className='svg-icon-2' />
                   </a>
                 </td>
@@ -158,7 +158,7 @@ const TablesWidget2: React.FC<Props> = ({className}) => {
                   </div>
                 </td>
                 <td>
-                  <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                  <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                     Active Customers
                   </a>
                   <span className='text-muted fw-bold d-block fs-7'>Best Customers</span>
@@ -171,7 +171,7 @@ const TablesWidget2: React.FC<Props> = ({className}) => {
                   <span className='text-muted fw-bold'>6370 Users</span>
                 </td>
                 <td className='text-end'>
-                  <a href='#' className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'>
+                  <a href='#!' className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'>
                     <KTSVG path='/media/icons/duotune/arrows/arr064.svg' className='svg-icon-2' />
                   </a>
                 </td>
@@ -189,7 +189,7 @@ const TablesWidget2: React.FC<Props> = ({className}) => {
                   </div>
                 </td>
                 <td>
-                  <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                  <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                     Bestseller Theme
                   </a>
                   <span className='text-muted fw-bold d-block fs-7'>Amazing Templates</span>
@@ -202,7 +202,7 @@ const TablesWidget2: React.FC<Props> = ({className}) => {
                   <span className='text-muted fw-bold'>354 Users</span>
                 </td>
                 <td className='text-end'>
-                  <a href='#' className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'>
+                  <a href='#!' className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'>
                     <KTSVG path='/media/icons/duotune/arrows/arr064.svg' className='svg-icon-2' />
                   </a>
                 </td>

@@ -21,12 +21,20 @@ const reducer: Reducer<ComponentState> = (state = INITIAL_STATE, action) => {
     case ComponentTypes.LOAD_COMPONENT_FAILURE:
       return {...state, loading: false, error: action.payload, data: {}}
 
+    //all users:
+    case ComponentTypes.LOAD_COMPONENT_WITH_ACCESS_REQUEST:
+      return {...state, loading: true}
+    case ComponentTypes.LOAD_COMPONENT_WITH_ACCESS_SUCCESS:
+      return {...state, loading: false, error: false, data: action.payload.data}
+    case ComponentTypes.LOAD_COMPONENT_WITH_ACCESS_FAILURE:
+      return {...state, loading: false, error: action.payload, data: {}}
+
     case ComponentTypes.LOAD_LASTCLASS_REQUEST:
       return {...state, loadingLastClass: true}
     case ComponentTypes.LOAD_LASTCLASS_SUCCESS:
       return {...state, loadingLastClass: false, error: false, lastclass: action.payload.data}
-      case ComponentTypes.LOAD_LASTCLASS_FAILURE:
-        return {...state, loadingLastClass: false, error: action.payload, lastclass: {}}
+    case ComponentTypes.LOAD_LASTCLASS_FAILURE:
+      return {...state, loadingLastClass: false, error: action.payload, lastclass: {}}
 
     //load modules
     case ComponentTypes.LOAD_MODULES_REQUEST:
@@ -77,6 +85,29 @@ const reducer: Reducer<ComponentState> = (state = INITIAL_STATE, action) => {
     case ComponentTypes.CREATE_COMPONENT_FAILURE:
       return {...state, loading: false, error: action.payload}
 
+    //create access
+    case ComponentTypes.CREATE_COMPONENTACCESS_REQUEST:
+      return {...state}
+    case ComponentTypes.CREATE_COMPONENTACCESS_SUCCESS:
+      return {
+        ...state,
+        loading: false,
+        error: false,
+        data: {
+          ...state.data,
+          children: Object.assign([], state.data.children, {
+            ...state.data.children?.map((child) => {
+              if (child.id === action.payload.data.componentId) {
+                child.access = [action.payload.data]
+              }
+              return child
+            }),
+          }),
+        },
+      }
+    case ComponentTypes.CREATE_COMPONENTACCESS_FAILURE:
+      return {...state, loading: false, error: action.payload}
+
     //##update component:
     case ComponentTypes.UPDATE_COMPONENT_REQUEST:
       return {...state}
@@ -95,13 +126,39 @@ const reducer: Reducer<ComponentState> = (state = INITIAL_STATE, action) => {
     case ComponentTypes.UPDATE_COMPONENT_FAILURE:
       return {...state, loading: false, error: action.payload, data: {}}
 
+    //##update component:
+    case ComponentTypes.UPDATE_COMPONENTACCESS_REQUEST:
+      return {...state}
+    case ComponentTypes.UPDATE_COMPONENTACCESS_SUCCESS:
+      return {
+        ...state,
+        loading: false,
+        error: false,
+        data: {
+          ...state.data,
+          // children: state.data.children?.map((child) =>
+          //   child.id === action.payload.data.id ? action.payload.data : child
+          // ),
+          children: Object.assign([], state.data.children, {
+            ...state.data.children?.map((child) => {
+              if (child.id === action.payload.data.componentId) {
+                child.access = [action.payload.data]
+              }
+              return child
+            }),
+          }),
+        },
+      } //update data?
+    case ComponentTypes.UPDATE_COMPONENTACCESS_FAILURE:
+      return {...state, loading: false, error: action.payload, data: {}}
+
     //delete user:
     case ComponentTypes.DELETE_COMPONENT_REQUEST:
       return {...state}
     case ComponentTypes.DELETE_COMPONENT_SUCCESS:
-      console.log("PAYLOAD", action.payload)
-      console.log("PAYLOAD data", action.payload.data)
-      console.log("PAYLOAD data id", action.payload.data.id)
+      console.log('PAYLOAD', action.payload)
+      console.log('PAYLOAD data', action.payload.data)
+      console.log('PAYLOAD data id', action.payload.data.id)
       return {
         ...state,
         loading: false,

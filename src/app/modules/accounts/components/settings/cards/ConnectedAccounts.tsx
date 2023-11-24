@@ -47,7 +47,7 @@ const ConnectedAccounts: React.FC<React.PropsWithChildren<unknown>> = () => {
                 <div className='fs-6 text-gray-600'>
                   Two-factor authentication adds an extra layer of security to your account. To log
                   in, in you'll need to provide a 4 digit amazing code.
-                  <a href='#' className='fw-bolder'>
+                  <a href='#!' className='fw-bolder'>
                     Learn More
                   </a>
                 </div>
@@ -65,7 +65,7 @@ const ConnectedAccounts: React.FC<React.PropsWithChildren<unknown>> = () => {
                 />
 
                 <div className='d-flex flex-column'>
-                  <a href='#' className='fs-5 text-dark text-hover-primary fw-bolder'>
+                  <a href='#!' className='fs-5 text-dark text-hover-primary fw-bolder'>
                     Google
                   </a>
                   <div className='fs-6 fw-bold text-gray-400'>Plan properly your workflow</div>
@@ -100,7 +100,7 @@ const ConnectedAccounts: React.FC<React.PropsWithChildren<unknown>> = () => {
                 />
 
                 <div className='d-flex flex-column'>
-                  <a href='#' className='fs-5 text-dark text-hover-primary fw-bolder'>
+                  <a href='#!' className='fs-5 text-dark text-hover-primary fw-bolder'>
                     Github
                   </a>
                   <div className='fs-6 fw-bold text-gray-400'>Keep eye on on your Repositories</div>
@@ -135,7 +135,7 @@ const ConnectedAccounts: React.FC<React.PropsWithChildren<unknown>> = () => {
                 />
 
                 <div className='d-flex flex-column'>
-                  <a href='#' className='fs-5 text-dark text-hover-primary fw-bolder'>
+                  <a href='#!' className='fs-5 text-dark text-hover-primary fw-bolder'>
                     Slack
                   </a>
                   <div className='fs-6 fw-bold text-gray-400'>Integrate Projects Discussions</div>

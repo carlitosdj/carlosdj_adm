@@ -80,7 +80,7 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         School Music Festival
                       </a>
                       <span className='text-muted fw-bold d-block fs-7'>by Rose Liam</span>
@@ -91,7 +91,7 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                     </td>
                     <td className='text-end'>
                       <a
-                        href='#'
+                        href='#!'
                         className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
                       >
                         <i className='bi bi-three-dots fs-5'></i>
@@ -110,7 +110,7 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Maths Championship
                       </a>
                       <span className='text-muted fw-bold d-block fs-7'>By Tom Gere</span>
@@ -121,7 +121,7 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                     </td>
                     <td className='text-end'>
                       <a
-                        href='#'
+                        href='#!'
                         className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
                       >
                         <i className='bi bi-three-dots fs-5'></i>
@@ -140,7 +140,7 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Who Knows Geography
                       </a>
                       <span className='text-muted fw-bold d-block fs-7'>By Zoey Dylan</span>
@@ -151,7 +151,7 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                     </td>
                     <td className='text-end'>
                       <a
-                        href='#'
+                        href='#!'
                         className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
                       >
                         <i className='bi bi-three-dots fs-5'></i>
@@ -170,7 +170,7 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Napoleon Days
                       </a>
                       <span className='text-muted fw-bold d-block fs-7'>By Luke Owen</span>
@@ -181,7 +181,7 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                     </td>
                     <td className='text-end'>
                       <a
-                        href='#'
+                        href='#!'
                         className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
                       >
                         <i className='bi bi-three-dots fs-5'></i>
@@ -200,7 +200,7 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         The School Art Leads
                       </a>
                       <span className='text-muted fw-bold d-block fs-7'>By Ellie Cole</span>
@@ -211,7 +211,7 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                     </td>
                     <td className='text-end'>
                       <a
-                        href='#'
+                        href='#!'
                         className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
                       >
                         <i className='bi bi-three-dots fs-5'></i>
@@ -254,7 +254,7 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Who Knows Geography
                       </a>
                       <span className='text-muted fw-bold d-block fs-7'>By Zoey Dylan</span>
@@ -265,7 +265,7 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                     </td>
                     <td className='text-end'>
                       <a
-                        href='#'
+                        href='#!'
                         className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
                       >
                         <i className='bi bi-three-dots fs-5'></i>
@@ -284,7 +284,7 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Maths Championship
                       </a>
                       <span className='text-muted fw-bold d-block fs-7'>By Tom Gere</span>
@@ -295,7 +295,7 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                     </td>
                     <td className='text-end'>
                       <a
-                        href='#'
+                        href='#!'
                         className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
                       >
                         <i className='bi bi-three-dots fs-5'></i>
@@ -314,7 +314,7 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         School Music Festival
                       </a>
                       <span className='text-muted fw-bold d-block fs-7'>by Rose Liam</span>
@@ -325,7 +325,7 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                     </td>
                     <td className='text-end'>
                       <a
-                        href='#'
+                        href='#!'
                         className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
                       >
                         <i className='bi bi-three-dots fs-5'></i>
@@ -368,7 +368,7 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Maths Championship
                       </a>
                       <span className='text-muted fw-bold d-block fs-7'>By Tom Gere</span>
@@ -379,7 +379,7 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                     </td>
                     <td className='text-end'>
                       <a
-                        href='#'
+                        href='#!'
                         className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
                       >
                         <i className='bi bi-three-dots fs-5'></i>
@@ -398,7 +398,7 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Who Knows Geography
                       </a>
                       <span className='text-muted fw-bold d-block fs-7'>By Zoey Dylan</span>
@@ -409,7 +409,7 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                     </td>
                     <td className='text-end'>
                       <a
-                        href='#'
+                        href='#!'
                         className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
                       >
                         <i className='bi bi-three-dots fs-5'></i>
@@ -428,7 +428,7 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         Napoleon Days
                       </a>
                       <span className='text-muted fw-bold d-block fs-7'>By Luke Owen</span>
@@ -439,7 +439,7 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                     </td>
                     <td className='text-end'>
                       <a
-                        href='#'
+                        href='#!'
                         className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
                       >
                         <i className='bi bi-three-dots fs-5'></i>
@@ -458,7 +458,7 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                       </div>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                      <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                         School Music Festival
                       </a>
                       <span className='text-muted fw-bold d-block fs-7'>by Rose Liam</span>
@@ -469,7 +469,7 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                     </td>
                     <td className='text-end'>
                       <a
-                        href='#'
+                        href='#!'
                         className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
                       >
                         <i className='bi bi-three-dots fs-5'></i>

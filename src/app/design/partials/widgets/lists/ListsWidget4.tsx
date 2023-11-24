@@ -51,7 +51,7 @@ const ListsWidget4: React.FC<Props> = ({className, items = 6}) => {
           {/* begin::Section */}
           <div className='d-flex align-items-center flex-row-fluid flex-wrap'>
             <div className='flex-grow-1 me-2'>
-              <a href='#' className='text-gray-800 text-hover-primary fs-6 fw-bolder'>
+              <a href='#!' className='text-gray-800 text-hover-primary fs-6 fw-bolder'>
                 Top Authors
               </a>
               <span className='text-muted fw-bold d-block fs-7'>Mark, Rowling, Esther</span>
@@ -77,7 +77,7 @@ const ListsWidget4: React.FC<Props> = ({className, items = 6}) => {
           {/* begin::Section */}
           <div className='d-flex align-items-center flex-row-fluid flex-wrap'>
             <div className='flex-grow-1 me-2'>
-              <a href='#' className='text-gray-800 text-hover-primary fs-6 fw-bolder'>
+              <a href='#!' className='text-gray-800 text-hover-primary fs-6 fw-bolder'>
                 Popular Authors
               </a>
               <span className='text-muted fw-bold d-block fs-7'>Randy, Steve, Mike</span>
@@ -103,7 +103,7 @@ const ListsWidget4: React.FC<Props> = ({className, items = 6}) => {
           {/* begin::Section */}
           <div className='d-flex align-items-center flex-row-fluid flex-wrap'>
             <div className='flex-grow-1 me-2'>
-              <a href='#' className='text-gray-800 text-hover-primary fs-6 fw-bolder'>
+              <a href='#!' className='text-gray-800 text-hover-primary fs-6 fw-bolder'>
                 New Users
               </a>
               <span className='text-muted fw-bold d-block fs-7'>John, Pat, Jimmy</span>
@@ -129,7 +129,7 @@ const ListsWidget4: React.FC<Props> = ({className, items = 6}) => {
           {/* begin::Section */}
           <div className='d-flex align-items-center flex-row-fluid flex-wrap'>
             <div className='flex-grow-1 me-2'>
-              <a href='#' className='text-gray-800 text-hover-primary fs-6 fw-bolder'>
+              <a href='#!' className='text-gray-800 text-hover-primary fs-6 fw-bolder'>
                 Active Customers
               </a>
               <span className='text-muted fw-bold d-block fs-7'>Mark, Rowling, Esther</span>
@@ -156,7 +156,7 @@ const ListsWidget4: React.FC<Props> = ({className, items = 6}) => {
             {/* begin::Section */}
             <div className='d-flex align-items-center flex-row-fluid flex-wrap'>
               <div className='flex-grow-1 me-2'>
-                <a href='#' className='text-gray-800 text-hover-primary fs-6 fw-bolder'>
+                <a href='#!' className='text-gray-800 text-hover-primary fs-6 fw-bolder'>
                   Bestseller Theme
                 </a>
                 <span className='text-muted fw-bold d-block fs-7'>Disco, Retro, Sports</span>
@@ -183,7 +183,7 @@ const ListsWidget4: React.FC<Props> = ({className, items = 6}) => {
             {/* begin::Section */}
             <div className='d-flex align-items-center flex-row-fluid flex-wrap'>
               <div className='flex-grow-1 me-2'>
-                <a href='#' className='text-gray-800 text-hover-primary fs-6 fw-bolder'>
+                <a href='#!' className='text-gray-800 text-hover-primary fs-6 fw-bolder'>
                   Fox Broker App
                 </a>
                 <span className='text-muted fw-bold d-block fs-7'>Finance, Corporate, Apps</span>

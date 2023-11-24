@@ -63,7 +63,7 @@ const TablesWidget3: React.FC<Props> = ({className}) => {
                   </div>
                 </td>
                 <td>
-                  <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                  <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                     Top Authors
                   </a>
                 </td>
@@ -83,7 +83,7 @@ const TablesWidget3: React.FC<Props> = ({className}) => {
                   </div>
                 </td>
                 <td>
-                  <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                  <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                     Popular Authors
                   </a>
                 </td>
@@ -103,7 +103,7 @@ const TablesWidget3: React.FC<Props> = ({className}) => {
                   </div>
                 </td>
                 <td>
-                  <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                  <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                     New Users
                   </a>
                 </td>
@@ -123,7 +123,7 @@ const TablesWidget3: React.FC<Props> = ({className}) => {
                   </div>
                 </td>
                 <td>
-                  <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                  <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                     Active Customers
                   </a>
                 </td>
@@ -143,7 +143,7 @@ const TablesWidget3: React.FC<Props> = ({className}) => {
                   </div>
                 </td>
                 <td>
-                  <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
+                  <a href='#!' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
                     Active Customers
                   </a>
                 </td>
