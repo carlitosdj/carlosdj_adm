@@ -42,7 +42,7 @@ const Create = ({handleClose}: handleCloseProps) => {
         url,
         clicks: 0,
         //createdAt: data.getTime() / 1000,
-        status: 1,
+        status: '1',
       }
       console.log('component to save:', component)
       dispatch(createWppgroupRequest(component))

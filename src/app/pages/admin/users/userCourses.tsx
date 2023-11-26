@@ -39,7 +39,7 @@ const UserCourses = ({handleClose, child}: handleCloseProps) => {
     setComponentsSelected(
       component.data.children
         ?.filter((comp) => comp.access.length > 0)!
-        .map((comp) => ({userId: child.id, componentId: comp.id, status: 1}))!
+        .map((comp) => ({userId: child.id, componentId: comp.id, status: '1'}))!
     )
   }, [component.loading])
   //console.log("HEYYY", component.data.children?.filter(comp => comp.access.length > 0)!.map( comp => ( { id: comp.id} )))
@@ -81,7 +81,7 @@ const UserCourses = ({handleClose, child}: handleCloseProps) => {
             ...current.map((item: any) => {
               if (item.componentId === componentSelected.componentId) {
                 console.log('ACHEI', componentSelected)
-                return {userId: child.id, componentId: componentSelected.componentId, status: 1}
+                return {userId: child.id, componentId: componentSelected.componentId, status: '1'}
               }
               return item
             }),
@@ -90,12 +90,12 @@ const UserCourses = ({handleClose, child}: handleCloseProps) => {
       } else {
         setComponentsSelected([
           ...componentsSelected,
-          {userId: child.id, componentId: componentSelected.componentId, status: 1},
+          {userId: child.id, componentId: componentSelected.componentId, status: '1'},
         ])
       }
 
-      //console.log("CHECK2",checkArrayInArray(componentsSelected,{ userId: child.id, componentId: componentSelected.componentId, status: 1 }))
-      // console.log("Check 2",{ userId: child.id, componentId: componentSelected.componentId, status: 1 })
+      //console.log("CHECK2",checkArrayInArray(componentsSelected,{ userId: child.id, componentId: componentSelected.componentId, status: '1' }))
+      // console.log("Check 2",{ userId: child.id, componentId: componentSelected.componentId, status: '1' })
       // console.log("exists2",exists2)
     } else {
       setComponentsSelected((current: any) =>
@@ -166,7 +166,7 @@ const UserCourses = ({handleClose, child}: handleCloseProps) => {
                         style={{backgroundColor: 'rgb(112 107 107)', color: 'black'}}
                         defaultChecked={child.access.length ? true : false}
                         onChange={(e) => {
-                          handleMultiSelect(e, {componentId: child.id, status: 1})
+                          handleMultiSelect(e, {componentId: child.id, status: '1'})
                         }}
                         //onChange={(e: any) => selectAll(e)}
                       />

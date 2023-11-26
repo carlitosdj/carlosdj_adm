@@ -44,7 +44,7 @@ const Update = ({handleClose, child}: handleCloseProps) => {
         name,
         description,
         //createdAt: data.getTime() / 1000, //updated_at
-        status: 1,
+        status: '1',
         maxclicks: +maxclicks,
         slug,
       }

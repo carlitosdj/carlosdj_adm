@@ -22,7 +22,7 @@ export interface EmailTolist {
   message?: string | undefined
   parentUser?: any
   user_id?: number | undefined
-  status?: number | undefined
+  status?: string
   quantity?: number | undefined
   createdAt?: string | undefined
 }

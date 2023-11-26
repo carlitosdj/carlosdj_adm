@@ -41,7 +41,7 @@ const Create = ({handleClose}: handleCloseProps) => {
         name,
         description,
         //createdAt: data.getTime() / 1000,
-        status: 1,
+        status: '1',
         slug,
         maxclicks: +maxclicks,
       }

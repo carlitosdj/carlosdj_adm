@@ -43,7 +43,7 @@ const Create = ({handleClose}: handleCloseProps) => {
         valueExtra,
         componentId: component.data.id,
         //createdAt: data.getTime() / 1000,
-        status: 1,
+        status: '1',
       }
       // console.log('extra to save:', extra)
       // console.log('component:', component)

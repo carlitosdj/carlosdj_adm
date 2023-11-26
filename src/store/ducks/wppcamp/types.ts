@@ -45,7 +45,7 @@ export interface Wppcamp {
   maxclicks?: number
   description?: string
   createdAt?: number
-  status?: number
+  status?: string
 }
 
 /**

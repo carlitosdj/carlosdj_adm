@@ -33,7 +33,7 @@ export interface Extras {
   keyExtra?: string
   valueExtra?: string
   createdAt?: number
-  status?: number
+  status?: string
   create?: Extras[] | undefined
 }
 /**

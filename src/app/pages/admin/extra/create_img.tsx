@@ -57,7 +57,7 @@ const Extra = ({handleClose}: handleCloseProps) => {
             valueExtra: res.data.filename,
             componentId: component.data.id,
             //createdAt: date.getTime() / 1000,
-            status: 1,
+            status: '1',
           }
           console.log('extra to save:', extra)
           console.log('component:', component)

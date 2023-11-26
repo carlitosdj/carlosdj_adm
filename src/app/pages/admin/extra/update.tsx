@@ -43,7 +43,7 @@ const Update = ({handleClose, child}: handleCloseProps) => {
         keyExtra,
         valueExtra,
         //createdAt: (data.getTime() / 1000).toString(), //updated_at
-        status: 1,
+        status: '1',
       }
       console.log('------------------ COMPONENT TO UPDATE', extraToUpdate)
 

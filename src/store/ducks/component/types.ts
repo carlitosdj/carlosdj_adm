@@ -108,7 +108,7 @@ export interface Component {
   name?: string
   description?: string
   createdAt?: string
-  status?: number | boolean
+  status?: string
   order?: string
   duration?: number
   children?: Component[] | undefined
@@ -126,7 +126,7 @@ export interface ComponentAccess {
   id?: number
   createdAt?: Date
   updatedAt?: Date
-  status?: number
+  status?: string
   userId?: number
   componentId?: number
 }

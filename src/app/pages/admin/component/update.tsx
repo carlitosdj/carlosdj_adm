@@ -23,7 +23,7 @@ const Update = ({handleClose, child}: handleCloseProps) => {
   const [description, setDescription] = useState<string | undefined>('')
   const [order, setOrder] = useState<string | undefined>('')
   const [orderby, setOrderby] = useState<string | undefined>('')
-  const [status, setStatus] = useState<number | boolean>(1)
+  const [status, setStatus] = useState<string>('1')
   const [duration, setDuration] = useState<string | undefined>('')
   const [ckEditor, setCkEditor] = useState(false)
 
@@ -53,13 +53,13 @@ const Update = ({handleClose, child}: handleCloseProps) => {
         description,
         order,
         //createdAt: (data.getTime() / 1000).toString(), //updated_at
-        status,
+        status: status!,
         duration: MOMENT.duration(duration).asSeconds(),
         tags,
         orderby,
       }
 
-      console.log('------------------ COMPONENT TO UPDATE', componentToUpdate)
+      console.log('----------------- COMPONENT TO UPDATExx', componentToUpdate)
       dispatch(updateComponentRequest(componentToUpdate))
       handleClose()
     }

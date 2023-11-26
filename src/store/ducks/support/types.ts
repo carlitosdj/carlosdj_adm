@@ -36,7 +36,7 @@ export interface Support {
   adminId?: number
   createdAt?: number
   repliedAt?: number
-  status?: number
+  status?: string
 }
 
 /**

@@ -26,7 +26,7 @@ export interface Cart {
   total?: number
   tax?: number
   createdAt?: number
-  status?: number
+  status?: string
   description?: string
   numcartao?: string
   nomecartao?: string

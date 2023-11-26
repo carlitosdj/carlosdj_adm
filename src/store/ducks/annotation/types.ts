@@ -22,7 +22,7 @@ export interface Annotation {
   componentId?: number | undefined
   message?: string | undefined
   createdAt?: string | undefined
-  status?: number | undefined
+  status?: string
   parentUser?: any | undefined
   parentComponent?: any | undefined
 }
