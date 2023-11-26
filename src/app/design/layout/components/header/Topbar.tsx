@@ -111,7 +111,7 @@ const Topbar: FC<React.PropsWithChildren<unknown>> = () => {
           data-kt-menu-flip='bottom'
         >
           <img 
-            src={ image?.includes('https://') ? image : 'http://localhost:3000/upload/file/' + image}
+            src={ image?.includes('https://') ? image : 'https://institutodefelicibus.com.br/apimodelo/upload/file/' + image}
             //style={{width: '40px', height:'40px'}}
             className=''
             onError={({ currentTarget }) => {
