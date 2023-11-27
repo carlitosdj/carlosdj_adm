@@ -23,11 +23,11 @@ const reducer: Reducer<ComponentState> = (state = INITIAL_STATE, action) => {
 
     //all users:
     case ComponentTypes.LOAD_COMPONENT_WITH_ACCESS_REQUEST:
-      return {...state, loading: true}
+      return {...state, loading: true, loadingAccess: true}
     case ComponentTypes.LOAD_COMPONENT_WITH_ACCESS_SUCCESS:
-      return {...state, loading: false, error: false, data: action.payload.data}
+      return {...state, loading: false, loadingAccess: false, error: false, data: action.payload.data}
     case ComponentTypes.LOAD_COMPONENT_WITH_ACCESS_FAILURE:
-      return {...state, loading: false, error: action.payload, data: {}}
+      return {...state, loading: false, loadingAccess: false, error: action.payload, data: {}}
 
     case ComponentTypes.LOAD_LASTCLASS_REQUEST:
       return {...state, loadingLastClass: true}
@@ -87,11 +87,12 @@ const reducer: Reducer<ComponentState> = (state = INITIAL_STATE, action) => {
 
     //create access
     case ComponentTypes.CREATE_COMPONENTACCESS_REQUEST:
-      return {...state}
+      return {...state, loadingAccess: true}
     case ComponentTypes.CREATE_COMPONENTACCESS_SUCCESS:
       return {
         ...state,
         loading: false,
+        loadingAccess: false,
         error: false,
         data: {
           ...state.data,
@@ -106,7 +107,7 @@ const reducer: Reducer<ComponentState> = (state = INITIAL_STATE, action) => {
         },
       }
     case ComponentTypes.CREATE_COMPONENTACCESS_FAILURE:
-      return {...state, loading: false, error: action.payload}
+      return {...state, loading: false, loadingAccess: false, error: action.payload}
 
     //##update component:
     case ComponentTypes.UPDATE_COMPONENT_REQUEST:

@@ -28,12 +28,12 @@ const UserCourses = ({handleClose, child}: handleCloseProps) => {
   const [componentsSelected, setComponentsSelected] = useState<any[]>([])
 
   useEffect(() => {
-    dispatch(loadLastClassRequest(child.id!))
+    //dispatch(loadLastClassRequest(child.id!))
     dispatch(loadComponentWithAccessRequest('2', child.id?.toString()!, 'desc'))
     // setCount((prev) => {
     //   return prev + 1
     // })
-  }, [child.id, component.data.id])
+  }, [])
 
   useEffect(() => {
     setComponentsSelected(
@@ -41,7 +41,7 @@ const UserCourses = ({handleClose, child}: handleCloseProps) => {
         ?.filter((comp) => comp.access.length > 0)!
         .map((comp) => ({userId: child.id, componentId: comp.id, status: '1'}))!
     )
-  }, [component.loading])
+  }, [component.loadingAccess])
   //console.log("HEYYY", component.data.children?.filter(comp => comp.access.length > 0)!.map( comp => ( { id: comp.id} )))
 
 
@@ -151,7 +151,7 @@ const UserCourses = ({handleClose, child}: handleCloseProps) => {
           <span>{child.email}</span>
           <br />
           <br />
-          {component.loading ? (
+          {component.loadingAccess ? (
             <Loading />
           ) : (
             <div>
@@ -164,7 +164,7 @@ const UserCourses = ({handleClose, child}: handleCloseProps) => {
                         type='checkbox'
                         id={child.id?.toString()}
                         style={{backgroundColor: 'rgb(112 107 107)', color: 'black'}}
-                        defaultChecked={child.access.length ? true : false}
+                        defaultChecked={child.access ? child.access.length ? true : false : false}
                         onChange={(e) => {
                           handleMultiSelect(e, {componentId: child.id, status: '1'})
                         }}
@@ -180,7 +180,7 @@ const UserCourses = ({handleClose, child}: handleCloseProps) => {
         </div>
         <br />
         <Button variant='primary' type='button' onClick={handleSubmit}>
-          Submit
+          Salvar
         </Button>
       </div>
     </>

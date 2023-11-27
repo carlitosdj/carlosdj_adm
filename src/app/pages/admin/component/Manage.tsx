@@ -43,7 +43,7 @@ const Manage: FC<React.PropsWithChildren<unknown>> = () => {
   let {id} = useParams<ParamTypes>()
 
   useEffect(() => {
-    dispatch(loadComponentRequest(id!, 'DESC')) //Puxa componentes com seus filhos primários
+    dispatch(loadComponentRequest(id!, 'asc')) //Puxa componentes com seus filhos primários
   }, [id, dispatch])
 
   if (component.loading && component.data) return <Loading />

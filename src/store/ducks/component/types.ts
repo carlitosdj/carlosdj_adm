@@ -140,7 +140,8 @@ export interface ComponentState {
   readonly data: Component
   readonly loading: boolean
   readonly error: boolean
-  readonly loadingAulaConcluida: boolean
+  readonly loadingAulaConcluida?: boolean
+  readonly loadingAccess?: boolean
   readonly loadingAulaConcluidaId?: number
 
   readonly lastclass?: Component

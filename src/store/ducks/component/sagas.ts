@@ -67,7 +67,7 @@ export function* loadComponent(payload: ReturnType<typeof loadComponentRequest>)
   try {
     put(loadComponentRequest(payload.payload.id, payload.payload.sort))
     //const response: Component = yield call(api.get, 'component/id/' + payload.payload.id + '/' + payload.payload.sort)
-    const response: Component = yield call(api.get, 'component/id/' + payload.payload.id)
+    const response: Component = yield call(api.get, 'component/id/' + payload.payload.id + '/' + payload.payload.sort)
     yield put(loadComponentSuccess(response))
   } catch (error: any) {
     yield put(loadComponentFailure(error.response.data))
