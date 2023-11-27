@@ -38,17 +38,15 @@ const UserCourses = ({handleClose, child}: handleCloseProps) => {
   useEffect(() => {
     setComponentsSelected(
       component.data.children
-        ?.filter((comp) => comp.access.length > 0)!
-        .map((comp) => ({userId: child.id, componentId: comp.id, status: '1'}))!
+        ?.filter((comp) => comp.access?.length > 0)
+        ?.map((comp) => ({userId: child.id, componentId: comp.id, status: '1'}))!
     )
-  }, [component.loadingAccess])
-  //console.log("HEYYY", component.data.children?.filter(comp => comp.access.length > 0)!.map( comp => ( { id: comp.id} )))
-
+  }, [component.data.id])
 
   const handleSubmit = () => {
     //console.log("componentsSelected", componentsSelected)
     componentsSelected.map((access) => {
-      console.log("ACCESS", access)
+      console.log('ACCESS', access)
       dispatch(createComponentAccessRequest(access))
       handleClose()
     })
@@ -164,7 +162,7 @@ const UserCourses = ({handleClose, child}: handleCloseProps) => {
                         type='checkbox'
                         id={child.id?.toString()}
                         style={{backgroundColor: 'rgb(112 107 107)', color: 'black'}}
-                        defaultChecked={child.access ? child.access.length ? true : false : false}
+                        defaultChecked={child.access ? (child.access.length ? true : false) : false}
                         onChange={(e) => {
                           handleMultiSelect(e, {componentId: child.id, status: '1'})
                         }}
