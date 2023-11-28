@@ -52,6 +52,9 @@ import {
   updateComponentAccessRequest,
   updateComponentAccessSuccess,
   updateComponenAccesstFailure,
+  createLaunchRequest,
+  createLaunchFailure,
+  createLaunchSuccess,
   // loadCourseRequest,
 } from './actions'
 
@@ -182,6 +185,17 @@ export function* createComponent(payload: ReturnType<typeof createComponentReque
     yield put(createComponentSuccess(response))
   } catch (error: any) {
     yield put(createComponentFailure(error.response.data))
+  }
+}
+
+export function* createLaunch(payload: ReturnType<typeof createLaunchRequest>) {
+  try {
+    put(createLaunchRequest(payload.payload))
+    console.log("PAYLOAD", payload.payload)
+    const response: Component = yield call(api.post, 'component/launch', payload.payload)
+    yield put(createLaunchSuccess(response))
+  } catch (error: any) {
+    yield put(createLaunchFailure(error.response.data))
   }
 }
 

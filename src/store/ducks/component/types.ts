@@ -48,6 +48,11 @@ export enum ComponentTypes {
   CREATE_COMPONENT_SUCCESS = '@component/CREATE_COMPONENT_SUCCESS',
   CREATE_COMPONENT_FAILURE = '@component/CREATE_COMPONENT_FAILURE',
 
+  //CREATE_LAUNCH_FAILURE
+  CREATE_LAUNCH_REQUEST = '@component/CREATE_LAUNCH_REQUEST',
+  CREATE_LAUNCH_SUCCESS = '@component/CREATE_LAUNCH_SUCCESS',
+  CREATE_LAUNCH_FAILURE = '@component/CREATE_LAUNCH_FAILURE',
+
   //Create access
   CREATE_COMPONENTACCESS_REQUEST = '@component/CREATE_COMPONENTACCESS_REQUEST',
   CREATE_COMPONENTACCESS_SUCCESS = '@component/CREATE_COMPONENTACCESS_SUCCESS',
@@ -131,6 +136,39 @@ export interface ComponentAccess {
   componentId?: number
 }
 
+export interface Launch {
+  name?: string
+  description?: string
+  slug?: string
+  eventName?: string
+  eventHeadline?: string
+  eventDescription?: string
+  expertName?: string
+
+  leadSignUpStartDate?: string
+  leadSignUpEndDate?: string
+  dateCpl1?: string
+  dateCpl2?: string
+  dateCpl3?: string
+
+  cartOpenDate?: string
+  cartCloseDate?: string
+
+  productName?: string
+  productHeadline?: string
+  productDescription?: string
+  productPrice?: string
+  productInstallments?: string
+
+  productVideo?: string
+  productDiscount?: string
+  productDiscountText?: string
+  productWaitLink?: string
+  talktousLink?: string
+
+  componentId?: number
+}
+
 /**
  * State type
  */
@@ -146,4 +184,5 @@ export interface ComponentState {
 
   readonly lastclass?: Component
   readonly loadingLastClass?: boolean
+  readonly loadingNewLaunch?: boolean
 }

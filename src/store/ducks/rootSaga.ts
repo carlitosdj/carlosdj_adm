@@ -37,6 +37,7 @@ import {
   loadComponentWithAccess,
   createComponentAccess,
   updateComponentAccess,
+  createLaunch,
   // uploadExtra
 } from './component/sagas'
 
@@ -111,6 +112,7 @@ export default function* rootSaga() {
     takeLatest(ComponentTypes.LOAD_COMPONENT_WITH_ACCESS_REQUEST, loadComponentWithAccess),
     takeLatest(ComponentTypes.LOAD_COMPONENT_BY_DESC_REQUEST, loadComponentByDescription),
     takeLatest(ComponentTypes.CREATE_COMPONENT_REQUEST, createComponent),
+    takeLatest(ComponentTypes.CREATE_LAUNCH_REQUEST, createLaunch),
     takeLatest(ComponentTypes.CREATE_COMPONENTACCESS_REQUEST, createComponentAccess),
     takeLatest(ComponentTypes.UPDATE_COMPONENT_REQUEST, updateComponent),
     takeLatest(ComponentTypes.UPDATE_COMPONENTACCESS_REQUEST, updateComponentAccess),

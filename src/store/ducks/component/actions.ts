@@ -1,5 +1,5 @@
 import {action} from 'typesafe-actions'
-import {ComponentAccess, ComponentTypes} from './types'
+import {ComponentAccess, ComponentTypes, Launch} from './types'
 import {AulaConcluidaTypes, AulaConcluida} from '../aulaconcluida/types'
 import {Component} from './types'
 import {Extras} from '../extras/types'
@@ -57,6 +57,14 @@ export const createComponentSuccess = (data: Component) =>
   action(ComponentTypes.CREATE_COMPONENT_SUCCESS, data)
 export const createComponentFailure = (err: any[]) =>
   action(ComponentTypes.CREATE_COMPONENT_FAILURE, err)
+
+//Create Component
+export const createLaunchRequest = (newLaunch: Launch) =>
+  action(ComponentTypes.CREATE_LAUNCH_REQUEST, newLaunch)
+export const createLaunchSuccess = (data: Component) =>
+  action(ComponentTypes.CREATE_LAUNCH_SUCCESS, data)
+export const createLaunchFailure = (err: any[]) =>
+  action(ComponentTypes.CREATE_LAUNCH_FAILURE, err)
 
 //Create access
 export const createComponentAccessRequest = (access: ComponentAccess) =>

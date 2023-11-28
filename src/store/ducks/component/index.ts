@@ -25,7 +25,13 @@ const reducer: Reducer<ComponentState> = (state = INITIAL_STATE, action) => {
     case ComponentTypes.LOAD_COMPONENT_WITH_ACCESS_REQUEST:
       return {...state, loading: true, loadingAccess: true}
     case ComponentTypes.LOAD_COMPONENT_WITH_ACCESS_SUCCESS:
-      return {...state, loading: false, loadingAccess: false, error: false, data: action.payload.data}
+      return {
+        ...state,
+        loading: false,
+        loadingAccess: false,
+        error: false,
+        data: action.payload.data,
+      }
     case ComponentTypes.LOAD_COMPONENT_WITH_ACCESS_FAILURE:
       return {...state, loading: false, loadingAccess: false, error: action.payload, data: {}}
 
@@ -84,6 +90,20 @@ const reducer: Reducer<ComponentState> = (state = INITIAL_STATE, action) => {
       }
     case ComponentTypes.CREATE_COMPONENT_FAILURE:
       return {...state, loading: false, error: action.payload}
+
+    //create component inside children:
+    case ComponentTypes.CREATE_LAUNCH_REQUEST:
+      return {...state, loadingNewLaunch: true}
+    case ComponentTypes.CREATE_LAUNCH_SUCCESS:
+      return {
+        ...state,
+        loading: false,
+        error: false,
+        loadingNewLaunch: false,
+        data: {...state.data, children: state.data.children?.concat(action.payload.data)},
+      }
+    case ComponentTypes.CREATE_LAUNCH_FAILURE:
+      return {...state, loading: false, loadingNewLaunch: false, error: action.payload}
 
     //create access
     case ComponentTypes.CREATE_COMPONENTACCESS_REQUEST:

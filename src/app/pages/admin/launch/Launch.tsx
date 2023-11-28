@@ -24,6 +24,7 @@ const LaunchPage: React.FC<React.PropsWithChildren<Props>> = ({comp}) => (
     {/* begin::Row */}
     <div className='row g-5 gx-xxl-12'>
       <div className='col-xxl-12'>
+        {comp.loadingNewLaunch && <div><Loading/><br/></div>}
         <ManageItemWidget comp={comp} className='card-xxl-stretch mb-5 mb-xxl-7' />
       </div>
       {/* <div className='col-xxl-5'>
@@ -42,7 +43,7 @@ const Launch: FC<React.PropsWithChildren<unknown>> = () => {
   let id = '3'
 
   useEffect(() => {
-    dispatch(loadComponentRequest(id!,'ASC')) //Puxa componentes com seus filhos primários
+    dispatch(loadComponentRequest(id!,'asc')) //Puxa componentes com seus filhos primários
   }, [id, dispatch])
 
   if (component.loading && component.data) return <Loading />
