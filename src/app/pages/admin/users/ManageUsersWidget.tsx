@@ -312,7 +312,7 @@ const ManageUsersWidget: React.FC<React.PropsWithChildren<Props>> = ({
                               src={
                                 child.image?.includes('https://')
                                   ? child.image
-                                  : 'https://institutodefelicibus.com.br/apimodelo/upload/file/' + child.image
+                                  : 'https://institutodefelicibus.com.br/files/' + child.image
                               }
                               style={{width: '100%'}}
                               onError={({currentTarget}) => {

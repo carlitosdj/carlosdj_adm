@@ -1,10 +1,15 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import {Form, Button} from 'react-bootstrap-v5'
 
 import {useDispatch} from 'react-redux'
 import {createUserRequest} from '../../../../store/ducks/users/actions'
 
 import {User} from '../../../../store/ducks/me/types'
+import { useSelector } from 'react-redux'
+import { ApplicationState } from '../../../../store'
+import { loadCityRequest } from '../../../../store/ducks/city/actions'
+import { loadStateRequest } from '../../../../store/ducks/state/actions'
+import Loading from '../../../loading'
 
 // var bcrypt = require('bcryptjs');
 
@@ -25,8 +30,8 @@ const Create = ({handleClose}: handleCloseProps) => {
 
   const [number, setNumber] = useState<string | undefined>('')
   const [bairro, setBairro] = useState<string | undefined>('')
-  const [city, setCity] = useState<string | undefined>('')
-  const [state, setState] = useState<string | undefined>('')
+  // const [city, setCity] = useState<string | undefined>('')
+  // const [state, setState] = useState<string | undefined>('')
   const [country, setCountry] = useState<string | undefined>('')
   const [cep, setCep] = useState<string | undefined>('')
 
@@ -41,13 +46,25 @@ const Create = ({handleClose}: handleCloseProps) => {
   const [addressCountry, setAddressCountry] = useState<string | undefined>('')
 
   const [numTurma, setNumTurma] = useState<number | undefined>(1)
-  const [role, setRole] = useState<string | undefined>('')
+  const [role, setRole] = useState<string | undefined>('consumer')
 
   // let history = useHistory();
 
   const dispatch = useDispatch()
 
   const [validated, setValidated] = useState(false)
+  const stateRedux = useSelector((state: ApplicationState) => state.state)
+  const cityRedux = useSelector((state: ApplicationState) => state.city)
+  console.log('stateRedux', stateRedux)
+  console.log('cityRedux', cityRedux)
+  // const navigate = useNavigate()
+  // const users = useSelector((state: ApplicationState) => state.users)
+
+  const setState = (id: string) => {
+    setAddressState(id)
+    setAddressCity('')
+    dispatch(loadCityRequest(id))
+  }
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     const form = event.currentTarget
@@ -83,19 +100,24 @@ const Create = ({handleClose}: handleCloseProps) => {
         address,
         addressNumber,
         addressDistrict,
-        addressCity,
-        addressState,
+        // addressCity,
+        // addressState,
+        cityId: addressCity,
+        stateId: addressState,
         addressCountry,
         postalCode: addressCEP,
         whatsapp,
         cpf,
-        roles: role
+        roles: role,
       }
 
       dispatch(createUserRequest(user))
       handleClose()
     }
   }
+  useEffect(() => {
+    dispatch(loadStateRequest()) //Puxa componentes com seus filhos primários
+  }, [])
 
   return (
     <>
@@ -206,7 +228,7 @@ const Create = ({handleClose}: handleCloseProps) => {
         </Form.Group>
         <br />
 
-        <Form.Group controlId='fromName'>
+        {/* <Form.Group controlId='fromName'>
           <Form.Label>Cidade</Form.Label>
           <Form.Control
             placeholder=''
@@ -228,9 +250,63 @@ const Create = ({handleClose}: handleCloseProps) => {
           />
           <Form.Control.Feedback type='invalid'>Por favor informe o estado</Form.Control.Feedback>
         </Form.Group>
+        <br /> */}
+
+        
+
+        <Form.Group controlId='formBasicSelect'>
+          <Form.Label>Estado</Form.Label>
+
+          {stateRedux.loading ? (
+            <Loading />
+          ) : (
+            <Form.Control
+              as='select'
+              value={addressState}
+              onChange={(e: any) => setState(e.target.value)}
+              required
+            >
+              <option value='' selected disabled hidden>
+                Selecione
+              </option>
+              {stateRedux.data.map((st: any, index) => {
+                return (
+                  <option key={index} value={st.id} selected={+st.id === +stateRedux}>
+                    {st.name}
+                  </option>
+                )
+              })}
+            </Form.Control>
+          )}
+        </Form.Group>
+        <br />
+        <Form.Group controlId='formBasicSelect'>
+          <Form.Label>Cidade</Form.Label>
+          {cityRedux.loading ? (
+            <Loading />
+          ) : (
+            <Form.Control
+              as='select'
+              value={addressCity}
+              onChange={(e: any) => setAddressCity(e.target.value)}
+              required
+            >
+              <option value='' selected disabled hidden>
+                Selecione
+              </option>
+              {cityRedux.data.map((ct: any, index) => {
+                return (
+                  <option key={index} value={ct.id} selected={+ct.id === +cityRedux}>
+                    {ct.name}
+                  </option>
+                )
+              })}
+            </Form.Control>
+          )}
+        </Form.Group>
         <br />
 
-        <Form.Group controlId='fromName'>
+        {/* <Form.Group controlId='fromName'>
           <Form.Label>País</Form.Label>
           <Form.Control
             placeholder=''
@@ -240,7 +316,9 @@ const Create = ({handleClose}: handleCloseProps) => {
           />
           <Form.Control.Feedback type='invalid'>Por favor informe o país</Form.Control.Feedback>
         </Form.Group>
-        <br />
+        <br /> */}
+
+
         <Form.Group controlId='fromName'>
           <Form.Label>Turma</Form.Label>
           <Form.Control
@@ -254,14 +332,50 @@ const Create = ({handleClose}: handleCloseProps) => {
         <br />
 
         <Form.Group controlId='fromName'>
-          <Form.Label>Papel (producer, consumer)</Form.Label>
-          <Form.Control
+          <Form.Label>Papel (Role)</Form.Label>
+          {/* <Form.Control
             placeholder=''
             // required
             value={role}
             onChange={(e: any) => setRole(e.target.value)}
-          />
+          /> */}
           <Form.Control.Feedback type='invalid'>Por favor informe o papel</Form.Control.Feedback>
+          <div className='p-1'>
+            <input
+              className='form-check-input'
+              type='radio'
+              id='admin'
+              style={{backgroundColor: 'rgb(112 107 107)', color: 'black'}}
+              onChange={(e: any) => setRole('admin')}
+              name='drone'
+              checked={role === 'admin'}
+            />
+            <label htmlFor='admin'>&nbsp;Administrador</label>
+          </div>
+          <div className='p-1'>
+            <input
+              className='form-check-input'
+              type='radio'
+              id='producer'
+              style={{backgroundColor: 'rgb(112 107 107)', color: 'black'}}
+              onChange={(e: any) => setRole('producer')}
+              name='drone'
+              checked={role === 'producer'}
+            />
+            <label htmlFor='producer'>&nbsp;Produtor de conteúdo</label>
+          </div>
+          <div className='p-1'>
+            <input
+              className='form-check-input'
+              type='radio'
+              id='consumer'
+              style={{backgroundColor: 'rgb(112 107 107)', color: 'black'}}
+              onChange={(e: any) => setRole('consumer')}
+              name='drone'
+              checked={role === 'consumer'}
+            />
+            <label htmlFor='consumer'>&nbsp;Consumidor final</label>
+          </div>
         </Form.Group>
         <br />
 

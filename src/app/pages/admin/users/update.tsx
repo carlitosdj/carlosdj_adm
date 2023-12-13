@@ -7,6 +7,11 @@ import {updateUserRequest} from '../../../../store/ducks/users/actions'
 // import {ApplicationState} from '../../../../store'
 
 import {User} from '../../../../store/ducks/me/types'
+import {loadStateRequest} from '../../../../store/ducks/state/actions'
+import {ApplicationState} from '../../../../store'
+import {useSelector} from 'react-redux'
+import {loadCityRequest} from '../../../../store/ducks/city/actions'
+import Loading from '../../../loading'
 
 interface handleCloseProps {
   handleClose: () => void
@@ -27,8 +32,8 @@ const Update = ({handleClose, child}: handleCloseProps) => {
 
   const [number, setNumber] = useState<string | undefined>('')
   const [bairro, setBairro] = useState<string | undefined>('')
-  const [city, setCity] = useState<string | undefined>('')
-  const [state, setState] = useState<string | undefined>('')
+  // const [city, setCity] = useState<string | undefined>('')
+  // const [state, setState] = useState<string | undefined>('')
   const [country, setCountry] = useState<string | undefined>('')
   const [cep, setCep] = useState<string | undefined>('')
 
@@ -47,8 +52,18 @@ const Update = ({handleClose, child}: handleCloseProps) => {
 
   const [validated, setValidated] = useState<boolean>(false)
 
+  const stateRedux = useSelector((state: ApplicationState) => state.state)
+  const cityRedux = useSelector((state: ApplicationState) => state.city)
+  console.log('stateRedux', stateRedux)
+  console.log('cityRedux', cityRedux)
   // const navigate = useNavigate()
   // const users = useSelector((state: ApplicationState) => state.users)
+
+  const setState = (id: string) => {
+    setAddressState(id)
+    setAddressCity('')
+    dispatch(loadCityRequest(id))
+  }
 
   const dispatch = useDispatch()
 
@@ -79,7 +94,7 @@ const Update = ({handleClose, child}: handleCloseProps) => {
       stateId: addressState,
       //addressCountry,
       postalCode: addressCEP,
-      roles:role
+      roles: role,
 
       //},
     }
@@ -91,7 +106,7 @@ const Update = ({handleClose, child}: handleCloseProps) => {
   }
 
   useEffect(() => {
-    console.log("CHILD - VER AQUI", child)
+    console.log('CHILD - VER AQUI', child)
     setName(child.name)
     setEmail(child.email)
     setOldpasswordhash(child.password_hash)
@@ -125,6 +140,8 @@ const Update = ({handleClose, child}: handleCloseProps) => {
     setAddressCEP(child.postalCode)
     setNumTurma(child.numTurma)
     setRole(child.roles)
+    dispatch(loadStateRequest()) //Puxa componentes com seus filhos primários
+    dispatch(loadCityRequest(child.stateId?.toString()!)) //Puxa componentes com seus filhos primários
   }, [])
 
   return (
@@ -236,7 +253,7 @@ const Update = ({handleClose, child}: handleCloseProps) => {
         </Form.Group>
         <br />
 
-        <Form.Group controlId='fromName'>
+        {/* <Form.Group controlId='fromName'>
           <Form.Label>Cidade</Form.Label>
           <Form.Control
             placeholder=''
@@ -257,6 +274,58 @@ const Update = ({handleClose, child}: handleCloseProps) => {
             onChange={(e: any) => setAddressState(e.target.value)}
           />
           <Form.Control.Feedback type='invalid'>Por favor informe o estado</Form.Control.Feedback>
+        </Form.Group>
+        <br /> */}
+
+        <Form.Group controlId='formBasicSelect'>
+          <Form.Label>Estado</Form.Label>
+
+          {stateRedux.loading ? (
+            <Loading />
+          ) : (
+            <Form.Control
+              as='select'
+              value={addressState}
+              onChange={(e: any) => setState(e.target.value)}
+              required
+            >
+              <option value='' selected disabled hidden>
+                Selecione
+              </option>
+              {stateRedux.data.map((st: any, index) => {
+                return (
+                  <option key={index} value={st.id} selected={+st.id === +stateRedux}>
+                    {st.name}
+                  </option>
+                )
+              })}
+            </Form.Control>
+          )}
+        </Form.Group>
+        <br />
+        <Form.Group controlId='formBasicSelect'>
+          <Form.Label>Cidade</Form.Label>
+          {cityRedux.loading ? (
+            <Loading />
+          ) : (
+            <Form.Control
+              as='select'
+              value={addressCity}
+              onChange={(e: any) => setAddressCity(e.target.value)}
+              required
+            >
+              <option value='' selected disabled hidden>
+                Selecione
+              </option>
+              {cityRedux.data.map((ct: any, index) => {
+                return (
+                  <option key={index} value={ct.id} selected={+ct.id === +cityRedux}>
+                    {ct.name}
+                  </option>
+                )
+              })}
+            </Form.Control>
+          )}
         </Form.Group>
         <br />
 
@@ -285,13 +354,51 @@ const Update = ({handleClose, child}: handleCloseProps) => {
         <br />
 
         <Form.Group controlId='fromName'>
-          <Form.Label>Papel (producer, consumer)</Form.Label>
-          <Form.Control
+          <Form.Label>Papel (Role)</Form.Label>
+          {/* <Form.Control
             placeholder=''
             // required
             value={role}
             onChange={(e: any) => setRole(e.target.value)}
-          />
+          /> */}
+
+          <div className='p-1'>
+            <input
+              className='form-check-input'
+              type='radio'
+              id='admin'
+              style={{backgroundColor: 'rgb(112 107 107)', color: 'black'}}
+              onChange={(e: any) => setRole('admin')}
+              name='drone'
+              checked={role === 'admin'}
+            />
+            <label htmlFor='admin'>&nbsp;Administrador</label>
+          </div>
+          <div className='p-1'>
+            <input
+              className='form-check-input'
+              type='radio'
+              id='producer'
+              style={{backgroundColor: 'rgb(112 107 107)', color: 'black'}}
+              onChange={(e: any) => setRole('producer')}
+              name='drone'
+              checked={role === 'producer'}
+            />
+            <label htmlFor='producer'>&nbsp;Produtor de conteúdo</label>
+          </div>
+          <div className='p-1'>
+            <input
+              className='form-check-input'
+              type='radio'
+              id='consumer'
+              style={{backgroundColor: 'rgb(112 107 107)', color: 'black'}}
+              onChange={(e: any) => setRole('consumer')}
+              name='drone'
+              checked={role === 'consumer'}
+            />
+            <label htmlFor='consumer'>&nbsp;Consumidor final</label>
+          </div>
+
           <Form.Control.Feedback type='invalid'>Por favor informe o papel</Form.Control.Feedback>
         </Form.Group>
         <br />
