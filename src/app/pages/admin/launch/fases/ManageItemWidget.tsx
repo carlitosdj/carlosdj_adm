@@ -173,7 +173,7 @@ const ManageItemWidget: React.FC<React.PropsWithChildren<Props>> = ({className, 
                         {/* <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                         Intertico
                       </a> */}
-                        <span className='text-muted fw-bold text-muted d-block fs-7'>
+                        <span className='text-muted fw-bold d-block fs-7'>
                           <a target={'_blank'} href={child.name=='Captação de lead' ? 'http://localhost:3001/lead/subscribe/' + child.description + '/site': ''}> {child.name=='Captação de lead' ? 'http://localhost:3001/lead/subscribe/' + child.description + '/site': ''} </a>
                           <a target={'_blank'} href={child.name=='Evento' ? 'http://localhost:3001/class/' + child.description + '/aula01': ''}> {child.name=='Evento' ? 'http://localhost:3001/class/' + child.description + '/aula01': ''} </a>
                           <a target={'_blank'} href={child.name=='Vendas' ? 'http://localhost:3001/sale/subscribe/' + child.description + '': ''}>{child.name=='Vendas' ? 'http://localhost:3001/sale/subscribe/' + child.description + '': ''}</a>

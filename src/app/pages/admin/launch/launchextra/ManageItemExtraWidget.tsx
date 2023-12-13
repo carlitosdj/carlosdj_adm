@@ -210,7 +210,7 @@ const ManageItemExtraWidget: React.FC<React.PropsWithChildren<Props>> = ({classN
                         {/* <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                         Intertico
                       </a> */}
-                        <span className='text-muted fw-bold text-muted d-block fs-7'>
+                        <span className='text-muted fw-bold d-block fs-7'>
                           {extra.valueExtra?.substring(0, 200)}...
                         </span>
                       </td>

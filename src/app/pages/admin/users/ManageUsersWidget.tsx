@@ -341,7 +341,7 @@ const ManageUsersWidget: React.FC<React.PropsWithChildren<Props>> = ({
                         {/* <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                           Intertico
                         </a> */}
-                        <span className='text-muted fw-bold text-muted d-block fs-7'>
+                        <span className='text-muted fw-bold d-block fs-7'>
                           {child.email}
                         </span>
                       </td>
@@ -349,7 +349,7 @@ const ManageUsersWidget: React.FC<React.PropsWithChildren<Props>> = ({
                         {/* <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                           Intertico
                         </a> */}
-                        <span className='text-muted fw-bold text-muted d-block fs-7'>
+                        <span className='text-muted fw-bold d-block fs-7'>
                           <a href={'https://api.whatsapp.com/send?phone=' + whats} target='_blank'>
                             {child.whatsapp}
                           </a>
@@ -359,7 +359,7 @@ const ManageUsersWidget: React.FC<React.PropsWithChildren<Props>> = ({
                         {/* <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                           Intertico
                         </a> */}
-                        <span className='text-muted fw-bold text-muted d-block fs-7'>
+                        <span className='text-muted fw-bold d-block fs-7'>
                           {createdAt.format('DD/MM/YYYY HH:mm')}
                           {' / '}
                           {now.diff(createdAt, 'years', true) > 1 ? (
@@ -375,7 +375,7 @@ const ManageUsersWidget: React.FC<React.PropsWithChildren<Props>> = ({
                         {/* <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                           Intertico
                         </a> */}
-                        <span className='text-muted fw-bold text-muted d-block fs-7'>
+                        <span className='text-muted fw-bold d-block fs-7'>
                           {lastLoginAt ? lastLoginAt?.format('DD/MM/YYYY HH:mm') : ''}
                         </span>
                       </td>
@@ -391,7 +391,7 @@ const ManageUsersWidget: React.FC<React.PropsWithChildren<Props>> = ({
                         {/* <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                           Intertico
                         </a> */}
-                        <span className='text-muted fw-bold text-muted d-block fs-7'>
+                        <span className='text-muted fw-bold d-block fs-7'>
                           {child.numTurma}
                         </span>
                       </td>
