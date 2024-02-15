@@ -28,7 +28,7 @@ export enum WppgroupTypes {
  */
 export interface Wppgroup {
   id?: string
-  camp_id?: number
+  campId?: number
   parentCamp?: string
   name?: string
   url?: string

@@ -24,10 +24,10 @@ const ManagePage: React.FC<React.PropsWithChildren<Props>> = ({comp}) => (
   <>
     {/* begin::Row */}
     <div className='row g-5 gx-xxl-12'>
-      <div className='col-xxl-9'>
+      <div className='col-xxl-8'>
         <ManageItemWidget comp={comp} className='card-xxl-stretch mb-5 mb-xxl-7' />
       </div>
-      <div className='col-xxl-3'>
+      <div className='col-xxl-4'>
         <ManageItemExtraWidget comp={comp} className='card-xxl-stretch mb-5 mb-xxl-5' />
       </div>
     </div>

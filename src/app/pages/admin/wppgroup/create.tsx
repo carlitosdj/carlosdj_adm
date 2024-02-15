@@ -38,7 +38,7 @@ const Create = ({handleClose}: handleCloseProps) => {
       var data = new Date()
       const component: Wppgroup = {
         name,
-        camp_id: +id!,
+        campId: +id!,
         url,
         clicks: 0,
         //createdAt: data.getTime() / 1000,
