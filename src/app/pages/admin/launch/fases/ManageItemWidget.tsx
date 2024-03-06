@@ -174,9 +174,9 @@ const ManageItemWidget: React.FC<React.PropsWithChildren<Props>> = ({className, 
                         Intertico
                       </a> */}
                         <span className='text-muted fw-bold d-block fs-7'>
-                          <a target={'_blank'} href={child.name=='Captação de lead' ? 'http://localhost:3001/lead/subscribe/' + child.description + '/site': ''}> {child.name=='Captação de lead' ? 'http://localhost:3001/lead/subscribe/' + child.description + '/site': ''} </a>
-                          <a target={'_blank'} href={child.name=='Evento' ? 'http://localhost:3001/class/' + child.description + '/aula01': ''}> {child.name=='Evento' ? 'http://localhost:3001/class/' + child.description + '/aula01': ''} </a>
-                          <a target={'_blank'} href={child.name=='Vendas' ? 'http://localhost:3001/sale/subscribe/' + child.description + '': ''}>{child.name=='Vendas' ? 'http://localhost:3001/sale/subscribe/' + child.description + '': ''}</a>
+                          <a target={'_blank'} href={child.name=='Captação de lead' ? 'https://evnt.carlosdj.com.br/lead/subscribe/' + child.description + '/site': ''}> {child.name=='Captação de lead' ? 'https://evnt.carlosdj.com.br/lead/subscribe/' + child.description + '/site': ''} </a>
+                          <a target={'_blank'} href={child.name=='Evento' ? 'https://evnt.carlosdj.com.br/class/' + child.description + '/aula01': ''}> {child.name=='Evento' ? 'https://evnt.carlosdj.com.br/class/' + child.description + '/aula01': ''} </a>
+                          <a target={'_blank'} href={child.name=='Vendas' ? 'https://evnt.carlosdj.com.br/sale/subscribe/' + child.description + '': ''}>{child.name=='Vendas' ? 'https://evnt.carlosdj.com.br/sale/subscribe/' + child.description + '': ''}</a>
                          
                         </span>
                       </td>
