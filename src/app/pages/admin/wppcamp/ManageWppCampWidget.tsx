@@ -148,12 +148,12 @@ const ManageWppCampWidget: React.FC<React.PropsWithChildren<Props>> = ({classNam
                         {/* <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                         Intertico
                       </a> */}
-                        <span className='text-muted fw-bold text-muted d-block fs-7'>
+                        <span className='text-muted fw-bold d-block fs-7'>
                           {/* <a href={window.location.protocol + "//" + window.location.hostname + '/viawhats/' + child.slug} target="_blank" className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                           {window.location.protocol + "//" + window.location.hostname + '/viawhats/' + child.slug}
                         </a> */}
-                          {/* <a href={'https://evento.labiopalatina.com.br/viawhats/' + child.slug} target="_blank" className='text-dark fw-bolder text-hover-primary d-block fs-6'> */}
-                          {'https://evento.labiopalatina.com.br/viawhats/' + child.slug}
+                          {/* <a href={'https://envt.carlosdj.com.br/viawhats/' + child.slug} target="_blank" className='text-dark fw-bolder text-hover-primary d-block fs-6'> */}
+                          {'https://evnt.carlosdj.com.br/viawhats/' + child.slug}
                           {/* </a> */}
                         </span>
                       </td>
@@ -161,11 +161,11 @@ const ManageWppCampWidget: React.FC<React.PropsWithChildren<Props>> = ({classNam
                         {/* <a href='#!' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                         Intertico
                       </a> */}
-                        <span className='text-muted fw-bold text-muted d-block fs-7'>
+                        <span className='text-muted fw-bold d-block fs-7'>
                           {/* <a href={window.location.protocol + "//" + window.location.hostname + '/viawhats/' + child.slug} target="_blank" className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                           {window.location.protocol + "//" + window.location.hostname + '/viawhats/' + child.slug}
                         </a> */}
-                          {/* <a href={'https://evento.labiopalatina.com.br/viawhats/' + child.slug} target="_blank" className='text-dark fw-bolder text-hover-primary d-block fs-6'> */}
+                          {/* <a href={'https://evnt.carlosdj.com.br/viawhats/' + child.slug} target="_blank" className='text-dark fw-bolder text-hover-primary d-block fs-6'> */}
                           {child.maxclicks}
                           {/* </a> */}
                         </span>

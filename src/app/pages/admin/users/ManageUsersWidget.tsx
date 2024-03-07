@@ -281,7 +281,7 @@ const ManageUsersWidget: React.FC<React.PropsWithChildren<Props>> = ({
                       <td>
                         <div className='d-flex align-items-center'>
                           <div className='symbol symbol-45px me-5'>
-                            {/* <img src={'https://labiopalatina.com.br/files/1678819623100-vf.jpg'} alt='' /> */}
+                            {/* <img src={'https://carlosdj.com.br/files/1678819623100-vf.jpg'} alt='' /> */}
                             <input
                               className='form-check-input'
                               type='checkbox'
@@ -297,7 +297,7 @@ const ManageUsersWidget: React.FC<React.PropsWithChildren<Props>> = ({
                       <td>
                         <div className='d-flex align-items-center'>
                           <div className='symbol symbol-45px me-5'>
-                            {/* <img src={'https://labiopalatina.com.br/files/1678819623100-vf.jpg'} alt='' /> */}
+                            {/* <img src={'https://carlosdj.com.br/files/1678819623100-vf.jpg'} alt='' /> */}
                             {child.id}
                           </div>
                         </div>
@@ -305,20 +305,20 @@ const ManageUsersWidget: React.FC<React.PropsWithChildren<Props>> = ({
                       <td>
                         <div className='d-flex align-items-center'>
                           <div className='symbol symbol-45px me-5'>
-                            {/* <img src={'https://labiopalatina.com.br/files/1678819623100-vf.jpg'} alt='' /> */}
+                            {/* <img src={'https://carlosdj.com.br/files/1678819623100-vf.jpg'} alt='' /> */}
                             <img
                               //src={users.user.image}
                               //src={ image?.includes('https://') ? image : '../../files/' + image}
                               src={
                                 child.image?.includes('https://')
                                   ? child.image
-                                  : 'https://institutodefelicibus.com.br/files/' + child.image
+                                  : 'https://carlosdj.com.br/files/' + child.image
                               }
                               style={{width: '100%'}}
                               onError={({currentTarget}) => {
                                 currentTarget.onerror = null // prevents looping
                                 currentTarget.src =
-                                  'https://labiopalatina.com.br/media/guestuser.jpg'
+                                  'https://carlosdj.com.br/files/guestuser.jpg'
                               }}
                             />
                           </div>

@@ -135,12 +135,12 @@ const UserCourses = ({handleClose, child}: handleCloseProps) => {
             src={
               child.image?.includes('https://')
                 ? child.image
-                : 'https://institutodefelicibus.com.br/files/' + child.image
+                : 'https://carlosdj.com.br/files/' + child.image
             }
             style={{width: '100%'}}
             onError={({currentTarget}) => {
               currentTarget.onerror = null // prevents looping
-              currentTarget.src = 'https://labiopalatina.com.br/media/guestuser.jpg'
+              currentTarget.src = 'https://carlosdj.com.br/files/guestuser.jpg'
             }}
           />
         </div>

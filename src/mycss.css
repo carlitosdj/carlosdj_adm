@@ -65,13 +65,13 @@ a:hover {
   filter: gray;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
-  background-image: url(https://labiopalatina.com.br/imgs/background.webp);
+  background-image: url(https://carlosdj.com.br/files/background.webp);
   z-index: 1000;
 }
 
 .full {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)),
-    url(https://labiopalatina.com.br/imgs/background.webp) no-repeat center bottom 100%;
+    url(https://carlosdj.com.br/files/background.webp) no-repeat center bottom 100%;
   background-size: cover;
   -o-background-size: cover;
   -webkit-overflow-scrolling: touch;
