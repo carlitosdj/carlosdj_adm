@@ -10,7 +10,7 @@ import { useCookies } from 'react-cookie'
 
 //console.log("AXIOS", axios.defaults.headers.common)
 const api = axios.create({
-  baseURL: 'https://carlosdj.com.br/api'
+  baseURL: 'https://api.carlosdj.com.br'
   //baseURL: 'http://89.116.186.124:3001',
   //baseURL: 'https://institutodefelicibus.com.br/apicarlosdj',
   //baseURL: 'http://localhost:3000',
