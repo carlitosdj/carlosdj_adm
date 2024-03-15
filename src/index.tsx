@@ -12,7 +12,7 @@ import store, {persistor} from './store'
 // import axios from 'axios'
 // import {Chart, registerables} from 'chart.js'
 
-// Apps
+// Apps 
 import {App} from './app/App'
 import {MetronicI18nProvider} from './app/design/i18n/Metronici18n'
 /**
